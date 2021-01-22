@@ -12,5 +12,19 @@
     "name": "main",
     "origin": "project_file",
     "scope": null
+  },
+  {
+    "ID": "c:main.c@19@F@main@x",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "x",
+    "location": {
+      "column": "7",
+      "line": "4",
+      "path": "C:\\Users\\RAZER\\Documents\\IAR\\CSE2_Project_GR1\\main.c"
+    },
+    "name": "x",
+    "origin": "project_file",
+    "scope": null
   }
 ]
