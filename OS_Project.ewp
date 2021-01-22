@@ -772,7 +772,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$TOOLKIT_DIR$\config\linker\Microchip\sam3x8\sram.icf</state>
+                    <state>C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1\sam3x8-sram_BigHeap.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2112,6 +2112,21 @@
         </settings>
     </configuration>
     <file>
+        <name>$PROJ_DIR$\core_cm3.h</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\cstartup.s</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\exceptions.c</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\main.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\startup_sam3x.c</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\system_sam3x.c</name>
     </file>
 </project>
