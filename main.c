@@ -1,10 +1,11 @@
 
 #include "at91sam3x8.h"
 #include "system_sam3x.h"
+#include "kernel_functions_march_2019.h"
 
 #define CLKSPEED 84000000
-#define MAXTICKS 10;
-volatile uint32_t ticks = 0;
+#define MAXTICKS 10
+volatile uint32_t sticks = 0;
 uint8_t task = 0;
 uint8_t set_task_nr = 0;
 
@@ -23,6 +24,10 @@ void init_tasks();
 
 int main()
 {
+  SystemInit();
+  SysTick_Config(83999);
+  
+  
   init_tasks();
   while (1)
   {
@@ -31,24 +36,28 @@ int main()
   return 2;
 }
 
-void SysTick_Handler(void)
-{
-  ticks++;
-  if (ticks == MAXTICKS)
-  {
-    ticks = 0;
-    if (set_task_nr == 1)
-    {
-      set_task_nr = 2;
-      __set_SP((unsigned int)sp_f2);
-    }
-    else if (set_task_nr == 2)
-    {
-      set_task_nr = 1;
-      __set_SP((unsigned int)sp_f1);
-    }
-  }
-}
+// void SysTick_Handler(void)
+// {
+//   sticks++;
+//   if (sticks == MAXTICKS)
+//   {
+//     sticks = 0;
+//     if (set_task_nr == 1)
+//     {
+//       set_task_nr = 2;
+//       __set_SP((unsigned int)sp_f2);
+//       f1++;
+      
+//     }
+//     else if (set_task_nr == 2)
+//     {
+//       set_task_nr = 1;
+//       __set_SP((unsigned int)sp_f1);
+//       f2++;
+//     }
+//   }
+// }
+
 void init_tasks()
 {
   *(--sp_f1) = 0x21000000;       //XPRS
@@ -76,7 +85,6 @@ void Func1()
 {
   while (1)
   {
-    f1++;
   }
 }
 
@@ -84,6 +92,5 @@ void Func2()
 {
   while (1)
   {
-    f2++;
   }
 }
