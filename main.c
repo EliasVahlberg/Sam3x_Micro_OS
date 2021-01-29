@@ -3,10 +3,10 @@
 #include "system_sam3x.h"
 #include "kernel_functions_march_2019.h"
 
-#define CLKSPEED 84000000
-#define MAXTICKS 10
-volatile uint32_t sticks = 0;
-uint8_t task = 0;
+#define CLKSPEED            84000000
+#define MAXTICKS            10;
+volatile uint32_t ticks =   0;
+uint8_t task =  0;
 uint8_t set_task_nr = 0;
 
 uint32_t stack_f1[40];
@@ -16,20 +16,22 @@ uint32_t *sp_f2 = &stack_f2[40];
 uint32_t f1 = 0;
 uint32_t f2 = 0;
 
+//TEST COMMIT 16:04 29/01/21
+
 
 #pragma region Functions
 void Func1();
 void Func2();
 void init_tasks();
+
+
 #pragma endregion Functions
 
 int main()
 {
-  SystemInit();
-  SysTick_Config(83999);
-  
-  
   init_tasks();
+  SwitchContext();
+
   while (1)
   {
     set_task_nr = 1;
@@ -37,28 +39,24 @@ int main()
   return 2;
 }
 
-// void SysTick_Handler(void)
-// {
-//   sticks++;
-//   if (sticks == MAXTICKS)
-//   {
-//     sticks = 0;
-//     if (set_task_nr == 1)
-//     {
-//       set_task_nr = 2;
-//       __set_SP((unsigned int)sp_f2);
-//       f1++;
-      
-//     }
-//     else if (set_task_nr == 2)
-//     {
-//       set_task_nr = 1;
-//       __set_SP((unsigned int)sp_f1);
-//       f2++;
-//     }
-//   }
-// }
-
+void SysTick_Handler(void)
+{
+  ticks++;
+  if (ticks == MAXTICKS)
+  {
+    ticks = 0;
+    if (set_task_nr == 1)
+    {
+      set_task_nr = 2;
+      __set_SP((unsigned int)sp_f2);
+    }
+    else if (set_task_nr == 2)
+    {
+      set_task_nr = 1;
+      __set_SP((unsigned int)sp_f1);
+    }
+  }
+}
 void init_tasks()
 {
   *(--sp_f1) = 0x21000000;       //XPRS
@@ -86,6 +84,7 @@ void Func1()
 {
   while (1)
   {
+    f1++;
   }
 }
 
@@ -93,5 +92,6 @@ void Func2()
 {
   while (1)
   {
+    f2++;
   }
 }
