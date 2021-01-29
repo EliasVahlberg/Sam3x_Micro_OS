@@ -37,7 +37,7 @@ SysTick_Handler
         TST     LR,  #0x04     ; if LR = 0xFFFFFFF9 then before interrupt, SP was MSP,
                                ;                    which means that IRQ arrived
                                ;                    while main was executing
-                               ; if LR = 0xFFFFFFFD then before interrupt, SP was PSP,´
+                               ; if LR = 0xFFFFFFFD then before interrupt, SP was PSP,ï¿½
                                ;                    which means that IRQ arrived
                                ;                    while a task was executing
         BEQ     trigger_hardware_unstack  
@@ -82,7 +82,7 @@ SVC_Handler
         TST     LR,  #0x04         ; if LR = 0xFFFFFFF9 then before interrupt, SP was MSP,
         BEQ     called_from_main   ;                    which means that IRQ arrived
                                    ;                    while main was executing
-                                   ; if LR = 0xFFFFFFFD then before interrupt, SP was PSP,´
+                                   ; if LR = 0xFFFFFFFD then before interrupt, SP was PSP,ï¿½
                                    ;                    which means that IRQ arrived
                                    ;                    while a task was executing        
         MRS     r0, psp         ; peek into process stack
@@ -123,7 +123,7 @@ svc_function_isrOff
 svc_function_isrOn              
 ;  SVC function 1
         MOV     r0, #0
-        MSR     BASEPRI,  r0    ; sys tick enabled
+        MSR     BASEPRI,  r0    ; SysTick enabled
         CPSIE   I
         POP     {r0,r1,r2,PC}   ; exit ISR and trigger_hardware_unstack 
 

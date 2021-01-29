@@ -7,30 +7,30 @@
 #include <string.h>  /* for using the function memcpy        */
 #include <limits.h>  /* for using the constant UINT_MAX      */
 
-#define CONTEXT_SIZE    8   /*  for the 8 registers: r4 to r11   */ 
-#define STACK_SIZE      100 /*  about enough space for the stack */
+#define CONTEXT_SIZE            8   /*  for the 8 registers: r4 to r11   */ 
+#define STACK_SIZE              100 /*  about enough space for the stack */
 
 
-#define TRUE    1
-#define FALSE   !TRUE
+#define TRUE                    1
+#define FALSE                   !TRUE
 
-#define RUNNING 1
-#define INIT    !RUNNING
+#define RUNNING                 1
+#define INIT                    !RUNNING
 
-#define FAIL    0
-#define SUCCESS 1
-#define OK              1
+#define FAIL                    0
+#define SUCCESS                 1
+#define OK                      1
 
 #define DEADLINE_REACHED        0
 #define NOT_EMPTY               0
 
-#define SENDER          +1
-#define RECEIVER        -1
+#define SENDER                  +1
+#define RECEIVER                -1
 
 
-typedef int             exception;
-typedef int             bool;
-typedef unsigned int    uint;
+typedef int                     exception;
+typedef int                     bool;
+typedef unsigned int            uint;
 typedef int 			action;
 
 struct  l_obj;         // Forward declaration
