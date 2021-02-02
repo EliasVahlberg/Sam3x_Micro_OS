@@ -6,10 +6,10 @@
 #include <stdlib.h>  /* for using the functions calloc, free */
 #include <string.h>  /* for using the function memcpy        */
 #include <limits.h>  /* for using the constant UINT_MAX      */
+#include <stdint.h>
 
 #define CONTEXT_SIZE            8   /*  for the 8 registers: r4 to r11   */ 
 #define STACK_SIZE              100 /*  about enough space for the stack */
-
 
 #define TRUE                    1
 #define FALSE                   !TRUE
@@ -27,6 +27,8 @@
 #define SENDER                  +1
 #define RECEIVER                -1
 
+#define DEF_SPSR                0x21000000 
+
 
 typedef int                     exception;
 typedef int                     bool;
@@ -36,6 +38,11 @@ typedef int 			action;
 struct  l_obj;         // Forward declaration
 
 // Task Control Block, TCB.  Modified on 24/02/2019
+
+extern void     TimerInt(void);
+extern void     NextTask(void);
+extern void     PreviousTask(void);
+
 typedef struct
 {
         //uint    Context[CONTEXT_SIZE];        
@@ -90,7 +97,7 @@ typedef struct _list {
 
 
 // Task administration
-int             init_kernel(void);
+exception       init_kernel(void);
 exception	create_task( void (* body)(), uint d );
 void            terminate( void );
 void            run( void );
@@ -114,8 +121,8 @@ uint		deadline( void );
 void            set_deadline( uint nNew );
 
 //Interrupt and context switch
-extern void     isr_off(void);
 extern void     isr_on(void);
+extern void     isr_off(void);
 
 extern void     SwitchContext( void );	
                    /* Stores stack frame in stack of currently running task, and the
@@ -133,3 +140,22 @@ extern void     switch_to_stack_of_next_task( void );
 extern void     LoadContext_In_Terminate( void );
                    /* To be used on the last line of the C function terminate() */
 
+
+extern int32_t kernel_mode      = 0;
+extern int32_t mem_counter      = 0;
+extern int32_t tick_counter     = 0; 
+void test_task1(void);
+void test_task2(void);
+void test_task3(void);
+exception append_task_2_list(list* l, TCB* task);
+exception create_task(void (*body)(), uint d);
+void *mem_alloc(size_t size);
+void mem_free(void *mem);
+
+list *ReadyList;
+list *WaitingList;
+list *TimerList;
+
+#include "CFiles\tasks.c"
+#include "CFiles\kernel_init.c"
+#include "CFiles\timing.c"

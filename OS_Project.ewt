@@ -2840,6 +2840,9 @@
         </settings>
     </configuration>
     <file>
+        <name>$PROJ_DIR$\context_switching_functions_march_2019.s</name>
+    </file>
+    <file>
         <name>$PROJ_DIR$\core_cm3.h</name>
     </file>
     <file>

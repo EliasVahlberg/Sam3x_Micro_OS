@@ -1,97 +1,225 @@
+//;; This buffer is for text that is not saved, and for Lisp evaluation.
+//;; To create a file, visit it with C-x C-f and enter text in its buffer.
 
-#include "at91sam3x8.h"
+/*  Unit test to check if terminate() works correctly, and if create_task( )
+              (1) correctly initializes TCBs, and,
+              (2) correctly updates the ReadyList
+            assumes that you have used the name ReadyList to point to the Ready list
+            and assumes that you have written all of your kernel functions in a single
+            C file called kernel_functions.c
+            And of course, init_kernel() and run() also need to work correctly
+         */
+
 #include "system_sam3x.h"
-#include "kernel_functions_march_2019.h"
+#include "at91sam3x8.h"
+#include "kernel_functions.h"
 
-#define CLKSPEED 84000000
-#define MAXTICKS 10
-volatile uint32_t sticks = 0;
-uint8_t task = 0;
-uint8_t set_task_nr = 0;
+//list* ReadyList;
+//list* WaitingList;
+//list* TimerList; Does not work yet
 
-uint32_t stack_f1[40];
-uint32_t stack_f2[40];
-uint32_t *sp_f1 = &stack_f1[40];
-uint32_t *sp_f2 = &stack_f2[40];
-uint32_t f1 = 0;
-uint32_t f2 = 0;
+//Maybe you need to include your own library files here!!
+unsigned int g0 = 0, g1 = 0, g2 = 0, g3 = 1; /* gate flags for various stages of unit test */
+
+unsigned int low_deadline = 1000;
+unsigned int high_deadline = 100000;
 
 
-#pragma region Functions
-void Func1();
-void Func2();
-void init_tasks();
-#pragma endregion Functions
+#define create_count_from_main_MAX 10
+#define create_count_from_task2_MAX 10
 
-int main()
+void task_body_1()
+{
+  terminate();
+}
+
+void task_body_2()
+{
+  exception return_value;
+  unsigned int recursion_count_upon_entry;
+  static unsigned int recursion_depth_left = create_count_from_task2_MAX;
+  static unsigned int count_recursive_calls = 0;
+
+  count_recursive_calls++;
+  recursion_depth_left--;
+  if (recursion_depth_left > 0)
+  {
+    recursion_count_upon_entry = count_recursive_calls;
+    return_value = create_task(task_body_2, high_deadline - 10 * count_recursive_calls);
+    /* simply a way of creating tasks with tighter deadlines than
+                    * the currenty running task
+                    */
+    if (return_value == OK)
+    {
+      if (count_recursive_calls <= recursion_count_upon_entry)
+      {
+        g2 = FAIL;
+      }
+      else
+      {
+        g2 = OK;
+      }
+    }
+    else
+    {
+      g2 = FAIL;
+    }
+  }
+  else
+  {
+    if (count_recursive_calls == create_count_from_task2_MAX)
+    {
+      g2 = OK;
+    }
+    else
+    {
+      g2 = FAIL;
+    }
+  }
+  g3 = g3 * g2;
+  terminate();
+}
+
+void task_body_3()
+{
+  if (g3 == OK)
+  {
+    while (1)
+    {
+      /* Alles Gut ! This unit test has been passed */
+    }
+  }
+  else
+  {
+    while (1)
+    {
+      /* failed */
+    }
+  }
+}
+
+void main()
 {
   SystemInit();
-  SysTick_Config(83999);
-  
-  
-  init_tasks();
-  while (1)
+  SysTick_Config(100000);
+  SCB->SHP[((uint32_t)(SysTick_IRQn)&0xF) - 4] = (0xE0);
+  isr_off();
+
+  g0 = OK;
+  exception retVal = init_kernel();
+  if (retVal != OK)
   {
-    set_task_nr = 1;
+    g0 = FAIL;
+    while (1)
+    { /* no use going further */
+    }
   }
-  return 2;
-}
-
-// void SysTick_Handler(void)
-// {
-//   sticks++;
-//   if (sticks == MAXTICKS)
-//   {
-//     sticks = 0;
-//     if (set_task_nr == 1)
-//     {
-//       set_task_nr = 2;
-//       __set_SP((unsigned int)sp_f2);
-//       f1++;
-      
-//     }
-//     else if (set_task_nr == 2)
-//     {
-//       set_task_nr = 1;
-//       __set_SP((unsigned int)sp_f1);
-//       f2++;
-//     }
-//   }
-// }
-
-void init_tasks()
-{
-  *(--sp_f1) = 0x21000000;       //XPRS
-  *(--sp_f1) = (uint32_t)&Func1; //PC
-  *(--sp_f1) = 0xEU;             //LR
-  *(--sp_f1) = 0xCU;             //R12
-  *(--sp_f1) = 0x3U;             //R3
-  *(--sp_f1) = 0x2U;             //R2
-  *(--sp_f1) = 0x1U;             //R1
-  *(--sp_f1) = 0x0U;             //R0
-
-  *(--sp_f2) = 0x21000000;       //XPRS
-  *(--sp_f2) = (uint32_t)&Func2; //PC
-  *(--sp_f2) = 0xEU;             //LR
-  *(--sp_f2) = 0xCU;             //R12
-  *(--sp_f2) = 0x3U;             //R3
-  *(--sp_f2) = 0x2U;             //R2
-  *(--sp_f2) = 0x1U;             //R1
-  *(--sp_f2) = 0x0U;             //R0
-}
-void set_task(uint8_t t_nr)
-{
-}
-void Func1()
-{
-  while (1)
+  if (ReadyList->pHead != ReadyList->pTail)
   {
+    g0 = FAIL;
   }
-}
-
-void Func2()
-{
-  while (1)
+  if (WaitingList->pHead != WaitingList->pTail)
   {
+    g0 = FAIL;
+  }
+  if (TimerList->pHead != TimerList->pTail)
+  {
+    g0 = FAIL;
+  }
+
+  if (g0 != OK)
+  {
+    while (1)
+    { /* no use going further */
+    }
+  }
+
+  unsigned int i, *sPtr, *lowEndPtr, *highEndPtr;
+  listobj *nextListObj;
+
+  g1 = OK;
+  for (i = 1; i <= create_count_from_main_MAX; i++)
+  {
+    retVal = create_task(task_body_1, low_deadline + i);
+    if (retVal == OK)
+    {
+      if (i == 1)
+        nextListObj = ReadyList->pHead;
+      else
+        nextListObj = nextListObj->pNext;
+      // check whether the SP is pointing inside the stack
+      sPtr = nextListObj->pTask->SP;
+      lowEndPtr = &(nextListObj->pTask->StackSeg[0]);
+      highEndPtr = &(nextListObj->pTask->StackSeg[STACK_SIZE - 1]);
+      if (lowEndPtr >= sPtr || sPtr >= highEndPtr)
+      {
+        g1 = FAIL;
+        break;
+      }
+      // check whether the stack frame matches the PC and SPSR fields
+      lowEndPtr = (unsigned int *)((unsigned int)sPtr + (unsigned int)24);  // where PC  should be stored
+      highEndPtr = (unsigned int *)((unsigned int)sPtr + (unsigned int)28); // where PSR should be stored
+      if ((unsigned int)nextListObj->pTask->PC != (unsigned int)(*lowEndPtr))
+      {
+        g1 = FAIL;
+        break;
+      }
+      if ((unsigned int)nextListObj->pTask->SPSR != (unsigned int)(*highEndPtr))
+      {
+        g1 = FAIL;
+        break;
+      }
+      if ((unsigned int)nextListObj->pTask->PC == (unsigned int)0)
+      {
+        g1 = FAIL;
+        break;
+      }
+      // is the newly created task here ?
+      if ((unsigned int)nextListObj->pTask->Deadline != (unsigned int)(low_deadline + i))
+      {
+          g1 = FAIL;
+        break;
+      }
+      // advance to create the next task and examine its TCB
+    }
+    else
+    {
+      g1 = FAIL;
+      break;
+    }
+  }
+  if (g1 != OK)
+  {
+    while (1)
+    { /* no use going further */
+    }
+  }
+
+  /* now we shall set up a task to test how create_task works when called during run time */
+  g3 = 1;
+  g2 = 0;
+  retVal = create_task(task_body_2, high_deadline);
+  if (retVal != OK)
+  {
+    while (1)
+    { /* no use going further */
+    }
+  }
+
+  retVal = create_task(task_body_3, 8 * high_deadline);
+  // should have a priority higher than the idle task, but lower than all else
+  if (retVal != OK)
+  {
+    while (1)
+    { /* no use going further */
+    }
+  }
+
+  run();
+
+  while (1)
+  { /* something is wrong with run */
   }
 }
+struct _list l1;
+list l2;

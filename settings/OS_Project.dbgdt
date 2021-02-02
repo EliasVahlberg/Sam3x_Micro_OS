@@ -902,7 +902,7 @@
                     <item>task</item>
                     <item>f1</item>
                     <item>f2</item>
-                    <item></item>
+                    <item />
                 </expressions>
                 <col-names>
                     <item>Expression</item>

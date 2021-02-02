@@ -1,0 +1,32 @@
+
+    ##CSEII Project Commenting Conventions##
+
+    Short description           :
+
+/** \brief Pmc hardware registers */
+
+    In-function comment         :
+
+/* comment */
+    
+    File description comment    :
+
+/**
+* @file
+*     main.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
+
+    
+    Function comment:
+
+/**
+* \brief Summary
+* @param input1
+* @param input2
+* @return value returned
+*/
