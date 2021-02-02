@@ -40,8 +40,6 @@ struct  l_obj;         // Forward declaration
 // Task Control Block, TCB.  Modified on 24/02/2019
 
 extern void     TimerInt(void);
-extern void     NextTask(void);
-extern void     PreviousTask(void);
 
 typedef struct
 {
@@ -124,13 +122,8 @@ void            set_deadline( uint nNew );
 extern void     isr_on(void);
 extern void     isr_off(void);
 
-extern void     SwitchContext( void );	
-                   /* Stores stack frame in stack of currently running task, and the
-                    * remaining registers in its TCB
-                    * Loads stack frame from stack of RunningTask, and the
-                    * remaining registers from its TCB
-                    */
-                                        
+extern void     SwitchContext( void );
+                                
 extern void     LoadContext_In_Run( void );
                    /* To be used on the last line of the C function run() */
 
@@ -141,13 +134,14 @@ extern void     LoadContext_In_Terminate( void );
                    /* To be used on the last line of the C function terminate() */
 
 
+TCB *PreviousTask, *NextTask;
 extern int32_t kernel_mode      = 0;
 extern int32_t mem_counter      = 0;
 extern int32_t tick_counter     = 0; 
 void test_task1(void);
 void test_task2(void);
 void test_task3(void);
-exception append_task_2_list(list* l, TCB* task);
+exception add_task_2_list(list* l, TCB* task);
 exception create_task(void (*body)(), uint d);
 void *mem_alloc(size_t size);
 void mem_free(void *mem);
@@ -159,3 +153,4 @@ list *TimerList;
 #include "CFiles\tasks.c"
 #include "CFiles\kernel_init.c"
 #include "CFiles\timing.c"
+#include "CFiles\kernel.c"

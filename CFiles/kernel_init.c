@@ -8,8 +8,6 @@ extern TCB idle_task;
 #pragma region Function_PreInit
 exception init_kernel(void);
 list *create_task_list(void);
-void terminate(void);
-void run(void);
 void mem_free(void *mem);
 void *mem_alloc(size_t size);
 void idle();
@@ -45,19 +43,12 @@ exception init_kernel(void)
 }
 
 
-void terminate(void)
-{
-}
 
-void run(void)
-{
-}
 
-/**
-* create_task_list 
-* \brief creates a list of tasks
-* @return pointer to the allocated list, if memory alloc faliure it returns NULL
-*/
+/*
+ \brief creates a list of tasks
+ @return pointer to the allocated list, if memory alloc faliure it returns NULL
+ */
 list *create_task_list()
 {
     list *task_list = (list *)mem_alloc(sizeof(list));
@@ -119,10 +110,4 @@ void idle()
 extern void TimerInt(void)
 {
     tick_counter++;
-}
-extern void NextTask(void)
-{
-}
-extern void PreviousTask(void)
-{
 }

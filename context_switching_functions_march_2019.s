@@ -132,7 +132,7 @@ svc_function_switchContext
 ;  SVC function 2
         MRS     r0,  psp        ; r0 contains the process stack pointer 
         ISB                     ; of the task that was running before interrupt
-        LDR     r1,  = PreviousTask         
+        LDR     r1,  = PreviousTask
         LDR     r1,  [r1]       ; point r1 to PrevisouTask->SP
         STR     r0,  [r1]
         ADD     r1, r1, #4

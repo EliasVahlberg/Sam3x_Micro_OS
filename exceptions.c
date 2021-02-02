@@ -142,7 +142,7 @@ extern "C" {
  */
 void Dummy_Handler(void)
 {
-	while (1) {
+          while (1) {
 	}
 }
 
