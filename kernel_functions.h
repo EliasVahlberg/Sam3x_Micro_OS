@@ -27,8 +27,10 @@
 #define SENDER                  +1
 #define RECEIVER                -1
 
+
 #define DEF_SPSR                0x21000000 
 
+#define MESSAGE_LOST            -1 //If a message was deleted in force_remove_mailbox()
 
 typedef int                     exception;
 typedef int                     bool;
@@ -102,13 +104,13 @@ void            run( void );
 
 // Communication
 mailbox*	create_mailbox( uint nMessages, uint nDataSize );
-int             no_messages( mailbox* mBox );
-
 exception       send_wait( mailbox* mBox, void* pData );
 exception       receive_wait( mailbox* mBox, void* pData );
-
 exception	send_no_wait( mailbox* mBox, void* pData );
-int             receive_no_wait( mailbox* mBox, void* pData );
+exception       no_messages( mailbox* mBox );
+exception       receive_no_wait( mailbox* mBox, void* pData );
+exception       force_remove_mailbox(mailbox* mBox);
+exception       remove_mailbox(mailbox* mBox);
 
 
 // Timing
@@ -156,3 +158,4 @@ list *TimerList;
 #include "CFiles\kernel_init.c"
 #include "CFiles\timing.c"
 #include "CFiles\kernel.c"
+#include "CFiles\communication.c"

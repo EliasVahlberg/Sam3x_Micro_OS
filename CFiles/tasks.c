@@ -1,16 +1,6 @@
 listobj *create_listobj(TCB *task);
 static int compare_listobj(listobj *o1, listobj *o2);
 
-void test_task1()
-{
-    int i = 15;
-}
-void test_task2()
-{
-}
-void test_task3()
-{
-}
 
 exception add_task_2_list(list *l, TCB *task)
 {
@@ -67,7 +57,6 @@ static int compare_listobj(listobj *o1, listobj *o2)
 {
     return (o1->pTask->Deadline > o2->pTask->Deadline) ? 1 : 0;
 }
-
 
 listobj *create_listobj(TCB *task)
 {

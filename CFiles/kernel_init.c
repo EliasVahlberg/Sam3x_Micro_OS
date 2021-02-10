@@ -27,7 +27,7 @@ exception init_kernel(void)
         return FAIL;
 
     //Create an Idle task
-    if (!create_task(&idle, UINT_MAX))
+    if (!create_task(idle, UINT_MAX))
         return FAIL;
     //if (!create_task(&test_task1, 6000))
     //    return FAIL;
@@ -41,9 +41,6 @@ exception init_kernel(void)
     //Return status
     return OK;
 }
-
-
-
 
 /*
  \brief creates a list of tasks
@@ -64,39 +61,6 @@ list *create_task_list()
 }
 
 /**
-* mem_alloc
-* \brief Allocates memory safely
-* @param size the size that needs to be allocated 
-* @return the adress to the allocated area
-*/
-void *mem_alloc(size_t size)
-{
-    void *mem;
-    isr_off();
-    mem = calloc(1, size);
-    if (mem != NULL)
-        mem_counter++;
-    isr_on();
-    return mem;
-}
-
-/**
-* mem_free
-* \brief Allocates memory safely
-* @param mem adress to the allocated adress 
-*/
-void mem_free(void *mem)
-{
-    if (mem)
-    {
-        isr_off();
-        free(mem);
-        mem_counter--;
-        isr_on();
-    }
-}
-
-/**
 * idle_task
 * \brief Does nothing but keep the OS idle
 */
@@ -106,6 +70,7 @@ void idle()
     {
     }
 }
+
 //Needed to be added since they are referenced in the asm file
 extern void TimerInt(void)
 {
