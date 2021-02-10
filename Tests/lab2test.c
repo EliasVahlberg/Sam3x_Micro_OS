@@ -131,10 +131,7 @@ void task_body_3(){
 
 void lab2_test_main()
 {
-  SystemInit(); 
-  SysTick_Config(100000); 
-  SCB->SHP[((uint32_t)(SysTick_IRQn) & 0xF)-4] =  (0xE0);      
-  isr_off();
+
   
   g0 = OK;
   exception retVal = init_kernel(); 

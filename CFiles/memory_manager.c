@@ -34,10 +34,19 @@ void mem_free(void *mem)
     }
 }
 
-void *alloc_task()
+exception mem_copy(char* src, char* dest, uint size)
 {
-
+    if(size <= 0)
+        return FAIL;
+    if(src == NULL || dest == NULL)
+        return FAIL;
+    for (int i = 0; i < size; i++)
+    {
+        dest[i] = src[i];
+    }
+    return OK;
 }
+
 void update_meminfo()
 {
     meminfo = __iar_dlmallinfo();

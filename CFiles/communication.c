@@ -47,8 +47,29 @@ exception remove_mailbox(mailbox* mBox)
 //Empty declaration
 exception send_wait( mailbox* mBox, void* pData )
 {
-    exception status = OK;
-    return status;
+    isr_off();
+    int msg_status = 0; 
+    msg* temp = mBox->pHead;
+    while(temp!=NULL)
+    {
+        if(temp->Status == RECEIVER)
+            {
+                msg_status = 1;
+                break;
+            }
+        temp = temp->pNext;
+    }
+    if(msg_status)
+    {
+        if(mem_copy((char *) pData,temp->pData,mBox->nDataSize)==FAIL) {return FAIL;}
+        temp->pBlock->pMessage = NULL;
+        
+    }
+    else
+    {
+        
+    }
+    return OK;
 }
 
 
