@@ -150,6 +150,8 @@ list *ReadyList;
 list *WaitingList;
 list *TimerList;
 
+#include "CFiles\mallocstats.h"
+#include "CFiles\memory_manager.c"
 #include "CFiles\tasks.c"
 #include "CFiles\kernel_init.c"
 #include "CFiles\timing.c"

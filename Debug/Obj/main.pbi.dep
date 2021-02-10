@@ -19,6 +19,8 @@ main.pbi: C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1\main.c \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\string.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\DLib_Product_string.h \
   C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.4\arm\inc\c\limits.h \
+  C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1/CFiles\mallocstats.h \
+  C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1/CFiles\memory_manager.c \
   C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1/CFiles\tasks.c \
   C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1/CFiles\kernel_init.c \
   C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1/CFiles\timing.c \

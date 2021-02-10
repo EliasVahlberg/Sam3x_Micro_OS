@@ -68,42 +68,6 @@ static int compare_listobj(listobj *o1, listobj *o2)
     return (o1->pTask->Deadline > o2->pTask->Deadline) ? 1 : 0;
 }
 
-exception push(list *l, TCB *task)
-{
-    listobj *list_obj;
-    list_obj =  create_listobj(task);
-    if (!list_obj)
-        return FAIL;
-    listobj *current = l->pHead;
-    if (!l->pHead)
-    {
-        l->pHead = l->pTail = list_obj;
-        return OK;
-    }
-
-    //Here we have the special case that the first task of the list had LESSER priority than
-    //the task to be added
-    //Meaning deadline for current > list_obj
-    if (compare_listobj(list_obj, current))
-    {
-        // Insert New Node before head
-        list_obj->pNext = current;
-        l->pHead = list_obj;
-        return OK;
-    }
-    else
-    {
-        //Traversing the list and finding a position to insert the new node
-        while (current != NULL && current->pTask->Deadline < list_obj->pTask->Deadline)
-            current = current->pNext;
-        // Either at the ends of the list
-        // or at required position
-        list_obj->pPrevious = current;
-        current->pNext = list_obj;
-        return OK;
-    }
-    return FAIL;
-}
 
 listobj *create_listobj(TCB *task)
 {
@@ -141,11 +105,11 @@ exception create_task(void (*tbody)(), uint dl)
         //Disable interrupts
         isr_off();
         //Update PreviousTask (????)
-        PreviousTask = (TCB *)ReadyList->pTail;
+        PreviousTask = ReadyList->pHead->pTask;
         //Insert new task in ReadyList
         status = add_task_2_list(ReadyList, task);
         //Update NextTask
-        NextTask = (TCB *)ReadyList->pTail;
+        NextTask = ReadyList->pHead->pTask;
         //Switch context
         SwitchContext();
     }
@@ -154,6 +118,9 @@ exception create_task(void (*tbody)(), uint dl)
 
 exception remove_last(list *list)
 {
+    //The assumption below is probably false, due to the list acting as a PriorityQueue and the first element is the one
+    //with highest priority
+    //But the function might come in handy if the task with least priority is to be removed
     //Assuming the running task is in the tail of the ReadyList, just input the ReadyList
     listobj *toDelete, *prevTask;
     listobj *firstTask = list->pHead;
@@ -177,10 +144,55 @@ exception remove_last(list *list)
     }
 }
 
+exception push(list *l, TCB *task)
+{
+    listobj *list_obj;
+    list_obj =  create_listobj(task);
+    if (!list_obj)
+        return FAIL;
+    listobj *current = l->pHead;
+    if (!l->pHead)
+    {
+        l->pHead = l->pTail = list_obj;
+        return OK;
+    }
+
+    //Here we have the special case that the first task of the list has LESSER priority than
+    //the task to be added
+    //Meaning deadline for current > list_obj
+    if (compare_listobj(list_obj, current))
+    {
+        // Insert New Node before head
+        list_obj->pNext = current;
+        l->pHead = list_obj;
+        return OK;
+    }
+    else
+    {
+        //Traversing the list and finding a position to insert the new node
+        while (current != NULL && current->pTask->Deadline < list_obj->pTask->Deadline)
+            current = current->pNext;
+        // Either at the ends of the list
+        // or at required position
+        list_obj->pPrevious = current;
+        current->pNext = list_obj;
+        return OK;
+    }
+    return FAIL;
+}
+
 exception pop(list* list)
 {
-    listobj* toRemove = list->pHead;
-    list->pHead = list->pHead->pNext;
-    free(toRemove);
+    if (!list)
+        return FAIL;
+    if (list->pHead)
+    {
+        listobj* toRemove = list->pHead;
+        list->pHead = list->pHead->pNext;
+        free(toRemove->pTask);
+        free(toRemove);
+        return OK;
+    }
+    return FAIL;
 }
 

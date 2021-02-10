@@ -102,9 +102,10 @@ void main()
 {
   SystemInit();
   SysTick_Config(100000);
+
   SCB->SHP[((uint32_t)(SysTick_IRQn)&0xF) - 4] = (0xE0);
   isr_off();
-
+  //update_meminfo();
   g0 = OK;
   exception retVal = init_kernel();
   if (retVal != OK)
@@ -214,7 +215,7 @@ void main()
     { /* no use going further */
     }
   }
-
+  update_meminfo();
   run();
 
   while (1)
