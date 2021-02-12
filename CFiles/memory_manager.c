@@ -1,3 +1,4 @@
+msg* mailbox_dequeue(mailbox* mBox);
 
 struct mallinfo meminfo;
 
@@ -38,12 +39,13 @@ exception mem_copy(char* src, char* dest, uint size)
 {
     if(size <= 0)
         return FAIL;
+    
     if(src == NULL || dest == NULL)
-        return FAIL;
+        return NULLPOINTER;
+
     for (int i = 0; i < size; i++)
-    {
         dest[i] = src[i];
-    }
+    
     return OK;
 }
 

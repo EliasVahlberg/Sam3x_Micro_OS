@@ -131,6 +131,7 @@ exception remove_listobj(list *l, listobj *o1)
 
 exception move_listobj(list *src, list *dest, listobj* o1)
 {
+    if(src==NULL || dest==NULL || o1==NULL) {return NULLPOINTER;}
     if(find_task(src, o1->pTask)==FAIL){return FAIL;}
     if(find_task(dest,o1->pTask)==OK){return OK;}
     if(o1 == src->pHead)

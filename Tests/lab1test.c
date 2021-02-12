@@ -13,14 +13,7 @@
 //list* ReadyList;
 //list* WaitingList;
 //list* TimerList; Does not work yet
-unsigned int g0 = 0, g1 = 0, g2 = 0, g3 = 1; /* gate flags for various stages of unit test */
 
-unsigned int low_deadline = 1000;
-unsigned int high_deadline = 100000;
-
-
-#define create_count_from_main_MAX 10
-#define create_count_from_task2_MAX 10
 
 void task_body_1()
 {

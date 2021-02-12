@@ -31,6 +31,9 @@
 #define DEF_SPSR                0x21000000 
 
 #define MESSAGE_LOST            -1 //If a message was deleted in force_remove_mailbox()
+#define NULLPOINTER             -2
+#define ALLOCFAIL               -3
+
 
 typedef int                     exception;
 typedef int                     bool;
