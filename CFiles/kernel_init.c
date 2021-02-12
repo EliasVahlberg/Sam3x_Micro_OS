@@ -29,12 +29,6 @@ exception init_kernel(void)
     //Create an Idle task
     if (!create_task(idle, UINT_MAX))
         return FAIL;
-    //if (!create_task(&test_task1, 6000))
-    //    return FAIL;
-    //if (!create_task(&test_task2, 6000))
-    //    return FAIL;
-    //if (!create_task(&test_task3, 6000))
-    //    return FAIL;
     
     //Set the kernel in INIT mode
     kernel_mode = INIT;

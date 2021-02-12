@@ -53,6 +53,106 @@ exception add_task_2_list(list *l, TCB *task)
     return OK;
 }
 
+exception remove_task(list *l, TCB *task)
+{
+    if(task==NULL)
+        return FAIL;
+    if(task == l->pHead->pTask && task == l->pTail->pTask)
+    {
+        mem_free(l->pHead->pTask);
+        mem_free(l->pHead);
+        l->pHead = l->pTail = NULL;
+        return OK;
+    }
+    else if(task == l->pHead->pTask)
+    {
+        l->pHead = l->pHead->pNext;
+        mem_free(l->pHead->pPrevious->pTask);
+        mem_free(l->pHead->pPrevious);
+        l->pHead->pPrevious = NULL;
+        return OK;
+    }
+    listobj* temp = l->pHead;
+    while (temp!=NULL)
+    {
+        if (temp->pTask == task)
+            break;
+        if(temp->pNext == NULL)
+            return FAIL;
+        temp = temp->pNext;
+        
+    }
+    if(temp!=NULL)
+    {
+        if(temp == l->pTail)
+        {
+            l->pTail = l->pTail->pPrevious;
+            l->pTail->pNext = NULL;
+        }
+        else
+        {
+            temp->pPrevious->pNext = temp->pNext;
+            temp->pNext->pPrevious = temp->pPrevious;
+        }
+        mem_free(temp->pTask);
+        mem_free(temp);
+        return OK;
+    }
+    return FAIL;
+}
+
+exception remove_listobj(list *l, listobj *o1)
+{
+    if(l == NULL || o1 == NULL)
+        return FAIL;
+    if(o1->pPrevious == NULL && o1 != l->pHead)   
+        return FAIL;
+    if(o1->pNext == NULL && o1 != l->pTail)
+        return FAIL;
+    if(o1 == l->pHead)
+    {
+        l->pHead = l->pHead->pNext;
+        l->pHead->pPrevious = NULL;
+    }
+    if(o1 == l->pTail)
+    {
+        l->pTail = l->pTail->pPrevious;
+        l->pTail->pNext = NULL;
+    }
+    else
+    {
+        o1->pNext->pPrevious = o1->pPrevious;
+        o1->pPrevious->pNext = o1->pNext;
+    }
+    free(o1->pTask);
+    free(o1);
+    
+}
+
+exception move_listobj(list *src, list *dest, listobj* o1)
+{
+    if(find_task(src, o1->pTask)==FAIL){return FAIL;}
+    if(find_task(dest,o1->pTask)==OK){return OK;}
+    if(o1 == src->pHead)
+    {
+        src->pHead = src->pHead->pNext;
+        src->pHead->pPrevious = NULL;
+    }
+    if(o1 == src->pTail)
+    {
+        src->pTail = src->pTail->pPrevious;
+        src->pTail->pNext = NULL;
+    }
+    else
+    {
+        o1->pNext->pPrevious = o1->pPrevious;
+        o1->pPrevious->pNext = o1->pNext;
+    }
+    push(dest, o1->pTask);
+    mem_free(o1);
+
+}
+
 static int compare_listobj(listobj *o1, listobj *o2)
 {
     return (o1->pTask->Deadline > o2->pTask->Deadline) ? 1 : 0;
@@ -185,3 +285,16 @@ exception pop(list* list)
     return FAIL;
 }
 
+exception find_task(list* l, TCB *task)
+{
+    listobj* temp = l->pHead;
+    while(temp!=NULL)
+    {
+        if(temp->pTask == task)
+            return OK;
+        if(temp->pNext==NULL)
+            break;
+        temp = temp->pNext;
+    }
+    return FAIL;
+}

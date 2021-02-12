@@ -2,7 +2,7 @@
 mailbox* create_mailbox( uint nMessages, uint nDataSize )
 {
     mailbox *mbox;
-    msg *mes;
+    //msg *mes;
     mbox = (mailbox*) mem_alloc(sizeof(mailbox));
     if(mbox ==NULL)
         return NULL;
@@ -11,6 +11,7 @@ mailbox* create_mailbox( uint nMessages, uint nDataSize )
     mbox->nMessages = 0;
     return mbox;
 }
+
 exception force_remove_mailbox(mailbox* mBox)
 {
     if(mBox->nMessages == 0)
@@ -48,7 +49,7 @@ exception remove_mailbox(mailbox* mBox)
 exception send_wait( mailbox* mBox, void* pData )
 {
     isr_off();
-    int msg_status = 0; 
+    int msg_status = 0;
     msg* temp = mBox->pHead;
     while(temp!=NULL)
     {
@@ -69,6 +70,7 @@ exception send_wait( mailbox* mBox, void* pData )
     {
         
     }
+    isr_on();
     return OK;
 }
 
@@ -103,4 +105,21 @@ exception no_messages( mailbox* mBox )
 {
     exception status = OK;
     return status;
+}
+
+exception mailbox_enqueue(mailbox* mBox, msg* mes)
+{
+
+}
+
+exception mailbox_dequeue(mailbox* mBox,msg* mes, void* pData)
+{
+    if(mes->Status==RECEIVER)
+    {
+        if(mem_copy((char *) pData,mes->pData,mBox->nDataSize)==FAIL) {return FAIL;}
+        if(find_task(WaitingList, mes->pBlock->pTask))
+            move_listobj(WaitingList,ReadyList,mes->pBlock);
+        
+
+    }
 }
