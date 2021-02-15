@@ -1,4 +1,14 @@
 
+/**
+* @file
+*     main.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
+
 msg*        mailbox_dequeue(mailbox* mBox);
 exception   mailbox_enqueue(mailbox* mBox, msg* mes);
 
@@ -103,35 +113,32 @@ exception send_wait( mailbox* mBox, void* pData )
     SwitchContext();
     if (deadline_reached(NextTask))
     {
-        //Disable interrupt
         isr_off();
-        //Removing sending_msg Also returns the message, but it is not essential for this part
-        mailbox_dequeue(mBox);
-        //Enable interrupt
+        mailbox_dequeue(mBox);                                                  //Removing sending_msg Also returns the message, but it is not essential for this part
         isr_on();
         return DEADLINE_REACHED;
     }
     return OK;
 }
 
-//Empty declaration
+
 exception receive_wait( mailbox* mBox, void* pData )
 {
     if(mBox == NULL||pData ==NULL)
         return NULLPOINTER;
-    isr_off();                              //Disable interrupt
+    isr_off();                                                                  //Disable interrupt
     exception exc1 = (mBox->pHead==NULL)?0:(mBox->pHead->Status == SENDER)?1:0;
 
-    if(exc1)                                 //IF send Message is waiting
+    if(exc1)                                                                    //IF send Message is waiting
     {
         
         exception exc2 = mem_copy(mBox->pHead->pData,pData,mBox->nDataSize);    //Copy sender’s data to receiving task’s data area
-        msg* mes = mailbox_dequeue(mBox);   //Remove sending task’s Message struct from the Mailbox
-        if(mes->pBlock != NULL)             //IF Message was of wait type
+        msg* mes = mailbox_dequeue(mBox);                                       //Remove sending task’s Message struct from the Mailbox
+        if(mes->pBlock != NULL)                                                 //IF Message was of wait type
         {
             //Update PreviousTask
             PreviousTask = NextTask;
-            if(move_listobj(WaitingList,ReadyList,mes->pBlock)<=FAIL)   //Move sending task to ReadyList
+            if(move_listobj(WaitingList,ReadyList,mes->pBlock)<=FAIL)           //Move sending task to ReadyList
             {
                 isr_on();
                 return FAIL;
@@ -140,50 +147,129 @@ exception receive_wait( mailbox* mBox, void* pData )
             NextTask = ReadyList->pHead->pTask;
         }
         else
-            mem_free(mes->pData);           //Free senders data area
+            {
+                mem_free(mes->pData);                                           //Free senders data area
+                mem_free(mes);
+            }
+            
     }
-    //ENDIFYOUWANT
-    //ELSE
-        //Allocate a Message structure
-        msg* newMes = (msg*) mem_alloc(sizeof(msg));
-        //Add Message to the Mailbox
-        mailbox_enqueue(mBox, newMes); FUCK OFF
-        //Update PreviousTask
-        //Move receiving task from ReadyList to WaitingList Update NextTask
-    //ENDIFYOUWANT
-    //Switch context
-    //IF deadline is reached THEN
-        //Disable interrupt
-        //Remove receive Message
-        //Enable interrupt
-    //Return DEADLINE_REACHED
-    //ELSE
-        //Return YESOK
-    //ENDIFYOUWANT
-    
-    
-
+    else
+        {
+        msg* newMes = (msg*) mem_alloc(sizeof(msg));            //Allocate a Message structure
+        mailbox_enqueue(mBox, newMes);                          //Add Message to the Mailbox
+        PreviousTask = NextTask;                                //Update PreviousTask
+        move_listobj(ReadyList, WaitingList, ReadyList->pHead); //Move receiving task from ReadyList to WaitingList Update NextTask
+        NextTask = ReadyList->pHead->pTask;
+        }
+    SwitchContext();                                            //Switch context
+    if(deadline_reached(NextTask))
+    {
+        isr_off();
+        mailbox_dequeue(mBox);                                  //Remove receive Message
+        isr_on();
+        return DEADLINE_REACHED;
+    }
+    else
+        return OK;
 }
 
 //Empty declaration
 exception send_no_wait( mailbox* mBox, void* pData )
 {
+    if(mBox == NULL || pData == NULL)
+        return NULLPOINTER;
     exception status = OK;
-    return status;
+    isr_off();
+    int msg_status = 0;
+    msg_status = (mBox->pHead==NULL)?0:(mBox->pHead->Status==RECEIVER)?1:0;
+    if(msg_status)
+    {
+        status = mem_copy((char *) pData,mBox->pHead->pData,mBox->nDataSize);           //Copy data to receiving tasks’ data area.
+        if(status<= FAIL)
+        {
+            isr_on();
+            return status;
+        }
+        msg* mes = mailbox_dequeue(mBox);                                               //Remove receiving task’s Message struct from the Mailbox
+        PreviousTask = ReadyList->pHead->pTask;                                         //Update PreviousTask
+        move_listobj(ReadyList, WaitingList, mes->pBlock);                              //Move receiving task to Readylist
+        NextTask = ReadyList->pHead->pTask;                                             //Update NextTask
+        isr_on();
+        SwitchContext();                                                                //Switch context
+    
+    }
+    else
+    {
+        msg* newMes = (msg*) mem_alloc(sizeof(msg));                                    //Allocate a Message structure
+        newMes->pData = pData;                                                          //Copy Data to the Message
+        newMes->Status = SENDER;
+        if (mBox->nMaxMessages == mBox->nMessages)
+            mailbox_dequeue(mBox);                                                      //Remove the oldest Message struct
+        mailbox_enqueue(mBox,newMes);//Add Message to the Mailbox
+        isr_on();
+    }
+    return OK;
 }
 
 //Empty declaration
-exception receive_no_wait( mailbox* mBox, void* pData )
+exception receive_no_wait( mailbox* mBox, void* pData)
 {
+    if(mBox == NULL || pData == NULL)
+        return NULLPOINTER;
     exception status = OK;
-    return status;
+    isr_off();
+    int msg_status = 0;
+    msg_status = (mBox->pHead==NULL)?0:(mBox->pHead->Status==SENDER)?1:0;
+    if(msg_status)
+    {
+        status = mem_copy((char *) pData,mBox->pHead->pData,mBox->nDataSize);           //Copy data to receiving tasks’ data area.
+        if(status<= FAIL)
+        {
+            isr_on();
+            return status;
+        }
+        msg* mes = mailbox_dequeue(mBox);                                               //Remove receiving task’s Message struct from the Mailbox
+        if(mes->pBlock!=NULL)
+        {    
+            mem_free(mes->pData);
+            mem_free(mes);
+            PreviousTask = ReadyList->pHead->pTask;                                         //Update PreviousTask
+            move_listobj(ReadyList, WaitingList, mes->pBlock);                              //Move receiving task to Readylist
+            NextTask = ReadyList->pHead->pTask;                                             //Update NextTask
+            SwitchContext();          
+        }
+        else
+        {
+            mem_free(mes->pData);                                                       //Free senders data area
+            mem_free(mes);
+        }
+        return OK;
+    }
+    else
+        return FAIL;
+    // Return status on received Message
+}
+
+exception wait(uint nTicks)
+{
+    exception status;
+    isr_off();
+    PreviousTask = NextTask;                                                            //Update PreviousTask
+    move_listobj(ReadyList, TimerList, ReadyList->pHead);                               //Place running task in the TimerList
+    NextTask = ReadyList->pHead->pTask;                                                 //Update NextTask
+    SwitchContext();                                                                    //Switch context
+    if (deadline_reached(NextTask))                                                     //If deadline reched, then
+        status = DEADLINE_REACHED;                                                      //Status is DEADLINE_REACHED
+    else                            
+        status = OK;                                                                    //Else Status is OK
+    isr_on();
+    return status;                                                                      //Return Status
 }
 
 //Empty declaration
 exception no_messages( mailbox* mBox )
 {
-    exception status = OK;
-    return status;
+    return (mBox->nMessages == 0 && mBox->pHead==NULL)?1:0;
 }
 
 exception mailbox_enqueue(mailbox* mBox, msg* mes)
@@ -201,6 +287,7 @@ exception mailbox_enqueue(mailbox* mBox, msg* mes)
         mes->pPrevious = mBox->pTail;
         mBox->pTail = mes;
     }
+    mBox->nMessages++;
     return OK;
 }
 
@@ -219,5 +306,6 @@ msg* mailbox_dequeue(mailbox* mBox)
     }
     mBox->pHead = mBox->pHead->pNext;
     mBox->pHead->pPrevious = NULL;
+    mBox->nMessages--;
     return mes;
 }

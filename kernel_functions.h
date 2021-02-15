@@ -21,7 +21,7 @@
 #define SUCCESS                 1
 #define OK                      1
 
-#define DEADLINE_REACHED        0
+#define DEADLINE_REACHED        -4      
 #define NOT_EMPTY               0
 
 #define SENDER                  +1

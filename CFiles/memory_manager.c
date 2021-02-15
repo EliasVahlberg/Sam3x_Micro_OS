@@ -21,12 +21,12 @@ void *mem_alloc(size_t size)
 
 /**
 * mem_free
-* \brief Allocates memory safely
-* @param mem adress to the allocated adress 
+* \brief Frees allocated memory safely
+* @param mem adress to the allocated area 
 */
 void mem_free(void *mem)
 {
-    if (mem)
+    if (mem && dynamic_mem_adress(mem))
     {
         isr_off();
         free(mem);
@@ -53,3 +53,13 @@ void update_meminfo()
 {
     meminfo = __iar_dlmallinfo();
 }
+// int dynamic_mem_adress(void *ptr)
+// {
+//     char dynMem [__region_RAM_end__ - __region_RAM_start__];
+//     for (int i = 0; i < __region_RAM_end__ - __region_RAM_start__; i++)
+//     {
+//         if (&ptr == dynMem[i])
+//             return OK;
+//     }
+//     return FAIL;
+// }
