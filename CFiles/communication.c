@@ -173,7 +173,6 @@ exception receive_wait( mailbox* mBox, void* pData )
         return OK;
 }
 
-//Empty declaration
 exception send_no_wait( mailbox* mBox, void* pData )
 {
     if(mBox == NULL || pData == NULL)
@@ -201,9 +200,14 @@ exception send_no_wait( mailbox* mBox, void* pData )
     else
     {
         msg* newMes = (msg*) mem_alloc(sizeof(msg));                                    //Allocate a Message structure
+        if(newMes ==NULL)
+        {
+            isr_on();
+            return ALLOCFAIL;
+        }
         newMes->pData = pData;                                                          //Copy Data to the Message
         newMes->Status = SENDER;
-        if (mBox->nMaxMessages == mBox->nMessages)
+        if (mBox->nMaxMessages <= mBox->nMessages)
             mailbox_dequeue(mBox);                                                      //Remove the oldest Message struct
         mailbox_enqueue(mBox,newMes);//Add Message to the Mailbox
         isr_on();
@@ -211,7 +215,6 @@ exception send_no_wait( mailbox* mBox, void* pData )
     return OK;
 }
 
-//Empty declaration
 exception receive_no_wait( mailbox* mBox, void* pData)
 {
     if(mBox == NULL || pData == NULL)
@@ -243,10 +246,11 @@ exception receive_no_wait( mailbox* mBox, void* pData)
             mem_free(mes->pData);                                                       //Free senders data area
             mem_free(mes);
         }
+        isr_on();
         return OK;
     }
-    else
-        return FAIL;
+    isr_on();
+    return FAIL;
     // Return status on received Message
 }
 
@@ -266,7 +270,6 @@ exception wait(uint nTicks)
     return status;                                                                      //Return Status
 }
 
-//Empty declaration
 exception no_messages( mailbox* mBox )
 {
     return (mBox->nMessages == 0 && mBox->pHead==NULL)?1:0;

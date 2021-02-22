@@ -154,6 +154,7 @@ void mem_free(void *mem);
 list *ReadyList;
 list *WaitingList;
 list *TimerList;
+void* first_heap = NULL;
 
 #include "CFiles\mallocstats.h"
 #include "CFiles\memory_manager.c"

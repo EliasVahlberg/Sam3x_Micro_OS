@@ -13,6 +13,8 @@ void *mem_alloc(size_t size)
     void *mem;
     isr_off();
     mem = calloc(1, size);
+    if(mem_counter==0)
+        first_heap = mem;
     if (mem != NULL)
         mem_counter++;
     isr_on();
@@ -26,8 +28,10 @@ void *mem_alloc(size_t size)
 */
 void mem_free(void *mem)
 {
-    if (mem && dynamic_mem_adress(mem))
+    if (mem ) 
     {
+        if(!dynamic_mem_adress(mem))
+            return;
         isr_off();
         free(mem);
         mem_counter--;
@@ -53,13 +57,37 @@ void update_meminfo()
 {
     meminfo = __iar_dlmallinfo();
 }
-// int dynamic_mem_adress(void *ptr)
-// {
-//     char dynMem [__region_RAM_end__ - __region_RAM_start__];
-//     for (int i = 0; i < __region_RAM_end__ - __region_RAM_start__; i++)
-//     {
-//         if (&ptr == dynMem[i])
-//             return OK;
-//     }
-//     return FAIL;
-// }
+int dynamic_mem_adress(void *ptr)
+{
+   if(first_heap != NULL)
+   {
+       if(ReadyList != NULL && WaitingList != NULL && TimerList != NULL)
+       {
+           if(ptr<first_heap)
+            return FAIL;
+           listobj *lobj = ReadyList->pHead;
+           while (lobj!=NULL)
+           {
+                if( ptr >lobj->pTask->StackSeg && ptr<lobj->pTask->StackSeg+STACK_SIZE*4)
+                    return FAIL;
+                lobj = lobj->pNext;
+           }
+           lobj = WaitingList->pHead;
+           while (lobj!=NULL)
+           {
+                if( ptr >lobj->pTask->StackSeg && ptr<lobj->pTask->StackSeg+STACK_SIZE*4)
+                    return FAIL;
+                lobj = lobj->pNext;
+           }
+           lobj = TimerList->pHead;
+           while (lobj!=NULL)
+           {
+                if( ptr >lobj->pTask->StackSeg && ptr<lobj->pTask->StackSeg+STACK_SIZE*4)
+                    return FAIL;
+                lobj = lobj->pNext;
+           }
+           return OK;
+       }
+   }
+    return FAIL;
+}
