@@ -63,8 +63,10 @@ int dynamic_mem_adress(void *ptr)
    {
        if(ReadyList != NULL && WaitingList != NULL && TimerList != NULL)
        {
+           //Check if the memory is in the heap area
            if(ptr<first_heap)
             return FAIL;
+            //Check if memory is in a TCB Stack segment
            listobj *lobj = ReadyList->pHead;
            while (lobj!=NULL)
            {

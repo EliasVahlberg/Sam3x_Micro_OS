@@ -12,7 +12,8 @@ extern "C"
 #define MALLINFO_FIELD_TYPE size_t
 
 #define STRUCT_MALLINFO_DECLARED 1
-struct mallinfo {
+struct mallinfo
+{
   MALLINFO_FIELD_TYPE arena;    /* non-mmapped space allocated from system */
   MALLINFO_FIELD_TYPE ordblks;  /* number of free chunks */
   MALLINFO_FIELD_TYPE smblks;   /* always 0 */

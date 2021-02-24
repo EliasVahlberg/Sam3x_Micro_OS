@@ -1,7 +1,7 @@
 
 /**
 * @file
-*     main.c
+*     communication.c
 * @authors 
 *     Elias Vahlberg
 *     Hamed Haghjo
@@ -24,7 +24,27 @@ mailbox* create_mailbox( uint nMessages, uint nDataSize )
     mbox->nMessages = 0;
     return mbox;
 }
-
+exception append_msg(msg* mes, mailbox* mBox, void* pData, int status)
+{
+    if(mBox==NULL || pData ==NULL)
+        return NULLPOINTER;
+    if(status==RECEIVER)
+        mes = mem_alloc(sizeof(msg));
+    else
+        mes = mem_alloc(sizeof(msg)+mBox->nDataSize);
+    if(mes==NULL)
+        return ALLOCFAIL;
+    if(status==RECEIVER)
+        mes->pData = pData;
+    else
+    {
+        mes->pData = (void*)(mes+sizeof(msg));
+        mem_copy(pData,mes->pData,mBox->nDataSize);
+    }
+    mes->Status = status;
+    mes->pBlock = ReadyList->pHead;
+    return mailbox_enqueue(mBox,mes);
+}
 exception force_remove_mailbox(mailbox* mBox)
 {
     if (mBox == NULL)
@@ -88,19 +108,14 @@ exception send_wait( mailbox* mBox, void* pData )
     }
     else
     {
+        msg* mes = NULL;
+        exception status = append_msg(mes,mBox,pData,SENDER);
         //Allocate a msg
-        msg* mes = (msg*) mem_alloc(sizeof(msg));
-        if(mes == NULL)
+        if(status!=OK)
         {
             isr_on();
-            return ALLOCFAIL;
+            return status;
         }
-        //Set data pointer -> pData
-        mes->pData  = pData;
-        mes->pBlock = ReadyList->pHead;
-        mes->Status = SENDER;
-        //Add msg to mBox
-        mailbox_enqueue(mBox,mes);
         //Update PreviousTask
         PreviousTask = ReadyList->pHead->pTask;
         //Remove sending_task from ReadyList and insert it to WaitingList
@@ -120,7 +135,6 @@ exception send_wait( mailbox* mBox, void* pData )
     }
     return OK;
 }
-
 
 exception receive_wait( mailbox* mBox, void* pData )
 {
@@ -148,15 +162,19 @@ exception receive_wait( mailbox* mBox, void* pData )
         }
         else
             {
-                mem_free(mes->pData);                                           //Free senders data area
                 mem_free(mes);
             }
             
     }
     else
         {
-        msg* newMes = (msg*) mem_alloc(sizeof(msg));            //Allocate a Message structure
-        mailbox_enqueue(mBox, newMes);                          //Add Message to the Mailbox
+        msg* mes = NULL;
+        exception status = append_msg(mes,mBox,pData,RECEIVER);
+        if(status!=OK)
+        {
+            isr_on();
+            return status;
+        }
         PreviousTask = NextTask;                                //Update PreviousTask
         move_listobj(ReadyList, WaitingList, ReadyList->pHead); //Move receiving task from ReadyList to WaitingList Update NextTask
         NextTask = ReadyList->pHead->pTask;
@@ -243,7 +261,6 @@ exception receive_no_wait( mailbox* mBox, void* pData)
         }
         else
         {
-            mem_free(mes->pData);                                                       //Free senders data area
             mem_free(mes);
         }
         isr_on();
