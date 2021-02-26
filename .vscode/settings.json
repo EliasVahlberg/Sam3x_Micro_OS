@@ -1,0 +1,12 @@
+{
+    "cmake.configureOnOpen": false,
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#342A37",
+        "titleBar.activeBackground": "#493B4D",
+        "titleBar.activeForeground": "#FBFAFB"
+    },
+    "files.associations": {
+        "kernel_functions.h": "c",
+        "at91sam3x8.h": "c"
+    }
+}
