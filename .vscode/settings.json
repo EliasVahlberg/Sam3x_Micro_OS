@@ -7,6 +7,7 @@
     },
     "files.associations": {
         "kernel_functions.h": "c",
-        "at91sam3x8.h": "c"
+        "at91sam3x8.h": "c",
+        "tests.h": "c"
     }
 }

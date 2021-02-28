@@ -25,6 +25,7 @@ unsigned int high_deadline = 100000;
 #include "at91sam3x8.h"
 #include "kernel_functions.h"
 #include "Tests\tests.h"
+#include "UnitTest\utest.h"
 
 void main()
 {

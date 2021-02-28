@@ -1,2 +1,3 @@
-exceptions.pbi: C:\Users\Hamed\Desktop\Sam3x_Micro_OS-Lab1\exceptions.c \
-  C:\Users\Hamed\Desktop\Sam3x_Micro_OS-Lab1/exceptions.h
+exceptions.pbi: \
+  C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS\exceptions.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS/exceptions.h

@@ -178,10 +178,8 @@ void task_body_2_2()
   {
     if (g3 == OK)
       break;
-    if (g3 != OK){
-      g3 = OK;
-      break;
-    }
+   
+    
   }
 
   while (1)
