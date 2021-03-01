@@ -274,21 +274,6 @@ exception receive_no_wait(mailbox *mBox, void *pData)
     // Return status on received Message
 }
 
-exception wait(uint nTicks)
-{
-    exception status;
-    isr_off();
-    PreviousTask = NextTask;                              //Update PreviousTask
-    move_listobj(ReadyList, TimerList, ReadyList->pHead); //Place running task in the TimerList
-    NextTask = ReadyList->pHead->pTask;                   //Update NextTask
-    SwitchContext();                                      //Switch context
-    if (deadline_reached(NextTask))                       //If deadline reched, then
-        status = DEADLINE_REACHED;                        //Status is DEADLINE_REACHED
-    else
-        status = OK; //Else Status is OK
-    isr_on();
-    return status; //Return Status
-}
 
 exception no_messages(mailbox *mBox)
 {

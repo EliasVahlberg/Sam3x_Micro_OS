@@ -64,10 +64,3 @@ void idle()
     {
     }
 }
-
-//Needed to be added since they are referenced in the asm file
-extern void TimerInt(void)
-{
-    tick_counter++;
-    
-}

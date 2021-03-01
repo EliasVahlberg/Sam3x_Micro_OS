@@ -402,11 +402,15 @@
                 "__weak="
             ],
             "includePath": [
+                "${workspaceRoot}",
                 "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc",
                 "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\c",
                 "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\inc\\cpp"
             ],
-            "forcedInclude": [],
+            "forcedInclude": [
+                "${workspaceRoot}\\main.c",
+                "${workspaceRoot}\\kernel_functions.h"
+            ],
             "cStandard": "c11",
             "cppStandard": "c++14",
             "compilerPath": "",

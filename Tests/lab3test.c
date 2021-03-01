@@ -239,7 +239,7 @@ void task_body_3_5()
     terminate();
 }
 
-void main()
+void lab3_test_main()
 {
     SystemInit();
     SysTick_Config(100000);

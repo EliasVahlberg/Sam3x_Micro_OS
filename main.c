@@ -34,6 +34,7 @@ void main()
 
   SCB->SHP[((uint32_t)(SysTick_IRQn)&0xF) - 4] = (0xE0);
   isr_off();
+  lab3_test_main();
   lab2_test_main();
   lab1_test_main();
 
