@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+    <fileVersion>4</fileVersion>
+    <fileChecksum>3620653210</fileChecksum>
+    <configuration>
+        <name>Debug</name>
+        <outputs>
+            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.__cstat.et</file>
+            <file>$PROJ_DIR$\exceptions.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
+            <file>$PROJ_DIR$\context_switching_functions_march_2019.s</file>
+            <file>$PROJ_DIR$\startup_sam3x.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\context_switching_functions_march_2019.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$PROJ_DIR$\system_sam3x.c</file>
+            <file>$PROJ_DIR$\cstartup.s</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\cstartup.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\Backup of OS_Project.out</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.__cstat.et</file>
+        </outputs>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 15</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\exceptions.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\context_switching_functions_march_2019.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 7</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\startup_sam3x.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 16</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\system_sam3x.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cstartup.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 14</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 8</file>
+                </tool>
+            </outputs>
+        </file>
+    </configuration>
+    <configuration>
+        <name>Release</name>
+        <outputs />
+        <forcedrebuild>
+            <name>[MULTI_TOOL]</name>
+            <tool>ILINK</tool>
+        </forcedrebuild>
+    </configuration>
+</project>
