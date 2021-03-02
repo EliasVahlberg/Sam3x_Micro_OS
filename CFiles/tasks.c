@@ -1,6 +1,21 @@
+
+/**
+* @file
+*     task.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
+#pragma region Functions
 listobj *create_listobj(TCB *task,uint nTCnt);
 static int compare_listobj(listobj *o1, listobj *o2);
-
+exception find_task(list* l, TCB *task);
+exception push(list *l, TCB *task,uint nTCnt);
+exception pop(list* list);
+exception remove_last(list *list);
+#pragma endregion Functions
 
 exception add_task_2_list(list *l, TCB *task)
 {

@@ -1,4 +1,13 @@
 
+/**
+* @file
+*     kernel_init.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
 #pragma region Globalvars
 
 

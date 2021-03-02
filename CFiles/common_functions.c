@@ -1,4 +1,13 @@
 
+/**
+* @file
+*     common_functions.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
 
 /**
 * min

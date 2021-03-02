@@ -1,15 +1,15 @@
-"C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2\exceptions.c"
+"C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\exceptions.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2\Debug\BrowseInfo\exceptions.pbi.dep
+C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\Debug\BrowseInfo\exceptions.pbi.dep
 -o
-C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2\Debug\BrowseInfo\exceptions.pbi
+C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\Debug\BrowseInfo\exceptions.pbi
 -I
-C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2
+C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\inc\c\aarch32
 -I

@@ -1,3 +1,14 @@
+
+/**
+* @file
+*     timing.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
+
 void set_ticks( uint ticks )
 {
     tick_counter = ticks;

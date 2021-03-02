@@ -1,4 +1,14 @@
-msg* mailbox_dequeue(mailbox* mBox);
+
+/**
+* @file
+*     memory_manager.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
+
 
 struct mallinfo meminfo;
 

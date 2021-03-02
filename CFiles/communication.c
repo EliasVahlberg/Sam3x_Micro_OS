@@ -10,6 +10,7 @@
 */
 
 msg *mailbox_dequeue(mailbox *mBox);
+
 exception mailbox_enqueue(mailbox *mBox, msg *mes);
 
 mailbox *create_mailbox(uint nMessages, uint nDataSize)
@@ -24,6 +25,7 @@ mailbox *create_mailbox(uint nMessages, uint nDataSize)
     mbox->nMessages = 0;
     return mbox;
 }
+
 exception append_msg(msg *mes, mailbox *mBox, void *pData, int status, int wait)
 {
     if (mBox == NULL || pData == NULL)
@@ -53,6 +55,7 @@ exception append_msg(msg *mes, mailbox *mBox, void *pData, int status, int wait)
 
     return mailbox_enqueue(mBox, mes);
 }
+
 exception force_remove_mailbox(mailbox *mBox)
 {
     if (mBox == NULL)
@@ -273,7 +276,6 @@ exception receive_no_wait(mailbox *mBox, void *pData)
     return FAIL;
     // Return status on received Message
 }
-
 
 exception no_messages(mailbox *mBox)
 {

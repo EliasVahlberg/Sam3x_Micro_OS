@@ -1,15 +1,15 @@
-C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2\Debug\BrowseInfo\system_sam3x.pbi: \
-  C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2\system_sam3x.c \
-  C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2/at91sam3x8.h \
-  C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2/system_sam3x.h \
+C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\Debug\BrowseInfo\system_sam3x.pbi: \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\system_sam3x.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/at91sam3x8.h \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/system_sam3x.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\stdint.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\ycheck.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\yvals.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Defaults.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Config_Normal.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product.h \
-  C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2/core_cm3.h \
-  C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2/core_cmInstr.h \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/core_cm3.h \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/core_cmInstr.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32\cmsis_iar.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\aarch32/iccarm_builtin.h \
-  C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2/core_cmFunc.h
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/core_cmFunc.h

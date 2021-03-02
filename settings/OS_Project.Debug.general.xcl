@@ -2,13 +2,13 @@
 
 "C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armJLINK.dll" 
 
-"C:\Users\RAZER\Desktop\CSE2_Lab3\Sam3x_Micro_OS-Lab2\Debug\Exe\OS_Project.out" 
+"C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\Debug\Exe\OS_Project.out" 
 
 --plugin="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\bin\armbat.dll" 
 
 --device_macro="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\debugger\Microchip\SAM3XA.dmac" 
 
---macro="C:\Users\RAZER\Documents\IAR\CSE2_Project_GR1\arduino_due_x_sram.mac" 
+--macro="C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\arduino_due_x_sram.mac" 
 
 --flash_loader="C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\config\flashloader\Microchip\sam3x8\sam3x8-flash.board" 
 
