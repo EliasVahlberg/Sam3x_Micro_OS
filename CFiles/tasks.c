@@ -1,6 +1,6 @@
 listobj *create_listobj(TCB *task,uint nTCnt);
 static int compare_listobj(listobj *o1, listobj *o2);
-uint min(uint a, uint b);
+
 
 exception add_task_2_list(list *l, TCB *task)
 {
@@ -17,7 +17,7 @@ exception add_task_2_list(list *l, TCB *task)
         temp = l->pHead;
         while (1)
         {
-            int le = compare_listobj(temp, list_obj);
+            int le = compare_listobj(list_obj,temp);
             if (temp == l->pTail && !le)
             {
 
@@ -150,15 +150,18 @@ exception move_listobj(list *src, list *dest, listobj* o1)
         o1->pNext->pPrevious = o1->pPrevious;
         o1->pPrevious->pNext = o1->pNext;
     }
-    push(dest, o1->pTask,o1->nTCnt);
+    if(src == TimerList)
+        push(dest,o1->pTask,0);
+    else
+        push(dest, o1->pTask,o1->nTCnt);
     mem_free(o1);
 
 }
 
 static int compare_listobj(listobj *o1, listobj *o2)
 {
-    if(o1->nTCnt==0)
-        return (o1->pTask->Deadline > o2->pTask->Deadline) ? 1 : 0;
+    if(o1->nTCnt==0 || o2->nTCnt==0)
+        return (o1->pTask->Deadline < o2->pTask->Deadline) ? 1 : 0;
     else
         return (min(o1->nTCnt,o1->pTask->Deadline) < min(o2->nTCnt,o2->pTask->Deadline))? 0 : 1 ;
 
@@ -265,12 +268,21 @@ exception push(list *l, TCB *task,uint nTCnt)
     else
     {
         //Traversing the list and finding a position to insert the new node
-        while (current != NULL && current->pTask->Deadline < list_obj->pTask->Deadline)
+        while (current != NULL && compare_listobj(list_obj, current))
             current = current->pNext;
         // Either at the ends of the list
         // or at required position
-        list_obj->pPrevious = current;
-        current->pNext = list_obj;
+        if(current == NULL)
+            {
+                list_obj->pPrevious = l->pTail;
+                list_obj->pNext = NULL;
+                l->pTail->pNext = list_obj;
+                l->pTail = list_obj;
+                return OK;
+            }
+        list_obj->pNext= current;
+        list_obj->pPrevious = current->pPrevious;
+        current->pPrevious = list_obj;
         return OK;
     }
     return FAIL;
@@ -304,5 +316,3 @@ exception find_task(list* l, TCB *task)
     }
     return FAIL;
 }
-uint min(uint a, uint b)
-{return (a>b)?b:a;}

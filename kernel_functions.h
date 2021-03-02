@@ -143,13 +143,16 @@ TCB *PreviousTask, *NextTask;
 extern int32_t kernel_mode      = 0;
 extern int32_t mem_counter      = 0;
 extern int32_t tick_counter     = 0; 
-void test_task1(void);
-void test_task2(void);
-void test_task3(void);
+
+uint min(uint a, uint b);
+static int __ISR_ON(void);
+static int __ISR_OFF(void);
+
 exception add_task_2_list(list* l, TCB* task);
 exception create_task(void (*body)(), uint d);
 void *mem_alloc(size_t size);
 void mem_free(void *mem);
+
 
 list *ReadyList;
 list *WaitingList;
@@ -158,6 +161,7 @@ void* first_heap = NULL;
 
 #include "CFiles\mallocstats.h"
 #include "CFiles\memory_manager.c"
+#include "CFiles\common_functions.c"
 #include "CFiles\tasks.c"
 #include "CFiles\kernel_init.c"
 #include "CFiles\timing.c"

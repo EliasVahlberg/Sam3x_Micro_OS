@@ -37,6 +37,7 @@ void main()
   lab3_test_main();
   lab2_test_main();
   lab1_test_main();
+  
 
   while (1)
   { 

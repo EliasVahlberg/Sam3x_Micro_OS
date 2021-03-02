@@ -30,10 +30,13 @@ void set_deadline(uint deadline)
     pop(ReadyList);
     push(ReadyList, PreviousTask,0);
     //Update NextTask
-    isr_on();
     //Switch context
     if (ReadyList->pHead->pTask != PreviousTask)
+    {
+        NextTask = ReadyList->pHead->pTask;
+        isr_on();
         SwitchContext();
+    }
 }
 
 
@@ -61,5 +64,10 @@ extern void TimerInt(void)
     {
         NextTask = TimerList->pHead->pTask;
         move_listobj(TimerList,ReadyList,TimerList->pHead);
+    }
+    else if(ticks() >= WaitingList->pHead->pTask->Deadline)
+    {
+        NextTask = WaitingList->pHead->pTask;
+        move_listobj(WaitingList,ReadyList,WaitingList->pHead);
     }
 }
