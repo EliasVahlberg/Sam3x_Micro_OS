@@ -5,3 +5,5 @@ int man(void)
         printf("This is the way");
     return ex;
 }
+int min(int a, int b)
+{return (a>b)?b:a;}

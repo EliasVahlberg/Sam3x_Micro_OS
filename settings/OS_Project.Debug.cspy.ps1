@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS\settings\OS_Project.Debug.general.xcl" --backend -f "C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS\settings\OS_Project.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\settings\OS_Project.Debug.general.xcl" --backend -f "C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\settings\OS_Project.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS\settings\OS_Project.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS\settings\OS_Project.Debug.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\common\bin\cspybat" -f "C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\settings\OS_Project.Debug.general.xcl" --debug_file=$debugfile --backend -f "C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\settings\OS_Project.Debug.driver.xcl" 
 }

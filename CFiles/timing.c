@@ -28,10 +28,38 @@ void set_deadline(uint deadline)
     PreviousTask = ReadyList->pHead->pTask;
     //Reschedule ReadyList
     pop(ReadyList);
-    push(ReadyList, PreviousTask);
+    push(ReadyList, PreviousTask,0);
     //Update NextTask
     isr_on();
     //Switch context
     if (ReadyList->pHead->pTask != PreviousTask)
         SwitchContext();
+}
+
+
+exception wait(uint nTicks)
+{
+    exception status;
+    isr_off();
+    ReadyList->pHead->nTCnt = ticks() + nTicks;
+    PreviousTask = NextTask;                              //Update PreviousTask
+    move_listobj(ReadyList, TimerList, ReadyList->pHead); //Place running task in the TimerList
+    NextTask = ReadyList->pHead->pTask;                   //Update NextTask
+    SwitchContext();                                      //Switch context
+    if (deadline_reached(NextTask))                       //If deadline reched, then
+        status = DEADLINE_REACHED;                        //Status is DEADLINE_REACHED
+    else
+        status = OK; //Else Status is OK
+    isr_on();
+    return status; //Return Status
+}
+
+extern void TimerInt(void)
+{
+    tick_counter++;
+    if(ticks() >= min(TimerList->pHead->nTCnt,TimerList->pHead->pTask->Deadline))
+    {
+        NextTask = TimerList->pHead->pTask;
+        move_listobj(TimerList,ReadyList,TimerList->pHead);
+    }
 }

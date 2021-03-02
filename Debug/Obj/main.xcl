@@ -1,15 +1,15 @@
-"C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS\main.c"
+"C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS\Debug\Obj\main.pbi.dep
+C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\Debug\Obj\main.pbi.dep
 -o
 main.pbi
 -I
-C:\Users\elias\Documents\CSE2\OS_Proj_02_28\Sam3x_Micro_OS
+C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.4\arm\inc
 -I

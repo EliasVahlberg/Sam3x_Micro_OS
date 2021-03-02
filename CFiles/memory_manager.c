@@ -11,13 +11,19 @@ struct mallinfo meminfo;
 void *mem_alloc(size_t size)
 {
     void *mem;
-    isr_off();
+    int isrset = 0;
+    if(__get_PRIMASK()==0)
+    {
+        isr_off();
+        isrset = 1;
+    }
     mem = calloc(1, size);
     if(mem_counter==0)
         first_heap = mem;
     if (mem != NULL)
-        mem_counter++;
-    isr_on();
+        mem_counter++;        
+    if(isrset)
+        isr_on();
     return mem;
 }
 
@@ -32,10 +38,16 @@ void mem_free(void *mem)
     {
         if(!dynamic_mem_adress(mem))
             return;
-        isr_off();
+        int isrset = 0;
+        if(__get_PRIMASK()==0)
+        {
+            isr_off();
+            isrset = 1;
+        }
         free(mem);
         mem_counter--;
-        isr_on();
+        if(isrset)
+            isr_on();
     }
 }
 
