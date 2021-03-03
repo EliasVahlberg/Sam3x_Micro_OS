@@ -141,21 +141,21 @@ exception remove_listobj(list *l, listobj *o1)
     }
     free(o1->pTask);
     free(o1);
-    
+    return OK;
 }
 
 exception move_listobj(list *src, list *dest, listobj* o1)
 {
     if(src==NULL || dest==NULL || o1==NULL) {return NULLPOINTER;}
     if(find_task(src, o1->pTask)==FAIL){return FAIL;}
-    if(find_task(dest,o1->pTask)==OK){return OK;}
+    if(find_task(dest,o1->pTask)==OK){return FAIL;}
     
-    if(o1 == src->pHead)
+    if(o1->pTask == src->pHead->pTask)
     {
         src->pHead = src->pHead->pNext;
         src->pHead->pPrevious = NULL;
     }
-    if(o1 == src->pTail)
+    else if(o1->pTask == src->pTail->pTask)
     {
         src->pTail = src->pTail->pPrevious;
         src->pTail->pNext = NULL;
@@ -170,7 +170,7 @@ exception move_listobj(list *src, list *dest, listobj* o1)
     else
         push(dest, o1->pTask,o1->nTCnt);
     mem_free(o1);
-
+    return OK;
 }
 
 static int compare_listobj(listobj *o1, listobj *o2)
@@ -283,7 +283,7 @@ exception push(list *l, TCB *task,uint nTCnt)
     else
     {
         //Traversing the list and finding a position to insert the new node
-        while (current != NULL && compare_listobj(list_obj, current))
+        while (current != NULL && !compare_listobj(list_obj, current))
             current = current->pNext;
         // Either at the ends of the list
         // or at required position

@@ -104682,440 +104682,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@create_listobj",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "listobj * create_listobj(TCB *, uint)",
-    "location": {
-      "column": "10",
-      "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "create_listobj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@F@compare_listobj",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int compare_listobj(listobj *, listobj *)",
-    "location": {
-      "column": "12",
-      "line": "13",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "compare_listobj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@find_task",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception find_task(list *, TCB *)",
-    "location": {
-      "column": "11",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "find_task",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@push",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception push(list *, TCB *, uint)",
-    "location": {
-      "column": "11",
-      "line": "15",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "push",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@pop",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception pop(list *)",
-    "location": {
-      "column": "11",
-      "line": "16",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "pop",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@remove_last",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception remove_last(list *)",
-    "location": {
-      "column": "11",
-      "line": "17",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "remove_last",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@add_task_2_list",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception add_task_2_list(list *, TCB *)",
-    "location": {
-      "column": "11",
-      "line": "20",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "add_task_2_list",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@479@F@add_task_2_list@list_obj",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "list_obj",
-    "location": {
-      "column": "14",
-      "line": "22",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "list_obj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@503@F@add_task_2_list@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "14",
-      "line": "23",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@763@F@add_task_2_list@le",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "le",
-    "location": {
-      "column": "17",
-      "line": "35",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "le",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@remove_task",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception remove_task(list *, TCB *)",
-    "location": {
-      "column": "11",
-      "line": "71",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "remove_task",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@2325@F@remove_task@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "14",
-      "line": "90",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@remove_listobj",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception remove_listobj(list *, listobj *)",
-    "location": {
-      "column": "11",
-      "line": "119",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "remove_listobj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@move_listobj",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception move_listobj(list *, list *, listobj *)",
-    "location": {
-      "column": "11",
-      "line": "147",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "move_listobj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@F@compare_listobj",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int compare_listobj(listobj *, listobj *)",
-    "location": {
-      "column": "12",
-      "line": "176",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "compare_listobj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@create_listobj",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "listobj * create_listobj(TCB *, uint)",
-    "location": {
-      "column": "10",
-      "line": "185",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "create_listobj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@4652@F@create_listobj@list_obj",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "list_obj",
-    "location": {
-      "column": "14",
-      "line": "187",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "list_obj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@create_task",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception create_task(void (*)(), uint)",
-    "location": {
-      "column": "11",
-      "line": "195",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "create_task",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@4894@F@create_task@status",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "status",
-    "location": {
-      "column": "9",
-      "line": "197",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "status",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@4946@F@create_task@task",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "task",
-    "location": {
-      "column": "10",
-      "line": "199",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "task",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@remove_last",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception remove_last(list *)",
-    "location": {
-      "column": "11",
-      "line": "232",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "remove_last",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@6329@F@remove_last@toDelete",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "toDelete",
-    "location": {
-      "column": "14",
-      "line": "238",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "toDelete",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@6329@F@remove_last@prevTask",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "prevTask",
-    "location": {
-      "column": "25",
-      "line": "238",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "prevTask",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@6364@F@remove_last@firstTask",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "firstTask",
-    "location": {
-      "column": "14",
-      "line": "239",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "firstTask",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@push",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception push(list *, TCB *, uint)",
-    "location": {
-      "column": "11",
-      "line": "260",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "push",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@6916@F@push@list_obj",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "list_obj",
-    "location": {
-      "column": "14",
-      "line": "262",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "list_obj",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@7027@F@push@current",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "current",
-    "location": {
-      "column": "14",
-      "line": "266",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "current",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@pop",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception pop(list *)",
-    "location": {
-      "column": "11",
-      "line": "306",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "pop",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@8332@F@pop@toRemove",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "toRemove",
-    "location": {
-      "column": "18",
-      "line": "312",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "toRemove",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@find_task",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception find_task(list *, TCB *)",
-    "location": {
-      "column": "11",
-      "line": "321",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "find_task",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:tasks.c@8564@F@find_task@temp",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "temp",
-    "location": {
-      "column": "14",
-      "line": "323",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
-    },
-    "name": "temp",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:kernel_functions.h@472@macro@CONTEXT_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
@@ -106468,6 +106034,440 @@
     },
     "name": "first_heap",
     "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@create_listobj",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "listobj * create_listobj(TCB *, uint)",
+    "location": {
+      "column": "10",
+      "line": "12",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "create_listobj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@F@compare_listobj",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int compare_listobj(listobj *, listobj *)",
+    "location": {
+      "column": "12",
+      "line": "13",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "compare_listobj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@find_task",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception find_task(list *, TCB *)",
+    "location": {
+      "column": "11",
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "find_task",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@push",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception push(list *, TCB *, uint)",
+    "location": {
+      "column": "11",
+      "line": "15",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "push",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@pop",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception pop(list *)",
+    "location": {
+      "column": "11",
+      "line": "16",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "pop",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@remove_last",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception remove_last(list *)",
+    "location": {
+      "column": "11",
+      "line": "17",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "remove_last",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@add_task_2_list",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception add_task_2_list(list *, TCB *)",
+    "location": {
+      "column": "11",
+      "line": "20",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "add_task_2_list",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@479@F@add_task_2_list@list_obj",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "list_obj",
+    "location": {
+      "column": "14",
+      "line": "22",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "list_obj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@503@F@add_task_2_list@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "14",
+      "line": "23",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@763@F@add_task_2_list@le",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "le",
+    "location": {
+      "column": "17",
+      "line": "35",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "le",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@remove_task",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception remove_task(list *, TCB *)",
+    "location": {
+      "column": "11",
+      "line": "71",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "remove_task",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@2325@F@remove_task@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "14",
+      "line": "90",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@remove_listobj",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception remove_listobj(list *, listobj *)",
+    "location": {
+      "column": "11",
+      "line": "119",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "remove_listobj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@move_listobj",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception move_listobj(list *, list *, listobj *)",
+    "location": {
+      "column": "11",
+      "line": "147",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "move_listobj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@F@compare_listobj",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int compare_listobj(listobj *, listobj *)",
+    "location": {
+      "column": "12",
+      "line": "176",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "compare_listobj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@create_listobj",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "listobj * create_listobj(TCB *, uint)",
+    "location": {
+      "column": "10",
+      "line": "185",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "create_listobj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@4711@F@create_listobj@list_obj",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "list_obj",
+    "location": {
+      "column": "14",
+      "line": "187",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "list_obj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@create_task",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception create_task(void (*)(), uint)",
+    "location": {
+      "column": "11",
+      "line": "195",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "create_task",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@4953@F@create_task@status",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "status",
+    "location": {
+      "column": "9",
+      "line": "197",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "status",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@5005@F@create_task@task",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "task",
+    "location": {
+      "column": "10",
+      "line": "199",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "task",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@remove_last",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception remove_last(list *)",
+    "location": {
+      "column": "11",
+      "line": "232",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "remove_last",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@6388@F@remove_last@toDelete",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "toDelete",
+    "location": {
+      "column": "14",
+      "line": "238",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "toDelete",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@6388@F@remove_last@prevTask",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "prevTask",
+    "location": {
+      "column": "25",
+      "line": "238",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "prevTask",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@6423@F@remove_last@firstTask",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "firstTask",
+    "location": {
+      "column": "14",
+      "line": "239",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "firstTask",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@push",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception push(list *, TCB *, uint)",
+    "location": {
+      "column": "11",
+      "line": "260",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "push",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@6975@F@push@list_obj",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "list_obj",
+    "location": {
+      "column": "14",
+      "line": "262",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "list_obj",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@7086@F@push@current",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "current",
+    "location": {
+      "column": "14",
+      "line": "266",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "current",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@pop",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception pop(list *)",
+    "location": {
+      "column": "11",
+      "line": "306",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "pop",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@8392@F@pop@toRemove",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "toRemove",
+    "location": {
+      "column": "18",
+      "line": "312",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "toRemove",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@find_task",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception find_task(list *, TCB *)",
+    "location": {
+      "column": "11",
+      "line": "321",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "find_task",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:tasks.c@8624@F@find_task@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "14",
+      "line": "323",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\tasks.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -116988,90 +116988,6 @@
     "scope": null
   },
   {
-    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_YSIZET_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_YSIZET_H",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@277@macro@_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "16",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_STD_USING_SIZE_T",
-    "location": {
-      "column": "11",
-      "line": "17",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "_STD_USING_SIZE_T",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "_Sizet",
-    "location": {
-      "column": "18",
-      "line": "18",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__DATA_PTR_MEM_HELPER1__",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__DATA_PTR_MEM_HELPER1__",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ysizet.h@T@__data_size_t",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "1",
-      "line": "23",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
-    },
-    "name": "__data_size_t",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
     "ID": "c:string.h@100@macro@_STRING",
     "What": "MacroDef",
     "defdec": "Def",
@@ -117814,282 +117730,312 @@
     "scope": null
   },
   {
-    "ID": "c:limits.h@117@macro@_LIMITS",
+    "ID": "c:mallocstats.h@33@macro@_MALLOCSTATS_H_",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_LIMITS",
+    "display": "_MALLOCSTATS_H_",
     "location": {
       "column": "9",
-      "line": "4",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+      "line": "2",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
     },
-    "name": "_LIMITS",
-    "origin": "system_include",
+    "name": "_MALLOCSTATS_H_",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:limits.h@554@macro@MB_LEN_MAX",
+    "ID": "c:mallocstats.h@267@macro@MALLINFO_FIELD_TYPE",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "MB_LEN_MAX",
+    "display": "MALLINFO_FIELD_TYPE",
     "location": {
-      "column": "11",
-      "line": "25",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+      "column": "9",
+      "line": "12",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
     },
-    "name": "MB_LEN_MAX",
-    "origin": "system_include",
+    "name": "MALLINFO_FIELD_TYPE",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:limits.h@617@macro@CHAR_BIT",
+    "ID": "c:mallocstats.h@305@macro@STRUCT_MALLINFO_DECLARED",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "CHAR_BIT",
+    "display": "STRUCT_MALLINFO_DECLARED",
     "location": {
       "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+    },
+    "name": "STRUCT_MALLINFO_DECLARED",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@mallinfo",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "mallinfo",
+    "location": {
+      "column": "8",
+      "line": "15",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@mallinfo@FI@arena",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "arena",
+        "location": {
+          "column": "23",
+          "line": "17",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "arena",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@ordblks",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "ordblks",
+        "location": {
+          "column": "23",
+          "line": "18",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "ordblks",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@smblks",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "smblks",
+        "location": {
+          "column": "23",
+          "line": "19",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "smblks",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@hblks",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "hblks",
+        "location": {
+          "column": "23",
+          "line": "20",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "hblks",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@hblkhd",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "hblkhd",
+        "location": {
+          "column": "23",
+          "line": "21",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "hblkhd",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@usmblks",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "usmblks",
+        "location": {
+          "column": "23",
+          "line": "22",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "usmblks",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@fsmblks",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "fsmblks",
+        "location": {
+          "column": "23",
+          "line": "23",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "fsmblks",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@uordblks",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "uordblks",
+        "location": {
+          "column": "23",
+          "line": "24",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "uordblks",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@fordblks",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "fordblks",
+        "location": {
+          "column": "23",
+          "line": "25",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "fordblks",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      },
+      {
+        "ID": "c:@S@mallinfo@FI@keepcost",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "keepcost",
+        "location": {
+          "column": "23",
+          "line": "26",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+        },
+        "name": "keepcost",
+        "origin": "user_include",
+        "scope": "mallinfo"
+      }
+    ],
+    "name": "mallinfo",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@__iar_dlmallinfo",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "struct mallinfo __iar_dlmallinfo(void)",
+    "location": {
+      "column": "17",
       "line": "30",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
     },
-    "name": "CHAR_BIT",
-    "origin": "system_include",
+    "name": "__iar_dlmallinfo",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:limits.h@664@macro@CHAR_MAX",
+    "ID": "c:@F@__iar_dlmalloc_stats",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void __iar_dlmalloc_stats(void)",
+    "location": {
+      "column": "6",
+      "line": "31",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
+    },
+    "name": "__iar_dlmalloc_stats",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@111@macro@_YSIZET_H",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "CHAR_MAX",
+    "display": "_YSIZET_H",
     "location": {
       "column": "9",
-      "line": "32",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+      "line": "5",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "CHAR_MAX",
+    "name": "_YSIZET_H",
     "origin": "system_include",
     "scope": null
   },
   {
-    "ID": "c:limits.h@708@macro@CHAR_MIN",
+    "ID": "c:ysizet.h@277@macro@_SIZE_T",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "CHAR_MIN",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "CHAR_MIN",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@776@macro@INT_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "INT_MAX",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "INT_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@826@macro@INT_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "INT_MIN",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "INT_MIN",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@876@macro@UINT_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UINT_MAX",
-    "location": {
-      "column": "9",
-      "line": "38",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "UINT_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@960@macro@SCHAR_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SCHAR_MAX",
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "SCHAR_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1011@macro@SCHAR_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SCHAR_MIN",
-    "location": {
-      "column": "9",
-      "line": "42",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "SCHAR_MIN",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1088@macro@SHRT_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SHRT_MAX",
-    "location": {
-      "column": "9",
-      "line": "45",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "SHRT_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1140@macro@SHRT_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SHRT_MIN",
-    "location": {
-      "column": "9",
-      "line": "46",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "SHRT_MIN",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1217@macro@LONG_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LONG_MAX",
-    "location": {
-      "column": "9",
-      "line": "49",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "LONG_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1268@macro@LONG_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LONG_MIN",
-    "location": {
-      "column": "9",
-      "line": "50",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "LONG_MIN",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1348@macro@UCHAR_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UCHAR_MAX",
-    "location": {
-      "column": "9",
-      "line": "53",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "UCHAR_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1401@macro@USHRT_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "USHRT_MAX",
-    "location": {
-      "column": "9",
-      "line": "54",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "USHRT_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1455@macro@ULONG_MAX",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ULONG_MAX",
-    "location": {
-      "column": "9",
-      "line": "55",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
-    },
-    "name": "ULONG_MAX",
-    "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:limits.h@1561@macro@LLONG_MIN",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "LLONG_MIN",
+    "display": "_SIZE_T",
     "location": {
       "column": "11",
-      "line": "59",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+      "line": "16",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "LLONG_MIN",
+    "name": "_SIZE_T",
     "origin": "system_include",
     "scope": null
   },
   {
-    "ID": "c:limits.h@1617@macro@LLONG_MAX",
+    "ID": "c:ysizet.h@296@macro@_STD_USING_SIZE_T",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "LLONG_MAX",
+    "display": "_STD_USING_SIZE_T",
     "location": {
       "column": "11",
-      "line": "60",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+      "line": "17",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "LLONG_MAX",
+    "name": "_STD_USING_SIZE_T",
     "origin": "system_include",
     "scope": null
   },
   {
-    "ID": "c:limits.h@1673@macro@ULLONG_MAX",
+    "ID": "c:ysizet.h@T@size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "_Sizet",
+    "location": {
+      "column": "18",
+      "line": "18",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "size_t",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@359@macro@__DATA_PTR_MEM_HELPER1__",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "ULLONG_MAX",
+    "display": "__DATA_PTR_MEM_HELPER1__",
     "location": {
-      "column": "11",
-      "line": "61",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
     },
-    "name": "ULLONG_MAX",
+    "name": "__DATA_PTR_MEM_HELPER1__",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ysizet.h@T@__data_size_t",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "1",
+      "line": "23",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\ysizet.h"
+    },
+    "name": "__data_size_t",
     "origin": "system_include",
     "scope": null
   },
@@ -119200,232 +119146,6 @@
     "scope": null
   },
   {
-    "ID": "c:mallocstats.h@33@macro@_MALLOCSTATS_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_MALLOCSTATS_H_",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-    },
-    "name": "_MALLOCSTATS_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:mallocstats.h@267@macro@MALLINFO_FIELD_TYPE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MALLINFO_FIELD_TYPE",
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-    },
-    "name": "MALLINFO_FIELD_TYPE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:mallocstats.h@305@macro@STRUCT_MALLINFO_DECLARED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STRUCT_MALLINFO_DECLARED",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-    },
-    "name": "STRUCT_MALLINFO_DECLARED",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@mallinfo",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "mallinfo",
-    "location": {
-      "column": "8",
-      "line": "15",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@mallinfo@FI@arena",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "arena",
-        "location": {
-          "column": "23",
-          "line": "17",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "arena",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@ordblks",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "ordblks",
-        "location": {
-          "column": "23",
-          "line": "18",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "ordblks",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@smblks",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "smblks",
-        "location": {
-          "column": "23",
-          "line": "19",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "smblks",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@hblks",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "hblks",
-        "location": {
-          "column": "23",
-          "line": "20",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "hblks",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@hblkhd",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "hblkhd",
-        "location": {
-          "column": "23",
-          "line": "21",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "hblkhd",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@usmblks",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "usmblks",
-        "location": {
-          "column": "23",
-          "line": "22",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "usmblks",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@fsmblks",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "fsmblks",
-        "location": {
-          "column": "23",
-          "line": "23",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "fsmblks",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@uordblks",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "uordblks",
-        "location": {
-          "column": "23",
-          "line": "24",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "uordblks",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@fordblks",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "fordblks",
-        "location": {
-          "column": "23",
-          "line": "25",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "fordblks",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      },
-      {
-        "ID": "c:@S@mallinfo@FI@keepcost",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "keepcost",
-        "location": {
-          "column": "23",
-          "line": "26",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-        },
-        "name": "keepcost",
-        "origin": "user_include",
-        "scope": "mallinfo"
-      }
-    ],
-    "name": "mallinfo",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_dlmallinfo",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "struct mallinfo __iar_dlmallinfo(void)",
-    "location": {
-      "column": "17",
-      "line": "30",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-    },
-    "name": "__iar_dlmallinfo",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@__iar_dlmalloc_stats",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void __iar_dlmalloc_stats(void)",
-    "location": {
-      "column": "6",
-      "line": "31",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\mallocstats.h"
-    },
-    "name": "__iar_dlmalloc_stats",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:@idle_task",
     "What": "Variable",
     "defdec": "Dec",
@@ -120056,6 +119776,300 @@
     "scope": null
   },
   {
+    "ID": "c:core_cmFunc.h@1032@macro@__CORE_CMFUNC_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__CORE_CMFUNC_H",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\core_cmFunc.h"
+    },
+    "name": "__CORE_CMFUNC_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@117@macro@_LIMITS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_LIMITS",
+    "location": {
+      "column": "9",
+      "line": "4",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "_LIMITS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@554@macro@MB_LEN_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MB_LEN_MAX",
+    "location": {
+      "column": "11",
+      "line": "25",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "MB_LEN_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@617@macro@CHAR_BIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CHAR_BIT",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "CHAR_BIT",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@664@macro@CHAR_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CHAR_MAX",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "CHAR_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@708@macro@CHAR_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CHAR_MIN",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "CHAR_MIN",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@776@macro@INT_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "INT_MAX",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "INT_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@826@macro@INT_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "INT_MIN",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "INT_MIN",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@876@macro@UINT_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UINT_MAX",
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "UINT_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@960@macro@SCHAR_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SCHAR_MAX",
+    "location": {
+      "column": "9",
+      "line": "41",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "SCHAR_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1011@macro@SCHAR_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SCHAR_MIN",
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "SCHAR_MIN",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1088@macro@SHRT_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SHRT_MAX",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "SHRT_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1140@macro@SHRT_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SHRT_MIN",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "SHRT_MIN",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1217@macro@LONG_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LONG_MAX",
+    "location": {
+      "column": "9",
+      "line": "49",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "LONG_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1268@macro@LONG_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LONG_MIN",
+    "location": {
+      "column": "9",
+      "line": "50",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "LONG_MIN",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1348@macro@UCHAR_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UCHAR_MAX",
+    "location": {
+      "column": "9",
+      "line": "53",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "UCHAR_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1401@macro@USHRT_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "USHRT_MAX",
+    "location": {
+      "column": "9",
+      "line": "54",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "USHRT_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1455@macro@ULONG_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ULONG_MAX",
+    "location": {
+      "column": "9",
+      "line": "55",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "ULONG_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1561@macro@LLONG_MIN",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LLONG_MIN",
+    "location": {
+      "column": "11",
+      "line": "59",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "LLONG_MIN",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1617@macro@LLONG_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "LLONG_MAX",
+    "location": {
+      "column": "11",
+      "line": "60",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "LLONG_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:limits.h@1673@macro@ULLONG_MAX",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ULLONG_MAX",
+    "location": {
+      "column": "11",
+      "line": "61",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\limits.h"
+    },
+    "name": "ULLONG_MAX",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@min",
     "What": "Function",
     "defdec": "Def",
@@ -120520,17 +120534,17 @@
     "scope": null
   },
   {
-    "ID": "c:core_cmFunc.h@1032@macro@__CORE_CMFUNC_H",
+    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "__CORE_CMFUNC_H",
+    "display": "_DLIB_CONFIG_H",
     "location": {
       "column": "9",
-      "line": "25",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\core_cmFunc.h"
+      "line": "5",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Normal.h"
     },
-    "name": "__CORE_CMFUNC_H",
-    "origin": "user_include",
+    "name": "_DLIB_CONFIG_H",
+    "origin": "system_include",
     "scope": null
   },
   {
@@ -120559,20 +120573,6 @@
     },
     "name": "run",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_CONFIG_H",
-    "location": {
-      "column": "9",
-      "line": "5",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\inc\\c\\DLib_Config_Normal.h"
-    },
-    "name": "_DLIB_CONFIG_H",
-    "origin": "system_include",
     "scope": null
   },
   {
