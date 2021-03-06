@@ -139,8 +139,8 @@ exception remove_listobj(list *l, listobj *o1)
         o1->pNext->pPrevious = o1->pPrevious;
         o1->pPrevious->pNext = o1->pNext;
     }
-    free(o1->pTask);
-    free(o1);
+    mem_free(o1->pTask);
+    mem_free(o1);
     return OK;
 }
 
@@ -152,6 +152,11 @@ exception move_listobj(list *src, list *dest, listobj* o1)
     
     if(o1->pTask == src->pHead->pTask)
     {
+        if(src->pTail->pTask == o1->pTask)
+        {
+            src->pTail->pPrevious = NULL;
+            src->pTail = NULL;
+        }
         src->pHead = src->pHead->pNext;
         src->pHead->pPrevious = NULL;
     }
@@ -252,7 +257,7 @@ exception remove_last(list *list)
             firstTask = NULL;
         else
             prevTask->pNext = NULL;
-        free(toDelete);
+        mem_free(toDelete);
         return OK;
     }
 }
@@ -311,8 +316,8 @@ exception pop(list* list)
     {
         listobj* toRemove = list->pHead;
         list->pHead = list->pHead->pNext;
-        free(toRemove->pTask);
-        free(toRemove);
+        mem_free(toRemove->pTask);
+        mem_free(toRemove);
         return OK;
     }
     return FAIL;

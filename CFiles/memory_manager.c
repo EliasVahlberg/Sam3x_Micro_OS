@@ -26,7 +26,10 @@ void *mem_alloc(size_t size)
     if(mem_counter==0)
         first_heap = mem;
     if (mem != NULL)
-        mem_counter++;        
+        mem_counter++;       
+    DEBUG_memadress = mem;
+    DEBUG_memsize = size;
+    //BREAKPOINT HERE
     __ISR_ON();
     return mem;
 }
@@ -45,6 +48,8 @@ void mem_free(void *mem)
         __ISR_OFF();
         free(mem);
         mem_counter--;
+        DEBUG_memadress = mem;
+        //BREAKPOINT HERE
         __ISR_ON();
     }
 }
@@ -80,7 +85,7 @@ int dynamic_mem_adress(void *ptr)
            listobj *lobj = ReadyList->pHead;
            while (lobj!=NULL)
            {
-                if( ptr >lobj->pTask->StackSeg && ptr<lobj->pTask->StackSeg+STACK_SIZE*4)
+                if( ptr >lobj->pTask->StackSeg && ptr<(&(lobj->pTask->StackSeg[99])))
                     return FAIL;
                 lobj = lobj->pNext;
            }

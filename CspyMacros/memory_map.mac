@@ -1,0 +1,12 @@
+WriteAllocatedMem2File()//__var mem_adress, __var size)
+{
+   __var mem_adress,size//,_fileHandle;
+    mem_adress = 0;
+   size = 1
+   _fileHandle = __openFile("$PROJ_DIR$\\Memory_Map.txt", "w"); 
+    
+   __writeFile( _fileHandle, mem_adress);
+   __writeFile( _fileHandle, size);
+   __closeFile( _fileHandle );
+
+}

@@ -76,3 +76,81 @@ execUserFlashExit()
 {
     __message "------------------------------ execUserFlashExit ---------------------------------";
 }
+
+
+ClearMemFile()
+{
+    __var _fileHandle;
+    _fileHandle = __openFile("$PROJ_DIR$\\Memory.txt", "w");
+    __writeFile( _fileHandle, 0); 
+    __closeFile( _fileHandle );
+    _fileHandle = __openFile("$PROJ_DIR$\\Memory2.txt", "w");
+    __writeFile( _fileHandle, 0); 
+    __closeFile( _fileHandle );
+}
+WriteMemory2File(adress, size)
+{
+    __var _fileHandle;
+    adress = (int) adress;
+    size = (int) size;
+    //__message "------------------------------ HEY---------------------------------";
+
+    _fileHandle = __openFile("$PROJ_DIR$\\Memory.txt", "a"); 
+    if(_fileHandle)
+    {
+    __writeFile( _fileHandle, adress);
+    __writeFile( _fileHandle, size);
+    __closeFile( _fileHandle );
+    }
+
+}
+
+WriteFreeMemory2File(adress)
+{
+    __var _fileHandle,fsymb;
+    adress = (int) adress;
+    fsymb=0xffffffff;
+
+    //__message "------------------------------ HEY2---------------------------------";
+
+    _fileHandle = __openFile("$PROJ_DIR$\\Memory.txt", "a"); 
+    if(_fileHandle)
+    {
+    __writeFile( _fileHandle, fsymb);
+    __writeFile( _fileHandle, adress);
+    }
+    __closeFile( _fileHandle );
+
+}
+
+WriteMemory2FileExtended(adress, size)
+{
+    __var _fileHandle, i,fsymb;
+    adress = (int) adress;
+    size = (int) size;
+    //__message "------------------------------ HEY3---------------------------------";
+
+    _fileHandle = __openFile("$PROJ_DIR$\\Memory2.txt", "a"); 
+    if(_fileHandle)
+    {
+        if(size)
+        {
+
+            fsymb=0xffffffee;
+            __writeFile( _fileHandle, fsymb);
+            for(i = adress; i<adress+size;i++)
+            {
+                __writeFile( _fileHandle, i);
+            }
+        }
+        else
+        {
+            
+            fsymb=0xffffffff;
+            __writeFile( _fileHandle, fsymb);
+            __writeFile( _fileHandle, adress);
+        }
+    __closeFile( _fileHandle );
+    }
+
+}

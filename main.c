@@ -10,6 +10,7 @@
 */
 
 #pragma region TestVars
+#pragma endregion TestVars
 
 unsigned int g0 = 0, g1 = 0, g2 = 0, g3 = 1; /* gate flags for various stages of unit test */
 
@@ -26,6 +27,7 @@ unsigned int high_deadline = 100000;
 #include "kernel_functions.h"
 #include "Tests\tests.h"
 #include "UnitTest\utest.h"
+
 
 void main()
 {

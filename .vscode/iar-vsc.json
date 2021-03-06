@@ -1,6 +1,6 @@
 {
-    "ewp": "c:\\Users\\RAZER\\Desktop\\CSE2_Lab3\\Sam3x_Micro_OS-Lab2\\Backup of OS_Project.ewp",
+    "ewp": "c:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Backup (2) of OS_Project.ewp",
     "configuration": "Debug",
-    "compiler": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4\\arm\\bin\\iccarm.exe",
-    "workbench": "C:\\Program Files (x86)\\IAR Systems\\Embedded Workbench 8.4"
+    "compiler": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0\\arm\\bin\\iccarm.exe",
+    "workbench": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.0"
 }

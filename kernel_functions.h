@@ -139,6 +139,7 @@ extern void     LoadContext_In_Terminate( void );
                    /* To be used on the last line of the C function terminate() */
 
 
+
 TCB *PreviousTask, *NextTask;
 extern int32_t kernel_mode      = 0;
 extern int32_t mem_counter      = 0;
@@ -158,6 +159,12 @@ list *ReadyList;
 list *WaitingList;
 list *TimerList;
 void* first_heap = NULL;
+
+#pragma region debugg
+void*   DEBUG_memadress = NULL;
+uint    DEBUG_memsize = 0;
+#pragma endregion debugg
+
 
 #include "CFiles\mallocstats.h"
 #include "CFiles\memory_manager.c"
