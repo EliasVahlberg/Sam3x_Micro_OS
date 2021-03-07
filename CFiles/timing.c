@@ -73,12 +73,12 @@ extern void TimerInt(void)
     tick_counter++;
     if(ticks() >= min(TimerList->pHead->nTCnt,TimerList->pHead->pTask->Deadline))
     {
-        NextTask = TimerList->pHead->pTask;
         move_listobj(TimerList,ReadyList,TimerList->pHead);
+        NextTask = ReadyList->pHead->pTask;
     }
     else if(ticks() >= WaitingList->pHead->pTask->Deadline)
     {
-        NextTask = WaitingList->pHead->pTask;
         move_listobj(WaitingList,ReadyList,WaitingList->pHead);
+        NextTask = ReadyList->pHead->pTask;
     }
 }

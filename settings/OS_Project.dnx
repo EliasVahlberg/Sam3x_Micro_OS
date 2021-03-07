@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>2411195323</Checksum>
+        <Checksum>1412514580</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -76,8 +76,8 @@
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
     <PlDriver>
-        <FirstRun>0</FirstRun>
         <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\Microchip\ATSAM3X8E.ddf</MemConfigValue>
+        <FirstRun>0</FirstRun>
     </PlDriver>
     <ArmDriver>
         <EnableCache>0</EnableCache>
@@ -148,9 +148,14 @@
         <Bp11>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.53.9" 0 0 1 "WriteMemory2FileExtended(DEBUG_memadress, 0)" 0 "" 0</Bp11>
         <Bp12>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.33.5" 0 0 1 "WriteMemory2FileExtended(DEBUG_memadress, DEBUG_memsize)" 0 "" 0</Bp12>
         <Bp13>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.31.5" 0 0 1 "mem == 0x20074128" 0 "" 0</Bp13>
-        <Bp14>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\timing.c}.76.9" 0 0 1 "" 0 "" 0</Bp14>
-        <Bp15>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\timing.c}.81.9" 0 0 1 "" 0 "" 0</Bp15>
-        <Count>16</Count>
+        <Bp14>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\timing.c}.77.9" 0 0 1 "" 0 "" 0</Bp14>
+        <Bp15>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\timing.c}.82.9" 0 0 1 "" 0 "" 0</Bp15>
+        <Bp16>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.181.5" 0 0 1 "" 0 "" 0</Bp16>
+        <Bp17>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.184.5" 0 0 1 "" 0 "" 0</Bp17>
+        <Bp18>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\communication.c}.142.5" 0 0 1 "" 0 "" 0</Bp18>
+        <Bp19>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.156.5" 0 0 1 "" 0 "" 0</Bp19>
+        <Bp20>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\tasks.c}.298.9" 0 0 1 "" 0 "" 0</Bp20>
+        <Count>21</Count>
     </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>

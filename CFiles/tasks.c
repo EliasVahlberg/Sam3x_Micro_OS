@@ -167,8 +167,15 @@ exception move_listobj(list *src, list *dest, listobj* o1)
     }
     else
     {
-        o1->pNext->pPrevious = o1->pPrevious;
-        o1->pPrevious->pNext = o1->pNext;
+        listobj* temp = src->pHead;
+        while(temp->pTask!=o1->pTask)
+        {
+            if(temp == NULL)
+                return FAIL;
+            temp = temp->pNext;
+        }
+        temp->pNext->pPrevious = temp->pPrevious;
+        temp->pPrevious->pNext = temp->pNext;
     }
     if(src == TimerList)
         push(dest,o1->pTask,0);
@@ -282,6 +289,7 @@ exception push(list *l, TCB *task,uint nTCnt)
     {
         // Insert New Node before head
         list_obj->pNext = current;
+        l->pHead->pPrevious = list_obj;
         l->pHead = list_obj;
         return OK;
     }
