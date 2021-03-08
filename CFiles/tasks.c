@@ -8,6 +8,7 @@
 * \brief 
 *     ...
 */
+
 #pragma region Functions
 listobj *create_listobj(TCB *task,uint nTCnt);
 static int compare_listobj(listobj *o1, listobj *o2);
@@ -187,6 +188,8 @@ exception move_listobj(list *src, list *dest, listobj* o1)
 
 static int compare_listobj(listobj *o1, listobj *o2)
 {
+    if(o1==NULL || o2==NULL)
+        return -1;
     if(o1->nTCnt==0 || o2->nTCnt==0)
         return (o1->pTask->Deadline < o2->pTask->Deadline) ? 1 : 0;
     else

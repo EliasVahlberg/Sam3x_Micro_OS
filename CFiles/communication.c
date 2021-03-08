@@ -279,7 +279,27 @@ exception receive_no_wait(mailbox *mBox, void *pData)
 
 exception no_messages(mailbox *mBox)
 {
-    return (mBox->nMessages == 0 && mBox->pHead == NULL) ? 1 : 0;
+    return (mBox != NULL && (mBox->nMessages == 0 && mBox->pHead == NULL)) ? 1 : 0;
+}
+
+uint get_mailbox_size(mailbox *mBox)
+{
+    return (mBox != NULL && mBox->nMessages >= 0) ? mBox->nMessages : 0;
+}
+
+exception is_mailbox_full(mailbox *mBox)
+{
+    return (mBox != NULL && mBox->nMessages == mBox->nMaxMessages) ? 1 : 0;
+}
+
+msg *get_oldest_mes(mailbox *mBox)
+{
+    return (mBox != NULL && mBox->pTail != NULL) ? mBox->pTail : NULL;
+}
+
+msg *get_latest_mes(mailbox *mBox)
+{
+    return (mBox != NULL && mBox->pHead != NULL) ? mBox->pHead : NULL;
 }
 
 exception mailbox_enqueue(mailbox *mBox, msg *mes)

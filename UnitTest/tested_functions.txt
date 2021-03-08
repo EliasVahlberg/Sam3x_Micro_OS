@@ -10,31 +10,37 @@
 
 communication.c
     msg*        mailbox_dequeue(mailbox *mBox);
-                Check - Trying to dequeue from non existing mailbox
-                Check - Trying to dequeue from existing mailbox with nothing in it
-                Check - Dequeuing in right order
-                Check - If message was really dequeued, and size of mailbox decreases
-                Check - If message was really freed
-                Check - Returned msg's data and if it return NULLPOINTER
+                Check - Non allocated mBox
+                        Return NULLPOINTEREXCEPTION;
+                Check - Empty, mid full or full mailbox
+                Check - Order of dequeue
+                Check - Confirm dequeue of message, check if freed. (Check)
+                Check - Returned msg's data and if it returned NULLPOINTER
                 
     exception   mailbox_enqueue(mailbox *mBox, msg *mes);
-                Check - Memory full, trying to enqueue?
-                Check - Trying to enqueue to a non existing mailbox
-                Check - Mes exists?
+                Check - Non allocated mBox or mes
+                        Return NULLPOINTEREXCEPTION
+                Check - Empty, mid full or full mailbox
                 Check - Enqueues in the right order?
                 Check - Message really enqueued? Check the corresponding data of mes
                 Check - Enqueue to allocation failure
                 Check - Return types
                 
     mailbox*    create_mailbox(uint nMessages, uint nDataSize)
-                Check - Trying to create a mailbox when memory is full (Return type)
+                Check - Alloc returns NULL
 
     exception   append_msg(msg *mes, mailbox *mBox, void *pData, int status, int wait)
-                Check - 
-                Check - 
-                Check - 
+                Check - Nullpointers / Return type
+                Check - Allocation and constructing the message is in here
+
     exception   remove_mailbox(mailbox *mBox)
+                Check - Removing non existing mBox
+                Check - Removing existing mBox, really removed and freed?
+
     exception   send_wait(mailbox *mBox, void *pData)
+                Check - Empty mailbox, Full mailbox
+
+
     exception   receive_wait(mailbox *mBox, void *pData)
     exception   send_no_wait(mailbox *mBox, void *pData)
     exception   receive_no_wait(mailbox *mBox, void *pData)
@@ -65,6 +71,7 @@ kernel.c
     void        run(void);
 
 tasks.c
+    ID-1604
     exception   add_task_2_list(list *l, TCB *task);
             #BEFORE TEST Create 3 Lists with 0,1,3 elements  
             Add to empty list
@@ -76,7 +83,7 @@ tasks.c
                 check if there
                 check position
             
-
+    ID-1605
     exception   move_listobj(list *src, list *dest, listobj* o1);
             #BEFORE TEST Create 6 Lists with {0,0},{0,1},{1,0},{1,1},{3,1},{1,3},{3,3} elements  
             Move using all the lists above 
@@ -88,10 +95,10 @@ tasks.c
                 check for FAIL
             Try to move object in dest
                 check for FAIL
-            Move 100 time back and forth 
+        Move 100 time back and forth 
             check for FAIL
             check memory
-
+    ID-1606
     static int  compare_listobj(listobj *o1, listobj *o2);
             #BEFORE TEST create 4 list objects: 1: {NULL},2: { DL = 1, nTCnt = 0},3: { DL = 2, nTCnt = 0},4: { DL = 3 nTCnt = 1},5: { DL = 3 nTCnt = 2} 
             compare: (1,2)
@@ -114,12 +121,23 @@ tasks.c
                 Assert return = 1
             compare: (4,5)
                 Assert return = 1
-                
+    
+    ID-1606            
     listobj*    create_listobj(TCB *task,uint nTCnt);
+    
+    ID-0607
     exception   create_task(void (*tbody)(), uint dl)
+    
+    ID-0608
     exception   remove_last(list *list);
+
+    ID-0609
     exception   push(list *l, TCB *task,uint nTCnt);
+    
+    ID-0610
     exception   pop(list* list);
+    
+    ID-0611
     exception   find_task(list* l, TCB *task);
 
     #*#*exception   remove_listobj(list *l, listobj *o1);

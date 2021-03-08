@@ -1,3 +1,12 @@
+/**
+* @file
+*     utest_handler.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
 
 /**
 * assert_equals 
@@ -96,6 +105,19 @@ exception full_test_status(test_status status, int len)
             return FAIL;
     return OK;
 }
+exception pre_utest (test_info* t_info,int test_id,void* test_adress, int package, int num_assert)
+{
+    if((t_info = mem_alloc(sizeof(test_info)))==NULL)
+        return ALLOCFAIL;
+    t_info->test_id = test_id;
+    t_info->test_adress = test_adress;
+    t_info->package = package;
+    t_info->num_assert = num_assert;
+    if((t_info->test_s = mem_alloc(num_assert))==NULL)
+        return FAIL;
+    return OK;
+}
+
 void display_test_status(test_status status)
 {
 }

@@ -50,7 +50,6 @@ void set_deadline(uint deadline)
     }
 }
 
-
 exception wait(uint nTicks)
 {
     exception status;

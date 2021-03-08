@@ -33,4 +33,11 @@ C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\Debug\BrowseInfo\main
   C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/Tests/lab2test.c \
   C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/Tests/lab3test.c \
   C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest\utest.h \
-  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_handler.c
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_handler.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_communication.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_common_functions.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_kernel_init.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utetst_memory_manager.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_kernel.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_tasks.c \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/UnitTest/utest_timing.c

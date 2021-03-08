@@ -17,8 +17,6 @@ extern TCB idle_task;
 #pragma region Function_PreInit
 exception init_kernel(void);
 list *create_task_list(void);
-void mem_free(void *mem);
-void *mem_alloc(size_t size);
 void idle();
 #pragma endregion Function_PreInit
 
@@ -26,6 +24,8 @@ exception init_kernel(void)
 {
     //Set tick counter to zero
     set_ticks(0);
+    if (ticks() != 0)
+        return FAIL;
 
     //Create necessary data structures
     if ((ReadyList = create_task_list()) == NULL)

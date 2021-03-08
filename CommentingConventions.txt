@@ -13,7 +13,7 @@
 
 /**
 * @file
-*     main.c
+*     f.c
 * @authors 
 *     Elias Vahlberg
 *     Hamed Haghjo

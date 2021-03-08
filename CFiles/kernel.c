@@ -1,3 +1,13 @@
+
+/**
+* @file
+*     kernel.c
+* @authors 
+*     Elias Vahlberg
+*     Hamed Haghjo
+* \brief 
+*     ...
+*/
 void terminate(void)
 {
     //Disable interrupts
