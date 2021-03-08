@@ -32,7 +32,7 @@ typedef struct TestInfo
     void *test_adress;
     int package;
     int num_assert;
-    test_status* test_s;
+    test_status test_s;
 } test_info;
 
 exception       assert_equals       (void *pointer1, void *pointer2, int len, test_status status                 );
@@ -41,7 +41,7 @@ exception       assert_interrupt    (test_status status                         
 exception       assert_fail         (exception exc, test_status status                                           );
 exception       assert_ok           (exception exc, test_status status                                           );
 void            display_test_status (test_status status                                                          );
-exception       pre_utest           (test_info* t_info,int test_id,void* test_adress, int package, int num_assert);
+test_info*      pre_utest           (test_info* t_info,int test_id,void* test_adress, int package, int num_assert);
 
 #include "utest_handler.c"
 

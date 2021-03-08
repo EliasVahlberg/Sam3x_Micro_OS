@@ -20,6 +20,8 @@ exception remove_last(list *list);
 
 exception add_task_2_list(list *l, TCB *task)
 {
+    if(task == NULL || l ==NULL)
+        return NULLPOINTER;
     listobj *list_obj;
     listobj *temp;
     list_obj = create_listobj(task,0);

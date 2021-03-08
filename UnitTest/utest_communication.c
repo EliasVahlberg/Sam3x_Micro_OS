@@ -8,6 +8,7 @@
 *     ...
 */
 #pragma region functions
+test_info *  utest_communication_main        (                 );
 void         utest_communication_before      (test_info* t_info);
 test_info *  utest_mailbox_dequeue           (test_info* t_info);
 test_info *  utest_mailbox_enqueue           (test_info* t_info);
@@ -22,10 +23,26 @@ test_info *  utest_no_messages               (test_info* t_info);
 #pragma endregion functions
 
 
-mailbox * utest_mailbox;
-msg * utest_mes;
-int testvar = 0;
+mailbox *   utest_mailbox;
+msg *           utest_mes;
+int           testvar = 0;
+test_info* utest_communication_main()
+{
+    test_info* t_info;
+    
+    utest_communication_before      (t_info);
+    utest_mailbox_dequeue           (t_info);
+    utest_mailbox_enqueue           (t_info);
+    utest_create_mailbox            (t_info);
+    utest_append_msg                (t_info);
+    utest_remove_mailbox            (t_info);
+    utest_send_wait                 (t_info);
+    utest_receive_wait              (t_info);
+    utest_send_no_wait              (t_info);
+    utest_receive_no_wait           (t_info);
+    utest_no_messages               (t_info);
 
+}
 /*
 *ID-1200
 *\brief
@@ -34,7 +51,7 @@ void utest_communication_before(test_info* t_info)
 {
     //PRE-TEST
     t_info->test_id = 1200;
-    t_info->test_adress = utest_communication_before;
+    t_info->test_adress = (void*)utest_communication_before;
     t_info->package = MAILBOX_SYSTEM;
     t_info->num_assert = 0;
     //END PRE-TEST
@@ -54,21 +71,21 @@ test_info* utest_mailbox_dequeue(test_info* t_info)
 {
     //Test specifications
     t_info->test_id = 1201;
-    t_info->test_adress = utest_mailbox_dequeue;
+    t_info->test_adress = (void*)utest_mailbox_dequeue;
 
     exception dequeue_status = FAIL;
 
     dequeue_status = (mailbox_dequeue(utest_mailbox) != NULL) ? OK : FAIL;
     if (assert_fail(dequeue_status, t_info->test_s) == OK)
     {
-        if (!assert_ok(append_msg(utest_mes, utest_mailbox, testvar, 1, 100), t_info->test_s))
+        if (!assert_ok(append_msg(utest_mes, utest_mailbox, (void*)&testvar, SENDER, 100), t_info->test_s))
             while (1)
             {}
     } else
     while(1)
     {}
     
-    return t_info->test_s;
+    return t_info;
 }
 
 /*
@@ -78,7 +95,7 @@ test_info* utest_mailbox_dequeue(test_info* t_info)
 test_info* utest_mailbox_enqueue(test_info* t_info)
 {
     t_info->test_id = 1202;
-    t_info->test_adress = utest_mailbox_enqueue;
+    t_info->test_adress = (void*)utest_mailbox_enqueue;
 
     return NULL;
 }
@@ -90,7 +107,7 @@ test_info* utest_mailbox_enqueue(test_info* t_info)
 test_info* utest_create_mailbox(test_info* t_info)
 {
     t_info->test_id = 1203;
-    t_info->test_adress = utest_create_mailbox;
+    t_info->test_adress = (void*)utest_create_mailbox;
     
     return NULL;
 }
@@ -102,7 +119,7 @@ test_info* utest_create_mailbox(test_info* t_info)
 test_info* utest_append_msg(test_info* t_info)
 {
     t_info->test_id = 1204;
-    t_info->test_adress = utest_append_msg;
+    t_info->test_adress = (void*)utest_append_msg;
 
     return NULL;
 }
@@ -114,7 +131,7 @@ test_info* utest_append_msg(test_info* t_info)
 test_info* utest_remove_mailbox(test_info* t_info)
 {
     t_info->test_id = 1205;
-    t_info->test_adress = utest_remove_mailbox;
+    t_info->test_adress = (void*)utest_remove_mailbox;
 
     return NULL;
 }
@@ -126,7 +143,7 @@ test_info* utest_remove_mailbox(test_info* t_info)
 test_info* utest_send_wait(test_info* t_info)
 {
     t_info->test_id = 1206;
-    t_info->test_adress = utest_send_wait;
+    t_info->test_adress = (void*)utest_send_wait;
 
     return NULL;
 }
@@ -138,7 +155,7 @@ test_info* utest_send_wait(test_info* t_info)
 test_info* utest_receive_wait(test_info* t_info)
 {
     t_info->test_id = 1207;
-    t_info->test_adress = utest_receive_wait;
+    t_info->test_adress = (void*)utest_receive_wait;
 
     return NULL;
 }
@@ -150,7 +167,7 @@ test_info* utest_receive_wait(test_info* t_info)
 test_info* utest_send_no_wait(test_info* t_info)
 {
     t_info->test_id = 1208;
-    t_info->test_adress = utest_send_no_wait;
+    t_info->test_adress = (void*)utest_send_no_wait;
 
     return NULL;
 }
@@ -162,7 +179,7 @@ test_info* utest_send_no_wait(test_info* t_info)
 test_info* utest_receive_no_wait(test_info* t_info)
 {
     t_info->test_id = 1209;
-    t_info->test_adress = utest_receive_no_wait;
+    t_info->test_adress = (void*)utest_receive_no_wait;
 
     return NULL;
 }
@@ -174,7 +191,7 @@ test_info* utest_receive_no_wait(test_info* t_info)
 test_info* utest_no_messages(test_info* t_info)
 {
     t_info->test_id = 1210;
-    t_info->test_adress = utest_no_messages;
+    t_info->test_adress = (void*)utest_no_messages;
 
     return NULL;
 }

@@ -29,10 +29,11 @@ unsigned int high_deadline = 100000;
 #include "UnitTest\utest.h"
 
 
-void main()
+ void main()
 {
   SystemInit();
   SysTick_Config(100000);
+  utest_task_main();
 
   SCB->SHP[((uint32_t)(SysTick_IRQn)&0xF) - 4] = (0xE0);
   isr_off();

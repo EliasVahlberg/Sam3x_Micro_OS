@@ -79,7 +79,7 @@ exception assert_interrupt(test_status status)
 exception assert_fail(exception exc, test_status status)
 {
     if (status != NULL)
-        status[0] = (exc == FAIL) ? A_F_S : A_F_F;
+        status[0] = (exc <= FAIL) ? A_F_S : A_F_F;
     return (exc == FAIL) ? OK : FAIL;
 }
 
@@ -105,17 +105,18 @@ exception full_test_status(test_status status, int len)
             return FAIL;
     return OK;
 }
-exception pre_utest (test_info* t_info,int test_id,void* test_adress, int package, int num_assert)
+
+test_info* pre_utest (test_info* t_info,int test_id,void* test_adress, int package, int num_assert)
 {
     if((t_info = mem_alloc(sizeof(test_info)))==NULL)
-        return ALLOCFAIL;
+        return NULL;
     t_info->test_id = test_id;
     t_info->test_adress = test_adress;
     t_info->package = package;
     t_info->num_assert = num_assert;
     if((t_info->test_s = mem_alloc(num_assert))==NULL)
-        return FAIL;
-    return OK;
+        return NULL;
+    return t_info;
 }
 
 void display_test_status(test_status status)

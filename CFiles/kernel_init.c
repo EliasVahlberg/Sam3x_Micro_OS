@@ -47,7 +47,7 @@ exception init_kernel(void)
 
 /*
  \brief creates a list of tasks
- @return pointer to the allocated list, if memory alloc faliure it returns NULL
+ @return pointer to the allocated list, if memory alloc failiure it returns NULL
  */
 list *create_task_list()
 {

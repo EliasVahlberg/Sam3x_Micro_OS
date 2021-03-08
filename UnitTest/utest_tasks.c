@@ -20,12 +20,35 @@ test_info* utest_remove_last        (test_info* t_info          );    //(list *l
 test_info* utest_push               (test_info* t_info          );    //(list *l, TCB *task,uint nTCnt);
 test_info* utest_pop                (test_info* t_info          );    //(list* list);
 test_info* utest_find_task          (test_info* t_info          );    //(list* l, TCB *task);
-list*      before_test_build_list   (int n, int* dl,TCB* tasks  );
+list*      before_test_build_list   (int n, int* dl,TCB** tasks );
 listobj*   before_test_build_listobj(int nTCnt, TCB* task       );
 TCB*       before_test_build_task   (int dl                     );
 #pragma endregion functions
+test_info* utest_task_main()
+{
+    test_info* t_info;
+    
+    if((t_info = pre_utest(t_info,1604,(void*)utest_add_task_2_list,TASK_ADMINISTRATION,17))==NULL)
+        while(1){}
+    utest_add_task_2_list(t_info);
+    char res1[17];
+    for (int i = 0; i < 17; i++)
+        res1[i] = t_info->test_s[i];
+    
+    
+    if((t_info = pre_utest(t_info,1605,(void*)utest_move_listobj,TASK_ADMINISTRATION,17))==NULL)
+        while(1){}
+    utest_move_listobj(t_info);
+    utest_compare_listobj(t_info);
+    utest_create_listobj(t_info);
+    utest_create_task(t_info);
+    utest_remove_last(t_info);
+    utest_push(t_info);
+    utest_pop(t_info);
+    utest_find_task(t_info);
+}    
 
-list* before_test_build_list(int n, int* dl,TCB* tasks)
+list* before_test_build_list(int n, int* dl,TCB** tasks)
 {
     list* l = mem_alloc(sizeof(list));
     if(!l)
@@ -34,9 +57,6 @@ list* before_test_build_list(int n, int* dl,TCB* tasks)
         return l;
     l->pHead = mem_alloc(sizeof(listobj));
     if(!l->pHead)
-        return NULL;
-    l->pTail = mem_alloc(sizeof(listobj));
-    if(!l->pTail)
         return NULL;
     if(n == 1)
     {
@@ -47,20 +67,25 @@ list* before_test_build_list(int n, int* dl,TCB* tasks)
                 return NULL;
             if(dl)
                 task->Deadline = dl[0];
-            l->pHead = l->pTail = task;
+            l->pHead->pTask = l->pTail->pTask = task;
         }
         else 
-            l->pHead->pTask = l->pTail->pTask = tasks;
+            l->pHead->pTask = l->pTail->pTask = tasks[0];
         return l;
     }
     else
     {
         TCB* task;
         listobj* lobj;
+        l->pTail = l->pHead;
         if(tasks)
-            l->pTail->pTask = l->pHead->pTask = tasks;
+            l->pTail->pTask = l->pHead->pTask = tasks[0];
         else
-            l->pTail->pTask = l->pHead->pTask = mem_alloc(sizeof(TCB));
+            l->pTail->pTask  = mem_alloc(sizeof(TCB));
+        if(dl)
+            l->pHead->pTask->Deadline = dl[0];
+        else
+            l->pHead->pTask->Deadline = UINT_MAX;
         for (int i = 1; i < n; i++)
         {
             lobj = mem_alloc(sizeof(listobj));
@@ -70,13 +95,15 @@ list* before_test_build_list(int n, int* dl,TCB* tasks)
             lobj->pPrevious = l->pTail;
             l->pTail = lobj;
             if(tasks)
-                l->pTail->pTask = &tasks[i];
+                l->pTail->pTask = tasks[i];
             else
                 l->pTail->pTask = mem_alloc(sizeof(TCB));
             if(!l->pTail->pTask)
                 return NULL;
             if(dl)
                 l->pTail->pTask->Deadline = dl[i];
+            else
+                l->pTail->pTask->Deadline = UINT_MAX;
         }
         return l;
     }
@@ -107,16 +134,8 @@ TCB* before_test_build_task(int dl)
 */
 test_info* utest_add_task_2_list(test_info* t_info)
 {
-    //PRE-TEST
-    if(pre_utest(t_info,1604,utest_add_task_2_list,TASK_ADMINISTRATION,17)<=FAIL)
-    {
-        while(1)
-        {}
-        return NULL;        
-    }
     int k = 0;
-    //END PRE-TEST
-
+ 
     // #BEFORE TEST Create 3 Lists with 0,1,3 elements  
     int dl[] = {30,20,10,0};
     TCB** tasks = mem_alloc(16);
@@ -143,36 +162,36 @@ test_info* utest_add_task_2_list(test_info* t_info)
         t_info->test_s[k++]= UNEXPECTED_ERR;
         return t_info;
     }
-    if((l3  = before_test_build_list(3,dl,NULL))    ==  NULL)
+    if((l3  = before_test_build_list(3,NULL,NULL))    ==  NULL)
     {
         t_info->test_s[k++]= UNEXPECTED_ERR;
         return t_info;
     }
         //ADD to NULL list
-    assert_fail(add_task_2_list(l0,tasks[0]),t_info->test_s[k++]);                                      
+    assert_fail(add_task_2_list(l0,tasks[0]),&t_info->test_s[k++]);                                      
 
         //Add to list with 0 elements
-    assert_ok(add_task_2_list(l1,tasks[0]),t_info->test_s[k++]);                                        //Add to empty list
-    assert_equals((void*)l1->pHead->pTask,(void*)tasks[0],(int)sizeof(TCB),t_info->test_s[k++]);        //check if there
+    assert_ok(add_task_2_list(l1,tasks[0]),&t_info->test_s[k++]);                                        //Add to empty list
+    assert_equals((void*)l1->pHead->pTask,(void*)tasks[0],(int)sizeof(TCB),&t_info->test_s[k++]);        //check if there
     
         //Add to list with 1 element  
-    assert_ok(add_task_2_list(l2,tasks[0]),t_info->test_s[k++]);                                        
-    assert_ok(add_task_2_list(l2,tasks[1]),t_info->test_s[k++]);                                        
-    assert_ok((exception)(l2->pHead->pTask!=NULL && l2->pHead->pNext->pTask!=NULL),t_info->test_s[k++]); //Check if both elements are there
-    assert_equals((void*)l2->pHead->pTask,(void*)tasks[1],(int)sizeof(TCB),t_info->test_s[k++]);        //check if the order is correct
-    assert_equals((void*)l2->pHead->pNext->pTask,(void*)tasks[0],(int)sizeof(TCB),t_info->test_s[k++]); 
+    assert_ok(add_task_2_list(l2,tasks[0]),&t_info->test_s[k++]);                                        
+    assert_ok(add_task_2_list(l2,tasks[1]),&t_info->test_s[k++]);                                        
+    assert_ok((exception)(l2->pHead->pTask!=NULL && l2->pHead->pNext->pTask!=NULL),&t_info->test_s[k++]); //Check if both elements are there
+    assert_equals((void*)l2->pHead->pTask,(void*)tasks[1],(int)sizeof(TCB),&t_info->test_s[k++]);        //check if the order is correct
+    assert_equals((void*)l2->pHead->pNext->pTask,(void*)tasks[0],(int)sizeof(TCB),&t_info->test_s[k++]); 
     
             //Add to list with 1 element  
-    assert_ok(add_task_2_list(l3,tasks[0]),t_info->test_s[k++]);                                        
-    assert_ok(add_task_2_list(l3,tasks[2]),t_info->test_s[k++]);                                        
-    assert_ok(add_task_2_list(l3,tasks[1]),t_info->test_s[k++]);                                        
-    assert_ok(add_task_2_list(l3,tasks[3]),t_info->test_s[k++]);                                        
+    assert_ok(add_task_2_list(l3,tasks[0]),&t_info->test_s[k++]);                                        
+    assert_ok(add_task_2_list(l3,tasks[2]),&t_info->test_s[k++]);                                        
+    assert_ok(add_task_2_list(l3,tasks[1]),&t_info->test_s[k++]);                                        
+    assert_ok(add_task_2_list(l3,tasks[3]),&t_info->test_s[k++]);                                        
     assert_ok((exception)(l3->pHead->pTask!=NULL && l3->pHead->pNext->pTask!=NULL &&l3->pHead->pNext->pNext!=NULL&&l3->pHead->pNext->pNext->pNext!=NULL)
-    ,t_info->test_s[k++]); //Check if all elements are there
-    assert_equals((void*)l3->pHead->pTask,(void*)tasks[3],(int)sizeof(TCB),t_info->test_s[k++]);        //check if the order is correct
-    assert_equals((void*)l3->pHead->pNext->pTask,(void*)tasks[2],(int)sizeof(TCB),t_info->test_s[k++]); 
-    assert_equals((void*)l3->pHead->pNext->pNext->pTask,(void*)tasks[1],(int)sizeof(TCB),t_info->test_s[k++]); 
-    assert_equals((void*)l3->pHead->pNext->pNext->pNext->pTask,(void*)tasks[0],(int)sizeof(TCB),t_info->test_s[k++]); 
+    ,&t_info->test_s[k++]); //Check if all elements are there
+    assert_equals((void*)l3->pHead->pTask,(void*)tasks[3],(int)sizeof(TCB),&t_info->test_s[k++]);        //check if the order is correct
+    assert_equals((void*)l3->pHead->pNext->pTask,(void*)tasks[2],(int)sizeof(TCB),&t_info->test_s[k++]); 
+    assert_equals((void*)l3->pHead->pNext->pNext->pTask,(void*)tasks[1],(int)sizeof(TCB),&t_info->test_s[k++]); 
+    assert_equals((void*)l3->pHead->pNext->pNext->pNext->pTask,(void*)tasks[0],(int)sizeof(TCB),&t_info->test_s[k++]); 
     //Add to list with multiple elements
     //    check if there
     //    check position
@@ -200,14 +219,7 @@ test_info* utest_remove_listobj(test_info* t_info)//DEPRICATED
 */
 test_info* utest_move_listobj(test_info* t_info)
 {
-       //PRE-TEST
-    if(pre_utest(t_info,1605,utest_move_listobj,TASK_ADMINISTRATION,17)<=FAIL)
-    {
-        while(1){}
-        return NULL;        
-    }
     int k = 0;
-    //END PRE-TEST
 
     //#BEFORE TEST Create 6 Lists with {0,0},{0,1},{1,0},{1,1},{3,1},{1,3},{3,3} elements  
     list* l0 = NULL;
@@ -231,6 +243,13 @@ test_info* utest_move_listobj(test_info* t_info)
     l2 = before_test_build_list(3,NULL,NULL);
     l3 = before_test_build_list(3,NULL,tasks);
     l4 = before_test_build_list(4,NULL,tasks);
+    assert_fail(move_listobj(l0,l1,l6->pHead),t_info->test_s);
+    assert_fail(move_listobj(l0,l2,l6->pHead),t_info->test_s);
+    assert_fail(move_listobj(l1,l0,l1->pHead),t_info->test_s);
+    assert_fail(move_listobj(l2,l0,l2->pHead),t_info->test_s);
+
+    assert_fail(move_listobj(l1,l2,l6->pHead),t_info->test_s);
+    assert_ok(move_listobj(l1,l2,l1->pHead),t_info->test_s);
     //      Move using all the lists above 
     //          check for NULLPOINTER,
     //          check for FAIL
