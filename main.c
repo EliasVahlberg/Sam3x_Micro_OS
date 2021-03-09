@@ -33,10 +33,12 @@ unsigned int high_deadline = 100000;
 {
   SystemInit();
   SysTick_Config(100000);
+  isr_off();
+  mem_leak_test_main();
+
   utest_task_main();
 
   SCB->SHP[((uint32_t)(SysTick_IRQn)&0xF) - 4] = (0xE0);
-  isr_off();
   lab3_test_main();
   lab2_test_main();
   lab1_test_main();

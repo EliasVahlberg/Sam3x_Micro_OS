@@ -22,7 +22,7 @@ uint min(uint a, uint b)
 /**
 * __ISR_ON
 * \brief Uses the isr_on() function defined in context_switching_functions_march_2019.s to turn off all
-* maskable interrupts IF the PRIMASK register is equal to 0  so that isr_on does not run when in the systick handler.
+* maskable interrupts IF the PRIMASK register is equal to 0 so that isr_on does not run when in the systick handler.
 * @return value returned
 */
 static int __ISR_ON(void)

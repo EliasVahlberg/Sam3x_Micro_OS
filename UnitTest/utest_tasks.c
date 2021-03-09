@@ -27,18 +27,29 @@ TCB*       before_test_build_task   (int dl                     );
 test_info* utest_task_main()
 {
     test_info* t_info;
-    
+    //Test 1604
     if((t_info = pre_utest(t_info,1604,(void*)utest_add_task_2_list,TASK_ADMINISTRATION,17))==NULL)
         while(1){}
     utest_add_task_2_list(t_info);
+
     char res1[17];
     for (int i = 0; i < 17; i++)
         res1[i] = t_info->test_s[i];
-    
-    
-    if((t_info = pre_utest(t_info,1605,(void*)utest_move_listobj,TASK_ADMINISTRATION,17))==NULL)
+    mem_free(t_info->test_s);
+    mem_free(t_info);
+    //END Test 1604
+
+    //Test 1605
+    if((t_info = pre_utest(t_info,1605,(void*)utest_move_listobj,TASK_ADMINISTRATION,12))==NULL)
         while(1){}
     utest_move_listobj(t_info);
+
+    char res2[12];
+    for (int i = 0; i < 12; i++)
+        res2[i] = t_info->test_s[i];
+    mem_free(t_info->test_s);
+    mem_free(t_info);
+    //Test 1604
     utest_compare_listobj(t_info);
     utest_create_listobj(t_info);
     utest_create_task(t_info);
@@ -227,8 +238,6 @@ test_info* utest_move_listobj(test_info* t_info)
     list* l2;
     list* l3;
     list* l4;
-    list* l5;
-    list* l6;
     TCB** tasks = mem_alloc(16);
     for (int i = 0; i < 4; i++)
         if((tasks[i] = before_test_build_task(50-10*i))==NULL)
@@ -236,6 +245,7 @@ test_info* utest_move_listobj(test_info* t_info)
             for (int j = 0; j < i; j++)
                 mem_free(tasks[i]);
             t_info->test_s[k++] = UNEXPECTED_ERR;
+            return t_info;
         }
     
     l1 = before_test_build_list(0,NULL,NULL);
@@ -243,27 +253,44 @@ test_info* utest_move_listobj(test_info* t_info)
     l2 = before_test_build_list(3,NULL,NULL);
     l3 = before_test_build_list(3,NULL,tasks);
     l4 = before_test_build_list(4,NULL,tasks);
-    assert_fail(move_listobj(l0,l1,l6->pHead),t_info->test_s);
-    assert_fail(move_listobj(l0,l2,l6->pHead),t_info->test_s);
-    assert_fail(move_listobj(l1,l0,l1->pHead),t_info->test_s);
-    assert_fail(move_listobj(l2,l0,l2->pHead),t_info->test_s);
+    assert_fail(move_listobj(l0,l1,l4->pHead),&t_info->test_s[k++]);    //NULL pointer list test
+    assert_fail(move_listobj(l0,l2,l4->pHead),&t_info->test_s[k++]);    //NULL pointer list test
+    assert_fail(move_listobj(l1,l0,l1->pHead),&t_info->test_s[k++]);    //NULL pointer list test
+    assert_fail(move_listobj(l2,l0,l2->pHead),&t_info->test_s[k++]);    //NULL pointer list test
 
-    assert_fail(move_listobj(l1,l2,l6->pHead),t_info->test_s);
-    assert_ok(move_listobj(l1,l2,l1->pHead),t_info->test_s);
-    //      Move using all the lists above 
-    //          check for NULLPOINTER,
-    //          check for FAIL
-    //          check that the element is in dest
-    //          check that the element is not in src
-    //      Try to move object not in src list 
-    //          check for FAIL
-    //      Try to move object in dest
-    //          check for FAIL
-    //      Move 100 time back and forth 
-    //      check for FAIL
+    assert_fail(move_listobj(l1,l2,l4->pHead),&t_info->test_s[k++]);    //try to move object in the source
+    TCB* l1head = l1->pHead->pTask;
+    assert_ok(move_listobj(l1,l2,l1->pHead),&t_info->test_s[k++]);         //Normal move from list with 1 object to list with 3 objects
+    assert_ok(find_task(l2,l1head),&t_info->test_s[k++]);               //check if there
+    assert_fail(move_listobj(l3,l4,l3->pHead),&t_info->test_s[k++]);    //Task found in both lists
+    assert_fail(move_listobj(l4,l3,l3->pHead),&t_info->test_s[k++]);    //Task found in both lists
+    TCB* l3head = l1->pHead->pTask;
+    assert_ok(move_listobj(l3,l1,l3->pHead),&t_info->test_s[k++]);         //Normal move from list with 3 object to list with 0 objects
+    assert_ok(find_task(l1,l3head),&t_info->test_s[k++]);               //check if there
+    for (int i = 0; i < 100; i++)                                       //Move back and forth 100 times
+    {
+        if(i%2==0)
+        {
+            if(move_listobj(l4,l3,l4->pHead)<=FAIL)
+            {
+                t_info->test_s[k++] = A_O_F;
+                return t_info;
+            }
+        }
+        else
+        {
+            if(move_listobj(l3,l4,l3->pHead)<=FAIL)
+            {
+                t_info->test_s[k++] = A_O_F;
+                return t_info;
+            }
+        }
+    }
+    t_info->test_s[k++] = A_O_S;
+
     //      check memory
 
-    return NULL;
+    return t_info;
 }
 /*
 *
