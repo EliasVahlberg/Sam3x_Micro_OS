@@ -328,7 +328,13 @@ exception pop(list* list)
     if (list->pHead)
     {
         listobj* toRemove = list->pHead;
-        list->pHead = list->pHead->pNext;
+        if(list->pHead==list->pTail)
+        {
+            list->pHead = NULL;
+            list->pTail = NULL;
+        }
+        else
+            list->pHead = list->pHead->pNext;
         mem_free(toRemove->pTask);
         mem_free(toRemove);
         return OK;

@@ -60,7 +60,7 @@ void utest_communication_before(test_info* t_info)
     if (utest_mailbox == NULL)
         while(1)
         {}
-    
+    return;
 }
 
 /*

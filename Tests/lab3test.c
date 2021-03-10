@@ -116,7 +116,7 @@ void task_body_3_1()
 
     varInt_t1 = 100;
     retVal_t1 = send_wait(intMbox, &varInt_t1);
-    if (retVal_t1 != OK)
+    if (retVal_t1 != OK) //Fails if dynamic mem adress is not on
     {
         while (1)
         {

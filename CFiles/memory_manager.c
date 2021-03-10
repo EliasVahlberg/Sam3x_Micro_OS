@@ -8,6 +8,14 @@
 *     ...
 */
 
+
+#pragma region Functions
+void save_meminfo(struct mallinfo minfo);
+void *mem_alloc(size_t size);
+void mem_free(void *mem);
+int dynamic_mem_adress(void *ptr);
+#pragma endregion Functions
+
 struct mallinfo meminfo;
 
 /**
@@ -39,7 +47,7 @@ void *mem_alloc(size_t size)
 */
 void mem_free(void *mem)
 {
-    if (mem)
+    if (mem!=NULL)
     {
         if (!dynamic_mem_adress(mem))
             return;
@@ -49,6 +57,12 @@ void mem_free(void *mem)
         DEBUG_memadress = mem;
         //BREAKPOINT HERE
         __ISR_ON();
+        return;
+    }
+    else
+    {
+        DEBUG_memadress = (void*)0xfefefefe;
+        return;
     }
 }
 
@@ -69,10 +83,17 @@ exception mem_copy(char *src, char *dest, uint size)
 void update_meminfo()
 {
     meminfo = __iar_dlmallinfo();
+    return;
 }
-
+void save_meminfo(struct mallinfo minfo)
+{
+    minfo = __iar_dlmallinfo();
+    return;
+}
 int dynamic_mem_adress(void *ptr)
 {
+    if(kernel_mode == RUNNING)
+    {
     if (first_heap != NULL)
     {
         if (ReadyList != NULL && WaitingList != NULL && TimerList != NULL)
@@ -106,4 +127,6 @@ int dynamic_mem_adress(void *ptr)
         }
     }
     return FAIL;
+    }
+    return OK;
 }

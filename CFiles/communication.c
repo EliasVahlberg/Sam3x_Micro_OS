@@ -308,8 +308,8 @@ exception mailbox_enqueue(mailbox *mBox, msg *mes)
         return NULLPOINTER;
     if (mBox->pTail == NULL)
     {
-        mBox->pTail = mes;
         mBox->pHead = mes;
+        mBox->pTail = mes;
     }
     else
     {
@@ -330,8 +330,9 @@ msg *mailbox_dequeue(mailbox *mBox)
     msg *mes = mBox->pHead;
     if (mBox->pHead == mBox->pTail)
     {
+        mBox->pHead = NULL;
         mBox->pTail = NULL;
-        mBox->pTail = NULL;
+        mBox->nMessages--;
         return mes;
     }
     mBox->pHead = mBox->pHead->pNext;

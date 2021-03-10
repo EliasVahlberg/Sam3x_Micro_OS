@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1398295708</Checksum>
+        <Checksum>1057565403</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -76,8 +76,8 @@
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
     <PlDriver>
-        <FirstRun>0</FirstRun>
         <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\Microchip\ATSAM3X8E.ddf</MemConfigValue>
+        <FirstRun>0</FirstRun>
     </PlDriver>
     <ArmDriver>
         <EnableCache>0</EnableCache>
@@ -143,19 +143,18 @@
         <Bp4>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab2test.c}.170.3" 0 0 1 "" 0 "" 0</Bp4>
         <Bp5>_ 1 "EMUL_CODE" "{$PROJ_DIR$\exceptions.c}.145.11" 0 0 1 "" 0 "" 0</Bp5>
         <Bp6>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\common_functions.c}.1.1" 0 0 1 "" 0 "" 0</Bp6>
-        <Bp7>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\timing.c}.78.13" 0 0 1 "" 0 "" 0</Bp7>
-        <Bp8>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\timing.c}.83.9" 0 0 1 "" 0 "" 0</Bp8>
-        <Bp9>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.181.5" 0 0 1 "" 0 "" 0</Bp9>
-        <Bp10>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.184.5" 0 0 1 "" 0 "" 0</Bp10>
-        <Bp11>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.156.5" 0 0 1 "" 0 "" 0</Bp11>
-        <Bp12>_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.34.3" 0 0 1 "" 0 "" 0</Bp12>
-        <Bp13>_ 1 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.31.5" 0 0 1 "" 0 "" 0</Bp13>
-        <Bp14>_ 1 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.178.9" 0 0 1 "" 0 "" 0</Bp14>
-        <Bp15>_ 1 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.48.14" 0 0 1 "" 0 "" 0</Bp15>
-        <Bp16>_ 1 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.45.5" 0 0 1 "" 0 "" 0</Bp16>
-        <Bp17>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.31.5" 0 0 1 "WriteMemory2File(DEBUG_memadress,DEBUG_memsize)&amp;&amp;WriteMemory2FileExtended(DEBUG_memadress,DEBUG_memsize)" 0 "" 0</Bp17>
-        <Bp18>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.51.9" 0 0 1 "WriteFreeMemory2File(DEBUG_memadress)&amp;&amp;WriteMemory2FileExtended(DEBUG_memadress, 0)" 0 "" 0</Bp18>
-        <Count>19</Count>
+        <Bp7>_ 0 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.31.5" 0 0 1 "" 0 "" 0</Bp7>
+        <Bp8>_ 0 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.178.9" 0 0 1 "" 0 "" 0</Bp8>
+        <Bp9>_ 0 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.48.14" 0 0 1 "" 0 "" 0</Bp9>
+        <Bp10>_ 0 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.45.5" 0 0 1 "" 0 "" 0</Bp10>
+        <Bp11>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.31.5" 0 0 1 "WriteMemory2File(DEBUG_memadress,DEBUG_memsize)&amp;&amp;WriteMemory2FileExtended(DEBUG_memadress,DEBUG_memsize)" 0 "" 0</Bp11>
+        <Bp12>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.52.9" 0 0 1 "WriteFreeMemory2File(DEBUG_memadress)&amp;&amp;WriteMemory2FileExtended(DEBUG_memadress, 0)" 0 "" 0</Bp12>
+        <Bp13>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp13>
+        <Bp14>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp14>
+        <Bp15>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp15>
+        <Bp16>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.99.5" 0 0 1 "" 0 "" 0</Bp16>
+        <Bp17>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.126.5" 0 0 1 "" 0 "" 0</Bp17>
+        <Count>18</Count>
     </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>

@@ -36,7 +36,7 @@ unsigned int high_deadline = 100000;
   isr_off();
   mem_leak_test_main();
 
-  utest_task_main();
+  //utest_task_main();
 
   SCB->SHP[((uint32_t)(SysTick_IRQn)&0xF) - 4] = (0xE0);
   lab3_test_main();
