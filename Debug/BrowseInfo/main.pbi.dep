@@ -21,6 +21,8 @@ C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS\Debug\BrowseInfo\main
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\DLib_Product_string.h \
   C:\Program\ Files\IAR\ Systems\Embedded\ Workbench\ 9.0\arm\inc\c\limits.h \
   C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/CFiles\mallocstats.h \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/Handlers\handlers.h \
+  C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/Handlers/handlers.c \
   C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/CFiles\memory_manager.c \
   C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/CFiles\common_functions.c \
   C:\Users\elias\Documents\CSE2\OS_Proj_03_01\Sam3x_Micro_OS/CFiles\tasks.c \

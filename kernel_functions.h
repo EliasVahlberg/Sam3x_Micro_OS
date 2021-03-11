@@ -140,6 +140,11 @@ extern void     LoadContext_In_Terminate( void );
 
 
 
+
+#define ESCALATED_NULLPOINTER -10
+#define MEMFAULT -7
+
+#include "CFiles\mallocstats.h"
 TCB *PreviousTask, *NextTask;
 extern int32_t kernel_mode      = 0;
 extern int32_t mem_counter      = 0;
@@ -153,6 +158,9 @@ exception add_task_2_list(list* l, TCB* task);
 exception create_task(void (*body)(), uint d);
 void *mem_alloc(size_t size);
 void mem_free(void *mem);
+void update_meminfo();
+void save_meminfo(struct mallinfo minfo);
+
 
 
 list *ReadyList;
@@ -165,8 +173,7 @@ void*   DEBUG_memadress = NULL;
 uint    DEBUG_memsize = 0;
 #pragma endregion debugg
 
-
-#include "CFiles\mallocstats.h"
+#include "Handlers\handlers.h"
 #include "CFiles\memory_manager.c"
 #include "CFiles\common_functions.c"
 #include "CFiles\tasks.c"

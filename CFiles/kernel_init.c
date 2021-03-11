@@ -25,19 +25,19 @@ exception init_kernel(void)
     //Set tick counter to zero
     set_ticks(0);
     if (ticks() != 0)
-        return FAIL;
+        return task_exception_manager(FAIL);
 
     //Create necessary data structures
     if ((ReadyList = create_task_list()) == NULL)
-        return FAIL;
+        return task_exception_manager(FAIL);
     if ((WaitingList = create_task_list()) == NULL)
-        return FAIL;
+        return task_exception_manager(FAIL);
     if ((TimerList = create_task_list()) == NULL)
-        return FAIL;
+        return task_exception_manager(FAIL);
 
     //Create an Idle task
     if (!create_task(idle, UINT_MAX))
-        return FAIL;
+        return task_exception_manager(FAIL);
     
     //Set the kernel in INIT mode
     kernel_mode = INIT;
@@ -53,7 +53,10 @@ list *create_task_list()
 {
     list *task_list = (list *)mem_alloc(sizeof(list));
     if (task_list == NULL)
+    {
+        task_exception_manager(NULLPOINTER);
         return NULL;
+    }
 
    // listobj *obj = mem_alloc(sizeof(listobj));
    // obj->pNext = obj;

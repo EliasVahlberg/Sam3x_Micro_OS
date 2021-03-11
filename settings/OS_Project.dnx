@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>3201409124</Checksum>
+        <Checksum>4160068117</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -85,8 +85,12 @@
     <array_types>
         <Fmt0>char[12]	3	0</Fmt0>
         <Fmt1>char[17]	3	0</Fmt1>
-        <Fmt2>uint[100]	4	0</Fmt2>
+        <Fmt2>int (volatile)[14]	4	0</Fmt2>
+        <Fmt3>uint[100]	4	0</Fmt3>
     </array_types>
+    <watch_formats>
+        <Fmt0>{W}4:FAULT_REGISTERS	4	6</Fmt0>
+    </watch_formats>
     <Trace2>
         <Enabled>0</Enabled>
         <ShowSource>0</ShowSource>
@@ -160,8 +164,8 @@
         <Bp21>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.17.5" 0 0 1 "" 0 "" 0</Bp21>
         <Bp22>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.223.5" 0 0 1 "" 0 "" 0</Bp22>
         <Bp23>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.231.5" 0 0 1 "" 0 "" 0</Bp23>
-        <Bp24>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.67.9" 0 0 1 "" 0 "" 0</Bp24>
-        <Bp25>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.79.9" 0 0 1 "" 0 "" 0</Bp25>
+        <Bp24>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.67.9" 0 0 1 "" 0 "" 0</Bp24>
+        <Bp25>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.79.9" 0 0 1 "" 0 "" 0</Bp25>
         <Bp26>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\tasks.c}.286.9" 0 0 1 "" 0 "" 0</Bp26>
         <Count>27</Count>
     </Breakpoints2>

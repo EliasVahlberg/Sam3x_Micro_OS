@@ -50,7 +50,10 @@ void mem_free(void *mem)
     if (mem!=NULL)
     {
         if (!dynamic_mem_adress(mem))
+        {
+            task_exception_manager(MEMFAULT);
             return;
+        }
         __ISR_OFF();
         free(mem);
         mem_counter--;
@@ -69,17 +72,16 @@ void mem_free(void *mem)
 exception mem_copy(char *src, char *dest, uint size)
 {
     if (size <= 0)
-        return FAIL;
+        return task_exception_manager(FAIL);
 
     if (src == NULL || dest == NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
 
     for (int i = 0; i < size; i++)
         dest[i] = src[i];
 
     return OK;
 }
-
 void update_meminfo()
 {
     meminfo = __iar_dlmallinfo();
@@ -100,33 +102,33 @@ int dynamic_mem_adress(void *ptr)
         {
             //Check if the memory is in the heap area
             if (ptr < first_heap)
-                return FAIL;
+                return task_exception_manager(FAIL);
             //Check if memory is in a TCB Stack segment
             listobj *lobj = ReadyList->pHead;
             while (lobj != NULL)
             {
                 if (ptr > lobj->pTask->StackSeg && ptr < (&(lobj->pTask->StackSeg[99])))
-                    return FAIL;
+                    return task_exception_manager(FAIL);
                 lobj = lobj->pNext;
             }
             lobj = WaitingList->pHead;
             while (lobj != NULL)
             {
                 if (ptr > lobj->pTask->StackSeg && ptr < lobj->pTask->StackSeg + STACK_SIZE * 4)
-                    return FAIL;
+                    return task_exception_manager(FAIL);
                 lobj = lobj->pNext;
             }
             lobj = TimerList->pHead;
             while (lobj != NULL)
             {
                 if (ptr > lobj->pTask->StackSeg && ptr < lobj->pTask->StackSeg + STACK_SIZE * 4)
-                    return FAIL;
+                    return task_exception_manager(FAIL);
                 lobj = lobj->pNext;
             }
             return OK;
         }
     }
-    return FAIL;
+    return task_exception_manager(FAIL);
     }
     return OK;
 }

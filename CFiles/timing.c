@@ -63,7 +63,7 @@ exception wait(uint nTicks)
     NextTask = ReadyList->pHead->pTask;                   //Update NextTask
     SwitchContext();                                      //Switch context
     if (deadline_reached(NextTask))                       //If deadline reched, then
-        status = DEADLINE_REACHED;                        //Status is DEADLINE_REACHED
+        status = task_exception_manager(DEADLINE_REACHED);//Status is DEADLINE_REACHED
     else
         status = OK; //Else Status is OK
     isr_on();

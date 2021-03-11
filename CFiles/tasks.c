@@ -21,12 +21,12 @@ exception remove_last(list *list);
 exception add_task_2_list(list *l, TCB *task)
 {
     if(task == NULL || l ==NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     listobj *list_obj;
     listobj *temp;
     list_obj = create_listobj(task,0);
     if (list_obj == NULL)
-        return FAIL;
+        return task_exception_manager(FAIL);
 
     if (l->pHead == NULL)
         l->pHead = l->pTail = list_obj;
@@ -74,7 +74,7 @@ exception add_task_2_list(list *l, TCB *task)
 exception remove_task(list *l, TCB *task)
 {
     if(task==NULL)
-        return FAIL;
+        return task_exception_manager(NULLPOINTER);
     if(task == l->pHead->pTask && task == l->pTail->pTask)
     {
         mem_free(l->pHead->pTask);
@@ -96,7 +96,7 @@ exception remove_task(list *l, TCB *task)
         if (temp->pTask == task)
             break;
         if(temp->pNext == NULL)
-            return FAIL;
+            return task_exception_manager(NULLPOINTER);
         temp = temp->pNext;
         
     }
@@ -116,17 +116,17 @@ exception remove_task(list *l, TCB *task)
         mem_free(temp);
         return OK;
     }
-    return FAIL;
+    return task_exception_manager(FAIL);
 }
 
 exception remove_listobj(list *l, listobj *o1)
 {
     if(l == NULL || o1 == NULL)
-        return FAIL;
+        return task_exception_manager(NULLPOINTER);
     if(o1->pPrevious == NULL && o1 != l->pHead)   
-        return FAIL;
+        return task_exception_manager(FAIL);
     if(o1->pNext == NULL && o1 != l->pTail)
-        return FAIL;
+        return task_exception_manager(FAIL);
     if(o1 == l->pHead)
     {
         l->pHead = l->pHead->pNext;
@@ -149,9 +149,9 @@ exception remove_listobj(list *l, listobj *o1)
 
 exception move_listobj(list *src, list *dest, listobj* o1)
 {
-    if(src==NULL || dest==NULL || o1==NULL) {return NULLPOINTER;}
-    if(find_task(src, o1->pTask)==FAIL){return FAIL;}
-    if(find_task(dest,o1->pTask)==OK){return FAIL;}
+    if(src==NULL || dest==NULL || o1==NULL) {return task_exception_manager(NULLPOINTER);}
+    if(find_task(src, o1->pTask)==FAIL){return task_exception_manager(FAIL);}
+    if(find_task(dest,o1->pTask)==OK){return task_exception_manager(FAIL);}
     msg* pmess =NULL;
     if(o1->pMessage!=NULL)
         pmess = o1->pMessage;
@@ -176,7 +176,7 @@ exception move_listobj(list *src, list *dest, listobj* o1)
         while(temp->pTask!=o1->pTask)
         {
             if(temp == NULL)
-                return FAIL;
+                return task_exception_manager(NULLPOINTER);
             temp = temp->pNext;
         }
         temp->pNext->pPrevious = temp->pPrevious;
@@ -197,7 +197,7 @@ static int compare_listobj(listobj *o1, listobj *o2)
     if(o1->nTCnt==0 || o2->nTCnt==0)
         return (o1->pTask->Deadline < o2->pTask->Deadline) ? 1 : 0;
     else
-        return (min(o1->nTCnt,o1->pTask->Deadline) < min(o2->nTCnt,o2->pTask->Deadline))? 1 : 0 ;
+        return (min(o1->nTCnt,o1->pTask->Deadline) < min(o2->nTCnt,o2->pTask->Deadline))? 1 : 0 ; 
 
 }
 
@@ -205,7 +205,10 @@ listobj *create_listobj(TCB *task,uint nTCnt)
 {
     listobj *list_obj;
     if ((list_obj = mem_alloc(sizeof(listobj))) == NULL)
+    {
+        exception exc = task_exception_manager(ALLOCFAIL);
         return NULL;
+    }
     list_obj->nTCnt = nTCnt;
     list_obj->pTask = task;
     return list_obj;
@@ -218,7 +221,7 @@ exception create_task(void (*tbody)(), uint dl)
     TCB *task;
     task = (TCB *)mem_alloc(sizeof(TCB));
     if (task == NULL)
-        return FAIL;
+        return task_exception_manager(ALLOCFAIL);
     //Set deadline in TCB
     task->Deadline = dl + tick_counter;
     //Set the TCB’s PC to point to the task body
@@ -257,7 +260,7 @@ exception remove_last(list *list)
     listobj *toDelete, *prevTask;
     listobj *firstTask = list->pHead;
     if (!firstTask) //same as FirstTask == null
-        return FAIL;
+        return task_exception_manager(NULLPOINTER);
     else
     {
         toDelete = firstTask;
@@ -281,7 +284,7 @@ exception push(list *l, TCB *task,uint nTCnt,msg* pmess)
     listobj *list_obj;
     list_obj =  create_listobj(task,nTCnt);
     if (!list_obj)
-        return FAIL;
+        return task_exception_manager(NULLPOINTER);
     if(pmess!=NULL)
         add_msg_to_listobject(list_obj,pmess);
     listobj *current = l->pHead;
@@ -323,13 +326,13 @@ exception push(list *l, TCB *task,uint nTCnt,msg* pmess)
         current->pPrevious = list_obj;
         return OK;
     }
-    return FAIL;
+    return task_exception_manager(FAIL);
 }
 
 exception pop(list* list)
 {
     if (!list)
-        return FAIL;
+        return task_exception_manager(NULLPOINTER);
     if (list->pHead)
     {
         listobj* toRemove = list->pHead;
@@ -344,7 +347,7 @@ exception pop(list* list)
         mem_free(toRemove);
         return OK;
     }
-    return FAIL;
+    return task_exception_manager(FAIL);
 }
 
 exception find_task(list* l, TCB *task)
@@ -358,5 +361,5 @@ exception find_task(list* l, TCB *task)
             break;
         temp = temp->pNext;
     }
-    return FAIL;
+    return task_exception_manager(FAIL);
 }

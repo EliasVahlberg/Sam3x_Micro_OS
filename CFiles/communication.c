@@ -19,7 +19,10 @@ mailbox *create_mailbox(uint nMessages, uint nDataSize)
     //msg *mes;
     mbox = (mailbox *)mem_alloc(sizeof(mailbox));
     if (mbox == NULL)
+    {
+        task_exception_manager(NULLPOINTER);
         return NULL;
+    }
     mbox->nDataSize = nDataSize;
     mbox->nMaxMessages = nMessages;
     mbox->nMessages = 0;
@@ -29,13 +32,13 @@ mailbox *create_mailbox(uint nMessages, uint nDataSize)
 exception append_msg(msg *mes, mailbox *mBox, void *pData, int status, int wait)
 {
     if (mBox == NULL || pData == NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     if (status == RECEIVER)
         mes = mem_alloc(sizeof(msg));
     else
         mes = mem_alloc(sizeof(msg) + mBox->nDataSize);
     if (mes == NULL)
-        return ALLOCFAIL;
+        task_exception_manager(ALLOCFAIL);
     if (status == RECEIVER)
         mes->pData = pData;
     else
@@ -58,13 +61,13 @@ exception append_msg(msg *mes, mailbox *mBox, void *pData, int status, int wait)
     else
         mes->pBlock = NULL;
 
-    return mailbox_enqueue(mBox, mes);
+    return task_exception_manager(mailbox_enqueue(mBox, mes));
 }
 
 exception force_remove_mailbox(mailbox *mBox)
 {
     if (mBox == NULL)
-        return FAIL;
+        return task_exception_manager(FAIL);
     if (mBox->nMessages == 0)
     {
         mem_free(mBox);
@@ -77,31 +80,31 @@ exception force_remove_mailbox(mailbox *mBox)
         {
             mem_free(temp);
             mem_free(mBox);
-            return MESSAGE_LOST;
+            return task_exception_manager(FAIL);
         }
         temp = temp->pNext;
         mem_free(temp->pPrevious);
     }
     mem_free(mBox);
-    return FAIL;
+    return task_exception_manager(FAIL);
 }
 
 exception remove_mailbox(mailbox *mBox)
 {
     if (mBox == NULL)
-        return FAIL;
+        return task_exception_manager(FAIL);
     if (mBox->nMessages == 0)
     {
         mem_free(mBox);
         return OK;
     }
-    return NOT_EMPTY;
+    return task_exception_manager(NOT_EMPTY);
 }
 
 exception send_wait(mailbox *mBox, void *pData)
 {
     if (mBox == NULL || pData == NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     isr_off();
     int msg_status = 0;
     msg_status = (mBox->pHead == NULL) ? 0 : (mBox->pHead->Status == RECEIVER) ? 1
@@ -112,7 +115,7 @@ exception send_wait(mailbox *mBox, void *pData)
         if (exc1 <= FAIL)
         {
             isr_on();
-            return exc1;
+            return task_exception_manager(exc1);
         }
         msg *mes = mailbox_dequeue(mBox);
 
@@ -131,7 +134,7 @@ exception send_wait(mailbox *mBox, void *pData)
         if (status != OK)
         {
             isr_on();
-            return status;
+            return task_exception_manager(status);
         }
         //Update PreviousTask
 
@@ -148,7 +151,7 @@ exception send_wait(mailbox *mBox, void *pData)
         isr_off();
         mailbox_dequeue(mBox); //Removing sending_msg Also returns the message, but it is not essential for this part
         isr_on();
-        return DEADLINE_REACHED;
+        return task_exception_manager(DEADLINE_REACHED);
     }
     return OK;
 }
@@ -156,7 +159,7 @@ exception send_wait(mailbox *mBox, void *pData)
 exception receive_wait(mailbox *mBox, void *pData)
 {
     if (mBox == NULL || pData == NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     isr_off(); //Disable interrupt
     exception exc1 = (mBox->pHead == NULL) ? 0 : (mBox->pHead->Status == SENDER) ? 1
                                                                                  : 0;
@@ -173,7 +176,7 @@ exception receive_wait(mailbox *mBox, void *pData)
             if (move_listobj(WaitingList, ReadyList, mes->pBlock) <= FAIL) //Move sending task to ReadyList
             {
                 isr_on();
-                return FAIL;
+                return task_exception_manager(FAIL);
             }
             //Update NextTask
             NextTask = ReadyList->pHead->pTask;
@@ -190,7 +193,7 @@ exception receive_wait(mailbox *mBox, void *pData)
         if (status != OK)
         {
             isr_on();
-            return status;
+            return task_exception_manager(status);
         }
         PreviousTask = NextTask;                                //Update PreviousTask
         move_listobj(ReadyList, WaitingList, ReadyList->pHead); //Move receiving task from ReadyList to WaitingList Update NextTask
@@ -202,7 +205,7 @@ exception receive_wait(mailbox *mBox, void *pData)
         isr_off();
         mailbox_dequeue(mBox); //Remove receive Message
         isr_on();
-        return DEADLINE_REACHED;
+        return task_exception_manager(DEADLINE_REACHED);
     }
     else
         return OK;
@@ -211,7 +214,7 @@ exception receive_wait(mailbox *mBox, void *pData)
 exception send_no_wait(mailbox *mBox, void *pData)
 {
     if (mBox == NULL || pData == NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     exception status = OK;
     isr_off();
     int msg_status = 0;
@@ -223,7 +226,7 @@ exception send_no_wait(mailbox *mBox, void *pData)
         if (status <= FAIL)
         {
             isr_on();
-            return status;
+            return task_exception_manager(status);
         }
         msg *mes = mailbox_dequeue(mBox);                  //Remove receiving task’s Message struct from the Mailbox
         PreviousTask = ReadyList->pHead->pTask;            //Update PreviousTask
@@ -246,7 +249,7 @@ exception send_no_wait(mailbox *mBox, void *pData)
 exception receive_no_wait(mailbox *mBox, void *pData)
 {
     if (mBox == NULL || pData == NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     exception status = OK;
     isr_off();
     int msg_status = 0;
@@ -258,7 +261,7 @@ exception receive_no_wait(mailbox *mBox, void *pData)
         if (status <= FAIL)
         {
             isr_on();
-            return status;
+            return task_exception_manager(status);
         }
         msg *mes = mailbox_dequeue(mBox); //Remove receiving task’s Message struct from the Mailbox
         if (mes->pBlock != NULL)
@@ -277,7 +280,7 @@ exception receive_no_wait(mailbox *mBox, void *pData)
         return OK;
     }
     isr_on();
-    return FAIL;
+    return task_exception_manager(FAIL);
     // Return status on received Message
 }
 
@@ -309,7 +312,7 @@ msg *get_latest_mes(mailbox *mBox)
 exception mailbox_enqueue(mailbox *mBox, msg *mes)
 {
     if (mBox == NULL || mes == NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     if (mBox->pTail == NULL)
     {
         mBox->pHead = mes;
@@ -328,9 +331,15 @@ exception mailbox_enqueue(mailbox *mBox, msg *mes)
 msg *mailbox_dequeue(mailbox *mBox)
 {
     if (mBox == NULL)
+    {
+        task_exception_manager(NULLPOINTER);
         return NULL;
+    }
     if (mBox->pHead == NULL)
+    {
+        task_exception_manager(NULLPOINTER);
         return NULL;
+    }
     //if(mBox->pHead->pBlock!=NULL)
       //  remove_msg_from_listobject(mBox->pHead->pBlock,mBox->pHead);
     msg *mes = mBox->pHead;
@@ -350,7 +359,7 @@ msg *mailbox_dequeue(mailbox *mBox)
 exception add_msg_to_listobject(listobj* l_obj,msg* mes)
 {
     if(l_obj == NULL||mes==NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     if(l_obj->pMessage==NULL)
         l_obj->pMessage = mes;
     else
@@ -368,9 +377,9 @@ exception add_msg_to_listobject(listobj* l_obj,msg* mes)
 exception remove_msg_from_listobject(listobj* l_obj, msg* mes)
 {
     if(l_obj == NULL||mes==NULL)
-        return NULLPOINTER;
+        return task_exception_manager(NULLPOINTER);
     if(l_obj->pMessage==NULL)
-        return FAIL;
+        return task_exception_manager(FAIL);
     if(l_obj->pMessage==mes)
         l_obj->pMessage = l_obj->pMessage->pNext;
     else

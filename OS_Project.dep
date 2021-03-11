@@ -71,6 +71,8 @@
             <file>$PROJ_DIR$\sam3x8-sram_BigHeap.icf</file>
             <file>$PROJ_DIR$\context_switching_functions_march_2019.s</file>
             <file>$PROJ_DIR$\Debug\Obj\context_switching_functions_march_2019.o</file>
+            <file>$PROJ_DIR$\Handlers\handlers.h</file>
+            <file>$PROJ_DIR$\Handlers\handlers.c</file>
         </outputs>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\OS_Project.out</name>
@@ -89,16 +91,10 @@
         </file>
         <file>
             <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 10</file>
-                </tool>
-            </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 34 50 6 55 42 61 3 15 24 14 9 32 0 16 44 51 45 60 20 29 37 8 11 7 25 18 31 22 57 58 33 40 13 36 12 46 26 21 17 49 48 53 28 52</file>
+                    <file> 34 50 6 55 42 61 3 15 24 14 9 32 0 16 44 51 45 60 20 29 37 8 67 66 11 7 25 18 31 22 57 58 33 40 13 36 12 46 26 21 17 49 48 53 28 52</file>
                 </tool>
             </inputs>
         </file>
