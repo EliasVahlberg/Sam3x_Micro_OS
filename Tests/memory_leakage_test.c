@@ -18,7 +18,7 @@
 void mem_leak_mailbox_test(int recursion_number);
 void mem_leak_TCB_test();
 void mem_leak_listobj(); //DEPRECATED
-void mem_leak_message_test(int recursion_number);
+void mem_leak_message_test();
 
     struct mallinfo meminfo_test1;
     struct mallinfo meminfo_test2;
@@ -36,8 +36,11 @@ void mem_leak_test_main()
     
     update_meminfo();
     meminfo = meminfo_test2;
-    mem_leak_message_test(0);
-    
+    for (int i = 0; i < MESSAGE_TEST_RECURSIONS; i++)
+    {
+    mem_leak_message_test();
+        /* code */
+    }
     update_meminfo();
     meminfo = meminfo_test3;
 }
@@ -84,6 +87,8 @@ void mem_leak_TCB_test()
     
     if(ReadyList->pHead)
         while(1){/*All objects were not deleted*/}
+    ReadyList = NULL;
+    return;
 }
 
 void mem_leak_listobj()
@@ -94,7 +99,7 @@ void mem_leak_listobj()
     // }
 }
 
-void mem_leak_message_test(int recursion_number)
+void mem_leak_message_test()
 {
     update_meminfo();
     mailbox* mbox1 = create_mailbox(NUM_O_MESSAGES+1,4);
@@ -104,17 +109,18 @@ void mem_leak_message_test(int recursion_number)
     msg** messages  = (msg**)mem1;
     if(messages==NULL)
         while(1){}
-    void** data    = mem_alloc(4*NUM_O_MESSAGES);
+    int** data    = (int**)mem_alloc(4*NUM_O_MESSAGES);
     if(data==NULL)
         while(1){}
     for (size_t i = 0; i < NUM_O_MESSAGES; i++)
-        if((data[i] = mem_alloc(4))==NULL)
+        if((data[i] = (int*)mem_alloc(4))==NULL)
             while(1){/*failed to allocate space for data*/}
 
     for (int i = 0; i < NUM_O_MESSAGES; i++)
-        if((append_msg(messages[i],mbox1,(messages=&(messages[i])),1,100))<=FAIL)
+        if((append_msg(messages[i],mbox1,(void*)(data[i]),RECEIVER,100))<=FAIL)
             while(1){/*failed to create message*/}
 
+    update_meminfo();
     for (int i = 0; i < NUM_O_MESSAGES; i++)
     {
         msg* mes = mailbox_dequeue(mbox1);
@@ -131,8 +137,6 @@ void mem_leak_message_test(int recursion_number)
     if((remove_mailbox(mbox1))==NOT_EMPTY)
         while(1){/*OHshit.gif*/}
     update_meminfo();
-    if(recursion_number<MESSAGE_TEST_RECURSIONS)
-        mem_leak_message_test(recursion_number+1);
     return;
 }
 

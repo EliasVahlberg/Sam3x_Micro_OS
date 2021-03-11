@@ -68,7 +68,17 @@ exception wait(uint nTicks)
     isr_on();
     return status; //Return Status
 }
-
+exception periodically_run(void (*body)(),int ticks_period,int num_periods)
+{
+    int k=0;
+    while((wait(ticks_period))!=DEADLINE_REACHED)
+    {
+        (*body)();
+        if((++k)==num_periods&&num_periods!=0)
+            break;
+    }
+    return OK;
+}
 extern void TimerInt(void)
 {
     tick_counter++;

@@ -11,7 +11,6 @@
 
 #pragma region TestVars
 #pragma endregion TestVars
-
 unsigned int g0 = 0, g1 = 0, g2 = 0, g3 = 1; /* gate flags for various stages of unit test */
 
 unsigned int low_deadline = 1000;
@@ -35,7 +34,10 @@ unsigned int high_deadline = 100000;
   SysTick_Config(100000);
   isr_off();
   mem_leak_test_main();
-
+  periodic_task_main();
+  //functional_test_communication_main();
+  //functional_test_task_main();
+  while(1){}
   //utest_task_main();
 
   SCB->SHP[((uint32_t)(SysTick_IRQn)&0xF) - 4] = (0xE0);

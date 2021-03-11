@@ -108,11 +108,11 @@ void            run( void );
 // Communication
 mailbox*	create_mailbox( uint nMessages, uint nDataSize );
 exception       send_wait( mailbox* mBox, void* pData );
-exception       receive_wait( mailbox* mBox, void* pData );
 exception	send_no_wait( mailbox* mBox, void* pData );
-exception       no_messages( mailbox* mBox );
+exception       receive_wait( mailbox* mBox, void* pData );
 exception       receive_no_wait( mailbox* mBox, void* pData );
 exception       force_remove_mailbox(mailbox* mBox);
+exception       no_messages( mailbox* mBox );
 exception       remove_mailbox(mailbox* mBox);
 
 

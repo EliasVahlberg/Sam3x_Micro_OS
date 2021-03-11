@@ -2,3 +2,5 @@
 #include "lab2test.c"
 #include "lab3test.c"
 #include "memory_leakage_test.c"
+#include "functional_tests.c"
+#include "periodic_test.c"

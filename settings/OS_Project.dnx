@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>1057565403</Checksum>
+        <Checksum>2194460115</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -76,8 +76,8 @@
         <ITMlogFile>$PROJ_DIR$\ITM.log</ITMlogFile>
     </SWOTraceHWSettings>
     <PlDriver>
-        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\Microchip\ATSAM3X8E.ddf</MemConfigValue>
         <FirstRun>0</FirstRun>
+        <MemConfigValue>C:\Program Files\IAR Systems\Embedded Workbench 9.0\arm\CONFIG\debugger\Microchip\ATSAM3X8E.ddf</MemConfigValue>
     </PlDriver>
     <ArmDriver>
         <EnableCache>0</EnableCache>
@@ -139,8 +139,8 @@
         <Bp0>_ 0 "EMUL_CODE" "{$PROJ_DIR$\main.c}.19.1" 0 0 1 "" 0 "" 0</Bp0>
         <Bp1>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\kernel_init.c}.1.1" 0 0 1 "" 0 "" 0</Bp1>
         <Bp2>_ 0 "EMUL_CODE" "{$PROJ_DIR$\main.c}.1.1" 0 0 1 "" 0 "" 0</Bp2>
-        <Bp3>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab2test.c}.195.3" 0 0 1 "" 0 "" 0</Bp3>
-        <Bp4>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab2test.c}.170.3" 0 0 1 "" 0 "" 0</Bp4>
+        <Bp3>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab2test.c}.195.3" 0 0 1 "" 0 "" 0</Bp3>
+        <Bp4>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab2test.c}.170.3" 0 0 1 "" 0 "" 0</Bp4>
         <Bp5>_ 1 "EMUL_CODE" "{$PROJ_DIR$\exceptions.c}.145.11" 0 0 1 "" 0 "" 0</Bp5>
         <Bp6>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\common_functions.c}.1.1" 0 0 1 "" 0 "" 0</Bp6>
         <Bp7>_ 0 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.31.5" 0 0 1 "" 0 "" 0</Bp7>
@@ -152,9 +152,23 @@
         <Bp13>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp13>
         <Bp14>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp14>
         <Bp15>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp15>
-        <Bp16>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.99.5" 0 0 1 "" 0 "" 0</Bp16>
-        <Bp17>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.126.5" 0 0 1 "" 0 "" 0</Bp17>
-        <Count>18</Count>
+        <Bp16>_ 0 "EMUL_CODE" "{$PROJ_DIR$\main.c}.41.3" 0 0 1 "" 0 "" 0</Bp16>
+        <Bp17>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests_task.c}.120.5" 0 0 1 "" 0 "" 0</Bp17>
+        <Bp18>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests_task.c}.96.5" 0 0 1 "" 0 "" 0</Bp18>
+        <Bp19>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests_task.c}.85.5" 0 0 1 "" 0 "" 0</Bp19>
+        <Bp20>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests_task.c}.86.5" 0 0 1 "" 0 "" 0</Bp20>
+        <Bp21>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests.c}.125.9" 0 0 1 "" 0 "" 0</Bp21>
+        <Bp22>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.17.5" 0 0 1 "" 0 "" 0</Bp22>
+        <Bp23>_ 1 "EMUL_CODE" "{$PROJ_DIR$\main.c}.37.3" 0 0 1 "" 0 "" 0</Bp23>
+        <Bp24>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.49.5" 0 0 1 "" 0 "" 0</Bp24>
+        <Bp25>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.42.5" 0 0 1 "" 0 "" 0</Bp25>
+        <Bp26>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.67.9" 0 0 1 "" 0 "" 0</Bp26>
+        <Bp27>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.79.9" 0 0 1 "" 0 "" 0</Bp27>
+        <Bp28>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.62.5" 0 0 1 "" 0 "" 0</Bp28>
+        <Bp29>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.74.5" 0 0 1 "" 0 "" 0</Bp29>
+        <Bp30>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\communication.c}.175.13" 0 0 1 "" 0 "" 0</Bp30>
+        <Bp31>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\communication.c}.130.14" 0 0 1 "" 0 "" 0</Bp31>
+        <Count>32</Count>
     </Breakpoints2>
     <TermIOLog>
         <LoggingEnabled>_ 0</LoggingEnabled>
