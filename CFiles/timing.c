@@ -40,8 +40,9 @@ void set_deadline(uint deadline)
     //Reschedule ReadyList
     listobj* lobj = ReadyList->pHead;
     ReadyList->pHead = ReadyList->pHead->pNext;
+    msg* pmess = lobj->pMessage;
     mem_free(lobj);
-    push(ReadyList, PreviousTask,0);
+    push(ReadyList, PreviousTask,0, pmess);
     //Update NextTask
     //Switch context
     if (ReadyList->pHead->pTask != PreviousTask)

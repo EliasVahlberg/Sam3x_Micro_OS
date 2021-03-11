@@ -13,7 +13,7 @@
 listobj *create_listobj(TCB *task,uint nTCnt);
 static int compare_listobj(listobj *o1, listobj *o2);
 exception find_task(list* l, TCB *task);
-exception push(list *l, TCB *task,uint nTCnt);
+exception push(list *l, TCB *task,uint nTCnt,msg* pmess);
 exception pop(list* list);
 exception remove_last(list *list);
 #pragma endregion Functions
@@ -152,7 +152,9 @@ exception move_listobj(list *src, list *dest, listobj* o1)
     if(src==NULL || dest==NULL || o1==NULL) {return NULLPOINTER;}
     if(find_task(src, o1->pTask)==FAIL){return FAIL;}
     if(find_task(dest,o1->pTask)==OK){return FAIL;}
-    
+    msg* pmess =NULL;
+    if(o1->pMessage!=NULL)
+        pmess = o1->pMessage;
     if(o1->pTask == src->pHead->pTask)
     {
         if(src->pTail->pTask == o1->pTask)
@@ -181,9 +183,9 @@ exception move_listobj(list *src, list *dest, listobj* o1)
         temp->pPrevious->pNext = temp->pNext;
     }
     if(src == TimerList)
-        push(dest,o1->pTask,0);
+        push(dest,o1->pTask,0,pmess);
     else
-        push(dest, o1->pTask,o1->nTCnt);
+        push(dest, o1->pTask,o1->nTCnt,pmess);
     mem_free(o1);
     return OK;
 }
@@ -195,7 +197,7 @@ static int compare_listobj(listobj *o1, listobj *o2)
     if(o1->nTCnt==0 || o2->nTCnt==0)
         return (o1->pTask->Deadline < o2->pTask->Deadline) ? 1 : 0;
     else
-        return (min(o1->nTCnt,o1->pTask->Deadline) < min(o2->nTCnt,o2->pTask->Deadline))? 0 : 1 ;
+        return (min(o1->nTCnt,o1->pTask->Deadline) < min(o2->nTCnt,o2->pTask->Deadline))? 1 : 0 ;
 
 }
 
@@ -274,12 +276,14 @@ exception remove_last(list *list)
     }
 }
 
-exception push(list *l, TCB *task,uint nTCnt)
+exception push(list *l, TCB *task,uint nTCnt,msg* pmess)
 {
     listobj *list_obj;
     list_obj =  create_listobj(task,nTCnt);
     if (!list_obj)
         return FAIL;
+    if(pmess!=NULL)
+        add_msg_to_listobject(list_obj,pmess);
     listobj *current = l->pHead;
     if (!l->pHead)
     {
@@ -315,6 +319,7 @@ exception push(list *l, TCB *task,uint nTCnt)
             }
         list_obj->pNext= current;
         list_obj->pPrevious = current->pPrevious;
+        current->pPrevious->pNext = list_obj;
         current->pPrevious = list_obj;
         return OK;
     }

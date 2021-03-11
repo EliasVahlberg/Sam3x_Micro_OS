@@ -51,8 +51,7 @@ exception append_msg(msg *mes, mailbox *mBox, void *pData, int status, int wait)
         {
             if (ReadyList->pHead != NULL)
             {
-                mes->pBlock = ReadyList->pHead;               //Vi hade ReadyList ist för WaitingList
-                mes->pBlock->pTask = ReadyList->pHead->pTask; //Vi hade ReadyList ist för WaitingList
+                add_msg_to_listobject(ReadyList->pHead,mes);
             }
         }
     }
@@ -332,6 +331,8 @@ msg *mailbox_dequeue(mailbox *mBox)
         return NULL;
     if (mBox->pHead == NULL)
         return NULL;
+    //if(mBox->pHead->pBlock!=NULL)
+      //  remove_msg_from_listobject(mBox->pHead->pBlock,mBox->pHead);
     msg *mes = mBox->pHead;
     if (mBox->pHead == mBox->pTail)
     {
@@ -344,4 +345,42 @@ msg *mailbox_dequeue(mailbox *mBox)
     mBox->pHead->pPrevious = NULL;
     mBox->nMessages--;
     return mes;
+}
+
+exception add_msg_to_listobject(listobj* l_obj,msg* mes)
+{
+    if(l_obj == NULL||mes==NULL)
+        return NULLPOINTER;
+    if(l_obj->pMessage==NULL)
+        l_obj->pMessage = mes;
+    else
+    {
+        msg* t_mes = l_obj->pMessage;
+        while (t_mes->pNext!=NULL)
+            t_mes = t_mes->pNext;
+        t_mes->pNext = mes;
+        mes->pPrevious = t_mes;
+    }
+    mes->pBlock = l_obj;
+    return OK;
+}
+
+exception remove_msg_from_listobject(listobj* l_obj, msg* mes)
+{
+    if(l_obj == NULL||mes==NULL)
+        return NULLPOINTER;
+    if(l_obj->pMessage==NULL)
+        return FAIL;
+    if(l_obj->pMessage==mes)
+        l_obj->pMessage = l_obj->pMessage->pNext;
+    else
+    {
+        msg* t_mes = l_obj->pMessage;
+        while (t_mes->pNext!=mes)
+            t_mes = t_mes->pNext;
+        t_mes->pNext = mes->pNext;
+        if(mes->pNext!=NULL)
+        mes->pNext->pPrevious=t_mes;
+    }
+    return OK;   
 }

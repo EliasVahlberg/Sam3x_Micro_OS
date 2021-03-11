@@ -32,13 +32,14 @@ void periodic_task_test1()
 {
     periodically_run(periodic_func,50,0);
 
-    create_task(periodic_task_test2,high_deadline);
-    create_task(periodic_task_test3,high_deadline+1);
+    create_task(periodic_task_test2,high_deadline+10);
+    create_task(periodic_task_test3,high_deadline);
     terminate();
     return;
 }
 void periodic_task_test2()
 {
+    wait(5);
     periodically_run(p_rec,50,100);
     terminate();
     return;
@@ -58,8 +59,8 @@ void periodic_func()
 void p_rec()
 {
     pRecCount++;
-    if(receive_wait(intMbox,&pRetVal)==OK)
-        pSendOKCount++;
+    if(receive_no_wait(intMbox,&pRetVal)==OK)
+        pRecOKCount++;
     else
     {
         __ISR_OFF();
@@ -70,7 +71,7 @@ void p_rec()
 void p_send()
 {
     pSendCount++;
-    if(send_wait(intMbox,&pSendVal)==OK)
+    if(send_no_wait(intMbox,&pSendVal)==OK)
         pSendOKCount++;
     else
     {
