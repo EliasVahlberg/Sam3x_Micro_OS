@@ -47,8 +47,14 @@ exception append_msg(msg *mes, mailbox *mBox, void *pData, int status, int wait)
 
     if (wait)
     {
-        mes->pBlock = ReadyList->pHead;               //Vi hade ReadyList ist för WaitingList
-        mes->pBlock->pTask = ReadyList->pHead->pTask; //Vi hade ReadyList ist för WaitingList
+        if (ReadyList != NULL)
+        {
+            if (ReadyList->pHead != NULL)
+            {
+                mes->pBlock = ReadyList->pHead;               //Vi hade ReadyList ist för WaitingList
+                mes->pBlock->pTask = ReadyList->pHead->pTask; //Vi hade ReadyList ist för WaitingList
+            }
+        }
     }
     else
         mes->pBlock = NULL;
@@ -111,13 +117,12 @@ exception send_wait(mailbox *mBox, void *pData)
         }
         msg *mes = mailbox_dequeue(mBox);
 
-        //Is it in the head of the ReadyList? I don't think så but I will add it here
-        //Temporarily
-        PreviousTask = ReadyList->pHead->pTask; //Inlagt nyss
-        //PreviousTask = NextTask;                            //Update PreviousTask, the previous task is the task sending the message
-        move_listobj(WaitingList, ReadyList, mes->pBlock); //Insert recieving task in ReadyList
-        NextTask = ReadyList->pHead->pTask;                //Inlagt nyss
-        //NextTask = mes->pBlock->pTask;                      //Update NextTask
+                                                                //Temporarily
+        PreviousTask = ReadyList->pHead->pTask;                 //Inlagt nyss
+        //PreviousTask = NextTask;                              //Update PreviousTask, the previous task is the task sending the message
+        move_listobj(WaitingList, ReadyList, mes->pBlock);      //Insert recieving task in ReadyList
+        NextTask = ReadyList->pHead->pTask;                     //Inlagt nyss
+        //NextTask = mes->pBlock->pTask;                        //Update NextTask
     }
     else
     {
