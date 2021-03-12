@@ -54,7 +54,7 @@ list *create_task_list()
     list *task_list = (list *)mem_alloc(sizeof(list));
     if (task_list == NULL)
     {
-        task_exception_manager(NULLPOINTER);
+        task_exception_manager(ALLOCFAIL);
         return NULL;
     }
 

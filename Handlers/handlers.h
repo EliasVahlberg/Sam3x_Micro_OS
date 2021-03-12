@@ -44,9 +44,10 @@ exception   task_exception_manager(exception exc);
 exception   task_NULLPOINTER_handler();
 exception   task_ALLOCFAIL_handler();
 exception   task_FAIL_handler();
+exception   DEADLINE_REACHED_handler();
+exception   MEMORY_LEAKAGE_handler();
 exception   ESCALATED_NULLPOINTER_handler();
 void        escalated_exception(exception exc);
-exception   DEADLINE_REACHED_handler();
 void        get_system_fault_registers();
 void        clear_task_exception();
 #pragma endregion Functions

@@ -21,18 +21,21 @@
 #define SUCCESS                 1
 #define OK                      1
 
-#define DEADLINE_REACHED        -4      
-#define NOT_EMPTY               0
+#define NOT_EMPTY               -1
 
-#define SENDER                  +1
-#define RECEIVER                -1
-
-
-#define DEF_SPSR                0x21000000 
-
-#define MESSAGE_LOST            -1 //If a message was deleted in force_remove_mailbox()
 #define NULLPOINTER             -2
 #define ALLOCFAIL               -3
+#define DEADLINE_REACHED        -4      
+
+#define MEMFAULT                -5
+#define MEMORY_LEAKAGE          -6
+#define ESCALATED_NULLPOINTER   -7
+#define ESCALATED               -10
+#define FATAL_EXCEPTION         -20        
+
+#define DEF_SPSR                0x21000000 
+#define SENDER                  +1
+#define RECEIVER                -1
 
 
 typedef int                     exception;
@@ -141,8 +144,7 @@ extern void     LoadContext_In_Terminate( void );
 
 
 
-#define ESCALATED_NULLPOINTER -10
-#define MEMFAULT -7
+
 
 #include "CFiles\mallocstats.h"
 TCB *PreviousTask, *NextTask;

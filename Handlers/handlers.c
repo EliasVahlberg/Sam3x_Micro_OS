@@ -54,16 +54,23 @@ exception DEADLINE_REACHED_handler()
     //get_system_fault_registers();
     return DEADLINE_REACHED;
 }
+
+exception MEMORY_LEAKAGE_handler()
+{
+    //free unitilized memory 
+    update_meminfo();
+    return MEMORY_LEAKAGE_handler;
+}
+
 exception task_exception_manager(exception exc)
 {
+    if(exc == OK)
+        return OK;
     if(__get_BASEPRI() != 0x000000a0)
     {
-        
         isr_cleared_during_exception = 1;
         __ISR_OFF();
     }
-    if(exc == OK)
-        return OK;
     if(task_exception_status == NULLPOINTER)
         exc = ESCALATED_NULLPOINTER;
     else if(task_exception_status !=0 )
@@ -86,16 +93,26 @@ exception task_exception_manager(exception exc)
     case MEMFAULT:
         exc =  MEMFAULT_handler();
     break;
+    case MEMORY_LEAKAGE: 
+        exc = MEMORY_LEAKAGE_handler();
+    break;
     default: escalated_exception(exc);
         break;
     }
     if(isr_cleared_during_exception)
-        __ISR_ON();
+    {    
+    isr_cleared_during_exception = 0;
+    __ISR_ON();
+    } 
     clear_task_exception();
     return exc;
 }
 void escalated_exception(exception exc)
 {
+    if(task_exception_status != ESCALATED && task_exception_status != FATAL_EXCEPTION)
+    {
+        terminate();
+    }
     switch (exc)
     {
     case FAIL:
@@ -107,7 +124,15 @@ void escalated_exception(exception exc)
     case ALLOCFAIL:
         while (1){/* Escalated ALLOCFAIL Exception*/}
         break;
-    
+    case ESCALATED_NULLPOINTER:
+        while (1){/* Escalated NULLPOINTER Exception*/}
+    break;
+    case MEMFAULT:
+        while (1){/*Escalated MEMFAULT exception type*/}
+    break;
+    case FATAL_EXCEPTION:
+     while (1){/*FATAL EXCEPTION*/}
+    break;
     default:
         while (1){/*Unexpected exception type*/}
         break;
