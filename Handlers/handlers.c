@@ -10,26 +10,42 @@
 */
 
 
-
+exception NOT_EMPTY_handeler()
+{
+    num_failed_remove_mailbox++;
+    task_exception_status = 1;
+    if(num_failed_remove_mailbox>=MAILBOX_NON_EMPTY_THRESHOLD)
+        return FAIL;
+    return OK;
+}
 exception MEMFAULT_handler()
 {
     //Kinda sus
     num_memfaults++;
-    //get_system_fault_registers();
+    
+    if(memfault_adress1!=NULL && memfault_adress2!=NULL && memfault_adress1==memfault_adress2)
+    {
+        task_exception_status = MEMFAULT;
+        escalated_exception(MEMFAULT);
+    }
+    else
+        task_exception_status = OK;
     return MEMFAULT;
 }
 exception ESCALATED_NULLPOINTER_handler()
 {
     if(ReadyList->pHead->pNext!=NULL&&ReadyList->pHead!=NULL)
         terminate();
-    //get_system_fault_registers();
+    
     return ESCALATED_NULLPOINTER;
 }
 exception   task_NULLPOINTER_handler()
 {
     //Did you check malloc?
     num_nullpointers++;
-    //get_system_fault_registers();
+    if(num_nullpointers>=NULLPOINTER_THRESHOLD)
+        return ESCALATED_NULLPOINTER_handler();
+    
     return NULLPOINTER;
 }
 exception task_ALLOCFAIL_handler()
@@ -37,29 +53,31 @@ exception task_ALLOCFAIL_handler()
     //Out of memory my friend
     num_allocfails++;
     update_meminfo();
-    //get_system_fault_registers();
+    
     return ALLOCFAIL;
 }
 exception task_FAIL_handler()
 {
     //Well this was descriptive...
     num_fails++;
-    //get_system_fault_registers();
+    
+    task_exception_status = OK;
     return FAIL;
 }
 exception DEADLINE_REACHED_handler()
 {
     //You should blame blackboard it usually works
     num_deadline_reached++;
-    //get_system_fault_registers();
+    
     return DEADLINE_REACHED;
 }
 
 exception MEMORY_LEAKAGE_handler()
 {
-    //free unitilized memory 
+    //free unutilized memory 
     update_meminfo();
-    return MEMORY_LEAKAGE_handler;
+    /*Not yet implemented*/
+    return MEMORY_LEAKAGE;
 }
 
 exception task_exception_manager(exception exc)
@@ -73,7 +91,7 @@ exception task_exception_manager(exception exc)
     }
     if(task_exception_status == NULLPOINTER)
         exc = ESCALATED_NULLPOINTER;
-    else if(task_exception_status !=0 )
+    else if(task_exception_status !=OK )
         escalated_exception(exc);
     task_exception_status = exc;
     switch (exc)
@@ -96,7 +114,11 @@ exception task_exception_manager(exception exc)
     case MEMORY_LEAKAGE: 
         exc = MEMORY_LEAKAGE_handler();
     break;
-    default: escalated_exception(exc);
+    case FATAL_EXCEPTION:
+        escalated_exception(exc);
+    break;
+    default:
+     escalated_exception(exc);
         break;
     }
     if(isr_cleared_during_exception)
@@ -143,7 +165,8 @@ void escalated_exception(exception exc)
 }
 void clear_task_exception()
 {
-    task_exception_status = 0;
+    task_exception_status = OK;
+    num_nullpointers = 0;
 }
 void get_system_fault_registers()
 {

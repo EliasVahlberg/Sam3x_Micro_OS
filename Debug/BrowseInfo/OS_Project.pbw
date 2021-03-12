@@ -92762,1473 +92762,6 @@
     "scope": null
   },
   {
-    "ID": "c:kernel_functions.h@472@macro@CONTEXT_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CONTEXT_SIZE",
-    "location": {
-      "column": "9",
-      "line": "11",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "CONTEXT_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@550@macro@STACK_SIZE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "STACK_SIZE",
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "STACK_SIZE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@629@macro@TRUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "TRUE",
-    "location": {
-      "column": "9",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "TRUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@664@macro@FALSE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FALSE",
-    "location": {
-      "column": "9",
-      "line": "15",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "FALSE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@705@macro@RUNNING",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RUNNING",
-    "location": {
-      "column": "9",
-      "line": "17",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "RUNNING",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@740@macro@INIT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "INIT",
-    "location": {
-      "column": "9",
-      "line": "18",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "INIT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@784@macro@FAIL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FAIL",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "FAIL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@819@macro@SUCCESS",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SUCCESS",
-    "location": {
-      "column": "9",
-      "line": "21",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "SUCCESS",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@854@macro@OK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "OK",
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "OK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@891@macro@NOT_EMPTY",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "NOT_EMPTY",
-    "location": {
-      "column": "9",
-      "line": "24",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "NOT_EMPTY",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@929@macro@NULLPOINTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "NULLPOINTER",
-    "location": {
-      "column": "9",
-      "line": "26",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "NULLPOINTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@965@macro@ALLOCFAIL",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ALLOCFAIL",
-    "location": {
-      "column": "9",
-      "line": "27",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "ALLOCFAIL",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1001@macro@DEADLINE_REACHED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DEADLINE_REACHED",
-    "location": {
-      "column": "9",
-      "line": "28",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "DEADLINE_REACHED",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1045@macro@MEMFAULT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MEMFAULT",
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "MEMFAULT",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1081@macro@MEMORY_LEAKAGE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "MEMORY_LEAKAGE",
-    "location": {
-      "column": "9",
-      "line": "31",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "MEMORY_LEAKAGE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1117@macro@ESCALATED_NULLPOINTER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ESCALATED_NULLPOINTER",
-    "location": {
-      "column": "9",
-      "line": "32",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "ESCALATED_NULLPOINTER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1153@macro@ESCALATED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "ESCALATED",
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "ESCALATED",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1190@macro@FATAL_EXCEPTION",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "FATAL_EXCEPTION",
-    "location": {
-      "column": "9",
-      "line": "34",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "FATAL_EXCEPTION",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1237@macro@DEF_SPSR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DEF_SPSR",
-    "location": {
-      "column": "9",
-      "line": "36",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "DEF_SPSR",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1282@macro@SENDER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SENDER",
-    "location": {
-      "column": "9",
-      "line": "37",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "SENDER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@1318@macro@RECEIVER",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RECEIVER",
-    "location": {
-      "column": "9",
-      "line": "38",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "RECEIVER",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@T@exception",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "int",
-    "location": {
-      "column": "33",
-      "line": "41",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "exception",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@T@bool",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "int",
-    "location": {
-      "column": "33",
-      "line": "42",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "bool",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@T@uint",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "unsigned int",
-    "location": {
-      "column": "33",
-      "line": "43",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "uint",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@T@action",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "int",
-    "location": {
-      "column": "16",
-      "line": "44",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "action",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@l_obj",
-    "What": "Struct",
-    "defdec": "Dec",
-    "display": "l_obj",
-    "location": {
-      "column": "9",
-      "line": "46",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "members": [],
-    "name": "l_obj",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@TimerInt",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void TimerInt(void)",
-    "location": {
-      "column": "17",
-      "line": "50",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "TimerInt",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@TCB",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "52",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@TCB@FI@SP",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "SP",
-        "location": {
-          "column": "18",
-          "line": "55",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "SP",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_52_9"
-      },
-      {
-        "ID": "c:@SA@TCB@FI@R4toR11",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "R4toR11",
-        "location": {
-          "column": "17",
-          "line": "56",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "R4toR11",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_52_9"
-      },
-      {
-        "ID": "c:@SA@TCB@FI@PC",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "PC",
-        "location": {
-          "column": "19",
-          "line": "58",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "PC",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_52_9"
-      },
-      {
-        "ID": "c:@SA@TCB@FI@SPSR",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "SPSR",
-        "location": {
-          "column": "17",
-          "line": "59",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "SPSR",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_52_9"
-      },
-      {
-        "ID": "c:@SA@TCB@FI@StackSeg",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "StackSeg",
-        "location": {
-          "column": "17",
-          "line": "60",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "StackSeg",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_52_9"
-      },
-      {
-        "ID": "c:@SA@TCB@FI@Deadline",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Deadline",
-        "location": {
-          "column": "17",
-          "line": "61",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "Deadline",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_52_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@TCB",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct TCB",
-    "location": {
-      "column": "3",
-      "line": "62",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "TCB",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@msgobj",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "msgobj",
-    "location": {
-      "column": "16",
-      "line": "66",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@msgobj@FI@pData",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pData",
-        "location": {
-          "column": "26",
-          "line": "67",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pData",
-        "origin": "user_include",
-        "scope": "msgobj"
-      },
-      {
-        "ID": "c:@S@msgobj@FI@Status",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Status",
-        "location": {
-          "column": "25",
-          "line": "68",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "Status",
-        "origin": "user_include",
-        "scope": "msgobj"
-      },
-      {
-        "ID": "c:@S@msgobj@FI@pBlock",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pBlock",
-        "location": {
-          "column": "26",
-          "line": "69",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pBlock",
-        "origin": "user_include",
-        "scope": "msgobj"
-      },
-      {
-        "ID": "c:@S@msgobj@FI@pPrevious",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pPrevious",
-        "location": {
-          "column": "26",
-          "line": "70",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pPrevious",
-        "origin": "user_include",
-        "scope": "msgobj"
-      },
-      {
-        "ID": "c:@S@msgobj@FI@pNext",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pNext",
-        "location": {
-          "column": "26",
-          "line": "71",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pNext",
-        "origin": "user_include",
-        "scope": "msgobj"
-      }
-    ],
-    "name": "msgobj",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@T@msg",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct msgobj",
-    "location": {
-      "column": "3",
-      "line": "72",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "msg",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@mailbox",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "75",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@mailbox@FI@pHead",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pHead",
-        "location": {
-          "column": "26",
-          "line": "76",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pHead",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_75_9"
-      },
-      {
-        "ID": "c:@SA@mailbox@FI@pTail",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pTail",
-        "location": {
-          "column": "26",
-          "line": "77",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pTail",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_75_9"
-      },
-      {
-        "ID": "c:@SA@mailbox@FI@nDataSize",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "nDataSize",
-        "location": {
-          "column": "25",
-          "line": "78",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "nDataSize",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_75_9"
-      },
-      {
-        "ID": "c:@SA@mailbox@FI@nMaxMessages",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "nMaxMessages",
-        "location": {
-          "column": "25",
-          "line": "79",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "nMaxMessages",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_75_9"
-      },
-      {
-        "ID": "c:@SA@mailbox@FI@nMessages",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "nMessages",
-        "location": {
-          "column": "25",
-          "line": "80",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "nMessages",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_75_9"
-      },
-      {
-        "ID": "c:@SA@mailbox@FI@nBlockedMsg",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "nBlockedMsg",
-        "location": {
-          "column": "25",
-          "line": "81",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "nBlockedMsg",
-        "origin": "user_include",
-        "scope": "_anonymous_kernel_functions_h_75_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@mailbox",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct mailbox",
-    "location": {
-      "column": "3",
-      "line": "82",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "mailbox",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@l_obj",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "l_obj",
-    "location": {
-      "column": "16",
-      "line": "86",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@l_obj@FI@pTask",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pTask",
-        "location": {
-          "column": "26",
-          "line": "87",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pTask",
-        "origin": "user_include",
-        "scope": "l_obj"
-      },
-      {
-        "ID": "c:@S@l_obj@FI@nTCnt",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "nTCnt",
-        "location": {
-          "column": "25",
-          "line": "88",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "nTCnt",
-        "origin": "user_include",
-        "scope": "l_obj"
-      },
-      {
-        "ID": "c:@S@l_obj@FI@pMessage",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pMessage",
-        "location": {
-          "column": "26",
-          "line": "89",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pMessage",
-        "origin": "user_include",
-        "scope": "l_obj"
-      },
-      {
-        "ID": "c:@S@l_obj@FI@pPrevious",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pPrevious",
-        "location": {
-          "column": "26",
-          "line": "90",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pPrevious",
-        "origin": "user_include",
-        "scope": "l_obj"
-      },
-      {
-        "ID": "c:@S@l_obj@FI@pNext",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pNext",
-        "location": {
-          "column": "26",
-          "line": "91",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pNext",
-        "origin": "user_include",
-        "scope": "l_obj"
-      }
-    ],
-    "name": "l_obj",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@T@listobj",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct l_obj",
-    "location": {
-      "column": "3",
-      "line": "92",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "listobj",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@S@_list",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "_list",
-    "location": {
-      "column": "16",
-      "line": "96",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "members": [
-      {
-        "ID": "c:@S@_list@FI@pHead",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pHead",
-        "location": {
-          "column": "26",
-          "line": "97",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pHead",
-        "origin": "user_include",
-        "scope": "_list"
-      },
-      {
-        "ID": "c:@S@_list@FI@pTail",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "pTail",
-        "location": {
-          "column": "26",
-          "line": "98",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-        },
-        "name": "pTail",
-        "origin": "user_include",
-        "scope": "_list"
-      }
-    ],
-    "name": "_list",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@T@list",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct _list",
-    "location": {
-      "column": "3",
-      "line": "99",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "list",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@init_kernel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception init_kernel(void)",
-    "location": {
-      "column": "17",
-      "line": "106",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "init_kernel",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@create_task",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception create_task(void (*)(), uint)",
-    "location": {
-      "column": "11",
-      "line": "107",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "create_task",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@terminate",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void terminate(void)",
-    "location": {
-      "column": "17",
-      "line": "108",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "terminate",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@run",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void run(void)",
-    "location": {
-      "column": "17",
-      "line": "109",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "run",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@create_mailbox",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "mailbox * create_mailbox(uint, uint)",
-    "location": {
-      "column": "10",
-      "line": "112",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "create_mailbox",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@send_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception send_wait(mailbox *, void *)",
-    "location": {
-      "column": "17",
-      "line": "113",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "send_wait",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@send_no_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception send_no_wait(mailbox *, void *)",
-    "location": {
-      "column": "11",
-      "line": "114",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "send_no_wait",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@receive_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception receive_wait(mailbox *, void *)",
-    "location": {
-      "column": "17",
-      "line": "115",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "receive_wait",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@receive_no_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception receive_no_wait(mailbox *, void *)",
-    "location": {
-      "column": "17",
-      "line": "116",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "receive_no_wait",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@force_remove_mailbox",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception force_remove_mailbox(mailbox *)",
-    "location": {
-      "column": "17",
-      "line": "117",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "force_remove_mailbox",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@no_messages",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception no_messages(mailbox *)",
-    "location": {
-      "column": "17",
-      "line": "118",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "no_messages",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@remove_mailbox",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception remove_mailbox(mailbox *)",
-    "location": {
-      "column": "17",
-      "line": "119",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "remove_mailbox",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception wait(uint)",
-    "location": {
-      "column": "11",
-      "line": "123",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "wait",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@set_ticks",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void set_ticks(uint)",
-    "location": {
-      "column": "17",
-      "line": "124",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "set_ticks",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ticks",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint ticks(void)",
-    "location": {
-      "column": "17",
-      "line": "125",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "ticks",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@deadline",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint deadline(void)",
-    "location": {
-      "column": "7",
-      "line": "126",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "deadline",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@set_deadline",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void set_deadline(uint)",
-    "location": {
-      "column": "17",
-      "line": "127",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "set_deadline",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@isr_on",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void isr_on(void)",
-    "location": {
-      "column": "17",
-      "line": "130",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "isr_on",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@isr_off",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void isr_off(void)",
-    "location": {
-      "column": "17",
-      "line": "131",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "isr_off",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SwitchContext",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SwitchContext(void)",
-    "location": {
-      "column": "17",
-      "line": "133",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "SwitchContext",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LoadContext_In_Run",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void LoadContext_In_Run(void)",
-    "location": {
-      "column": "17",
-      "line": "135",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "LoadContext_In_Run",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@switch_to_stack_of_next_task",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void switch_to_stack_of_next_task(void)",
-    "location": {
-      "column": "17",
-      "line": "138",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "switch_to_stack_of_next_task",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@LoadContext_In_Terminate",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void LoadContext_In_Terminate(void)",
-    "location": {
-      "column": "17",
-      "line": "141",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "LoadContext_In_Terminate",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@PreviousTask",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "PreviousTask",
-    "location": {
-      "column": "6",
-      "line": "150",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "PreviousTask",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@NextTask",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "NextTask",
-    "location": {
-      "column": "21",
-      "line": "150",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "NextTask",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@kernel_mode",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "kernel_mode",
-    "location": {
-      "column": "16",
-      "line": "151",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "kernel_mode",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@mem_counter",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "mem_counter",
-    "location": {
-      "column": "16",
-      "line": "152",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "mem_counter",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@tick_counter",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "tick_counter",
-    "location": {
-      "column": "16",
-      "line": "153",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "tick_counter",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@min",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint min(uint, uint)",
-    "location": {
-      "column": "6",
-      "line": "155",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "min",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@F@__ISR_ON",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int __ISR_ON(void)",
-    "location": {
-      "column": "12",
-      "line": "156",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "__ISR_ON",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@F@__ISR_OFF",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "int __ISR_OFF(void)",
-    "location": {
-      "column": "12",
-      "line": "157",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "__ISR_OFF",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@add_task_2_list",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception add_task_2_list(list *, TCB *)",
-    "location": {
-      "column": "11",
-      "line": "159",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "add_task_2_list",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@create_task",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception create_task(void (*)(), uint)",
-    "location": {
-      "column": "11",
-      "line": "160",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "create_task",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@mem_alloc",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void * mem_alloc(size_t)",
-    "location": {
-      "column": "7",
-      "line": "161",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "mem_alloc",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@mem_free",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void mem_free(void *)",
-    "location": {
-      "column": "6",
-      "line": "162",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "mem_free",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@update_meminfo",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void update_meminfo(void)",
-    "location": {
-      "column": "6",
-      "line": "163",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "update_meminfo",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@save_meminfo",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void save_meminfo(struct mallinfo)",
-    "location": {
-      "column": "6",
-      "line": "164",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "save_meminfo",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@ReadyList",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "ReadyList",
-    "location": {
-      "column": "7",
-      "line": "168",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "ReadyList",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@WaitingList",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "WaitingList",
-    "location": {
-      "column": "7",
-      "line": "169",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "WaitingList",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@TimerList",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "TimerList",
-    "location": {
-      "column": "7",
-      "line": "170",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "TimerList",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@first_heap",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "first_heap",
-    "location": {
-      "column": "7",
-      "line": "171",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "first_heap",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@DEBUG_memadress",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "DEBUG_memadress",
-    "location": {
-      "column": "9",
-      "line": "174",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "DEBUG_memadress",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@DEBUG_memsize",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "DEBUG_memsize",
-    "location": {
-      "column": "9",
-      "line": "175",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
-    },
-    "name": "DEBUG_memsize",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
     "ID": "c:iccarm_builtin.h@297@macro@__BUILTINS_INCLUDED",
     "What": "MacroDef",
     "defdec": "Def",
@@ -106569,6 +105102,1473 @@
     "scope": null
   },
   {
+    "ID": "c:kernel_functions.h@472@macro@CONTEXT_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "CONTEXT_SIZE",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "CONTEXT_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@550@macro@STACK_SIZE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "STACK_SIZE",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "STACK_SIZE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@629@macro@TRUE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TRUE",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "TRUE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@664@macro@FALSE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FALSE",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "FALSE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@705@macro@RUNNING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RUNNING",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "RUNNING",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@740@macro@INIT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "INIT",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "INIT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@784@macro@FAIL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FAIL",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "FAIL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@819@macro@SUCCESS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SUCCESS",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "SUCCESS",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@854@macro@OK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "OK",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "OK",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@891@macro@NOT_EMPTY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NOT_EMPTY",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "NOT_EMPTY",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@929@macro@NULLPOINTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "NULLPOINTER",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "NULLPOINTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@965@macro@ALLOCFAIL",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ALLOCFAIL",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "ALLOCFAIL",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1001@macro@DEADLINE_REACHED",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DEADLINE_REACHED",
+    "location": {
+      "column": "9",
+      "line": "28",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "DEADLINE_REACHED",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1045@macro@MEMFAULT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MEMFAULT",
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "MEMFAULT",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1081@macro@MEMORY_LEAKAGE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MEMORY_LEAKAGE",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "MEMORY_LEAKAGE",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1117@macro@ESCALATED_NULLPOINTER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ESCALATED_NULLPOINTER",
+    "location": {
+      "column": "9",
+      "line": "32",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "ESCALATED_NULLPOINTER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1153@macro@ESCALATED",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "ESCALATED",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "ESCALATED",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1190@macro@FATAL_EXCEPTION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "FATAL_EXCEPTION",
+    "location": {
+      "column": "9",
+      "line": "34",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "FATAL_EXCEPTION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1237@macro@DEF_SPSR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "DEF_SPSR",
+    "location": {
+      "column": "9",
+      "line": "36",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "DEF_SPSR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1282@macro@SENDER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "SENDER",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "SENDER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@1318@macro@RECEIVER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "RECEIVER",
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "RECEIVER",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@T@exception",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "int",
+    "location": {
+      "column": "33",
+      "line": "41",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "exception",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@T@bool",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "int",
+    "location": {
+      "column": "33",
+      "line": "42",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "bool",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@T@uint",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "unsigned int",
+    "location": {
+      "column": "33",
+      "line": "43",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "uint",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@T@action",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "int",
+    "location": {
+      "column": "16",
+      "line": "44",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "action",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@l_obj",
+    "What": "Struct",
+    "defdec": "Dec",
+    "display": "l_obj",
+    "location": {
+      "column": "9",
+      "line": "46",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "members": [],
+    "name": "l_obj",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@TimerInt",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void TimerInt(void)",
+    "location": {
+      "column": "17",
+      "line": "50",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "TimerInt",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@TCB",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "52",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@TCB@FI@SP",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "SP",
+        "location": {
+          "column": "18",
+          "line": "55",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "SP",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_52_9"
+      },
+      {
+        "ID": "c:@SA@TCB@FI@R4toR11",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "R4toR11",
+        "location": {
+          "column": "17",
+          "line": "56",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "R4toR11",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_52_9"
+      },
+      {
+        "ID": "c:@SA@TCB@FI@PC",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "PC",
+        "location": {
+          "column": "19",
+          "line": "58",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "PC",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_52_9"
+      },
+      {
+        "ID": "c:@SA@TCB@FI@SPSR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "SPSR",
+        "location": {
+          "column": "17",
+          "line": "59",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "SPSR",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_52_9"
+      },
+      {
+        "ID": "c:@SA@TCB@FI@StackSeg",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "StackSeg",
+        "location": {
+          "column": "17",
+          "line": "60",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "StackSeg",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_52_9"
+      },
+      {
+        "ID": "c:@SA@TCB@FI@Deadline",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Deadline",
+        "location": {
+          "column": "17",
+          "line": "61",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "Deadline",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_52_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@TCB",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct TCB",
+    "location": {
+      "column": "3",
+      "line": "62",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "TCB",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@msgobj",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "msgobj",
+    "location": {
+      "column": "16",
+      "line": "66",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@msgobj@FI@pData",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pData",
+        "location": {
+          "column": "26",
+          "line": "67",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pData",
+        "origin": "user_include",
+        "scope": "msgobj"
+      },
+      {
+        "ID": "c:@S@msgobj@FI@Status",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Status",
+        "location": {
+          "column": "25",
+          "line": "68",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "Status",
+        "origin": "user_include",
+        "scope": "msgobj"
+      },
+      {
+        "ID": "c:@S@msgobj@FI@pBlock",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pBlock",
+        "location": {
+          "column": "26",
+          "line": "69",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pBlock",
+        "origin": "user_include",
+        "scope": "msgobj"
+      },
+      {
+        "ID": "c:@S@msgobj@FI@pPrevious",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pPrevious",
+        "location": {
+          "column": "26",
+          "line": "70",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pPrevious",
+        "origin": "user_include",
+        "scope": "msgobj"
+      },
+      {
+        "ID": "c:@S@msgobj@FI@pNext",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pNext",
+        "location": {
+          "column": "26",
+          "line": "71",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pNext",
+        "origin": "user_include",
+        "scope": "msgobj"
+      }
+    ],
+    "name": "msgobj",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@T@msg",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct msgobj",
+    "location": {
+      "column": "3",
+      "line": "72",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "msg",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@mailbox",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "75",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@mailbox@FI@pHead",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pHead",
+        "location": {
+          "column": "26",
+          "line": "76",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pHead",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_75_9"
+      },
+      {
+        "ID": "c:@SA@mailbox@FI@pTail",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pTail",
+        "location": {
+          "column": "26",
+          "line": "77",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pTail",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_75_9"
+      },
+      {
+        "ID": "c:@SA@mailbox@FI@nDataSize",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "nDataSize",
+        "location": {
+          "column": "25",
+          "line": "78",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "nDataSize",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_75_9"
+      },
+      {
+        "ID": "c:@SA@mailbox@FI@nMaxMessages",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "nMaxMessages",
+        "location": {
+          "column": "25",
+          "line": "79",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "nMaxMessages",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_75_9"
+      },
+      {
+        "ID": "c:@SA@mailbox@FI@nMessages",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "nMessages",
+        "location": {
+          "column": "25",
+          "line": "80",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "nMessages",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_75_9"
+      },
+      {
+        "ID": "c:@SA@mailbox@FI@nBlockedMsg",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "nBlockedMsg",
+        "location": {
+          "column": "25",
+          "line": "81",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "nBlockedMsg",
+        "origin": "user_include",
+        "scope": "_anonymous_kernel_functions_h_75_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@mailbox",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct mailbox",
+    "location": {
+      "column": "3",
+      "line": "82",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "mailbox",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@l_obj",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "l_obj",
+    "location": {
+      "column": "16",
+      "line": "86",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@l_obj@FI@pTask",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pTask",
+        "location": {
+          "column": "26",
+          "line": "87",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pTask",
+        "origin": "user_include",
+        "scope": "l_obj"
+      },
+      {
+        "ID": "c:@S@l_obj@FI@nTCnt",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "nTCnt",
+        "location": {
+          "column": "25",
+          "line": "88",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "nTCnt",
+        "origin": "user_include",
+        "scope": "l_obj"
+      },
+      {
+        "ID": "c:@S@l_obj@FI@pMessage",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pMessage",
+        "location": {
+          "column": "26",
+          "line": "89",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pMessage",
+        "origin": "user_include",
+        "scope": "l_obj"
+      },
+      {
+        "ID": "c:@S@l_obj@FI@pPrevious",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pPrevious",
+        "location": {
+          "column": "26",
+          "line": "90",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pPrevious",
+        "origin": "user_include",
+        "scope": "l_obj"
+      },
+      {
+        "ID": "c:@S@l_obj@FI@pNext",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pNext",
+        "location": {
+          "column": "26",
+          "line": "91",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pNext",
+        "origin": "user_include",
+        "scope": "l_obj"
+      }
+    ],
+    "name": "l_obj",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@T@listobj",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct l_obj",
+    "location": {
+      "column": "3",
+      "line": "92",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "listobj",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@_list",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "_list",
+    "location": {
+      "column": "16",
+      "line": "96",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@_list@FI@pHead",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pHead",
+        "location": {
+          "column": "26",
+          "line": "97",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pHead",
+        "origin": "user_include",
+        "scope": "_list"
+      },
+      {
+        "ID": "c:@S@_list@FI@pTail",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "pTail",
+        "location": {
+          "column": "26",
+          "line": "98",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+        },
+        "name": "pTail",
+        "origin": "user_include",
+        "scope": "_list"
+      }
+    ],
+    "name": "_list",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@T@list",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct _list",
+    "location": {
+      "column": "3",
+      "line": "99",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "list",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@init_kernel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception init_kernel(void)",
+    "location": {
+      "column": "17",
+      "line": "106",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "init_kernel",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@create_task",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception create_task(void (*)(), uint)",
+    "location": {
+      "column": "11",
+      "line": "107",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "create_task",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@terminate",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void terminate(void)",
+    "location": {
+      "column": "17",
+      "line": "108",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "terminate",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@run",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void run(void)",
+    "location": {
+      "column": "17",
+      "line": "109",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "run",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@create_mailbox",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "mailbox * create_mailbox(uint, uint)",
+    "location": {
+      "column": "10",
+      "line": "112",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "create_mailbox",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@send_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception send_wait(mailbox *, void *)",
+    "location": {
+      "column": "17",
+      "line": "113",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "send_wait",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@send_no_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception send_no_wait(mailbox *, void *)",
+    "location": {
+      "column": "11",
+      "line": "114",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "send_no_wait",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@receive_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception receive_wait(mailbox *, void *)",
+    "location": {
+      "column": "17",
+      "line": "115",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "receive_wait",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@receive_no_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception receive_no_wait(mailbox *, void *)",
+    "location": {
+      "column": "17",
+      "line": "116",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "receive_no_wait",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@force_remove_mailbox",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception force_remove_mailbox(mailbox *)",
+    "location": {
+      "column": "17",
+      "line": "117",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "force_remove_mailbox",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@no_messages",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception no_messages(mailbox *)",
+    "location": {
+      "column": "17",
+      "line": "118",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "no_messages",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@remove_mailbox",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception remove_mailbox(mailbox *)",
+    "location": {
+      "column": "17",
+      "line": "119",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "remove_mailbox",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception wait(uint)",
+    "location": {
+      "column": "11",
+      "line": "123",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "wait",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@set_ticks",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void set_ticks(uint)",
+    "location": {
+      "column": "17",
+      "line": "124",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "set_ticks",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ticks",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint ticks(void)",
+    "location": {
+      "column": "17",
+      "line": "125",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "ticks",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@deadline",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint deadline(void)",
+    "location": {
+      "column": "7",
+      "line": "126",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "deadline",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@set_deadline",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void set_deadline(uint)",
+    "location": {
+      "column": "17",
+      "line": "127",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "set_deadline",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isr_on",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void isr_on(void)",
+    "location": {
+      "column": "17",
+      "line": "130",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "isr_on",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isr_off",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void isr_off(void)",
+    "location": {
+      "column": "17",
+      "line": "131",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "isr_off",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SwitchContext",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SwitchContext(void)",
+    "location": {
+      "column": "17",
+      "line": "133",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "SwitchContext",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LoadContext_In_Run",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LoadContext_In_Run(void)",
+    "location": {
+      "column": "17",
+      "line": "135",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "LoadContext_In_Run",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@switch_to_stack_of_next_task",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void switch_to_stack_of_next_task(void)",
+    "location": {
+      "column": "17",
+      "line": "138",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "switch_to_stack_of_next_task",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@LoadContext_In_Terminate",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void LoadContext_In_Terminate(void)",
+    "location": {
+      "column": "17",
+      "line": "141",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "LoadContext_In_Terminate",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@PreviousTask",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "PreviousTask",
+    "location": {
+      "column": "6",
+      "line": "150",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "PreviousTask",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@NextTask",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "NextTask",
+    "location": {
+      "column": "21",
+      "line": "150",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "NextTask",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@kernel_mode",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "kernel_mode",
+    "location": {
+      "column": "16",
+      "line": "151",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "kernel_mode",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@mem_counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "mem_counter",
+    "location": {
+      "column": "16",
+      "line": "152",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "mem_counter",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@tick_counter",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tick_counter",
+    "location": {
+      "column": "16",
+      "line": "153",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "tick_counter",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@min",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint min(uint, uint)",
+    "location": {
+      "column": "6",
+      "line": "155",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "min",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@F@__ISR_ON",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int __ISR_ON(void)",
+    "location": {
+      "column": "12",
+      "line": "156",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "__ISR_ON",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@F@__ISR_OFF",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int __ISR_OFF(void)",
+    "location": {
+      "column": "12",
+      "line": "157",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "__ISR_OFF",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@add_task_2_list",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception add_task_2_list(list *, TCB *)",
+    "location": {
+      "column": "11",
+      "line": "159",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "add_task_2_list",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@create_task",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception create_task(void (*)(), uint)",
+    "location": {
+      "column": "11",
+      "line": "160",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "create_task",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@mem_alloc",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void * mem_alloc(size_t)",
+    "location": {
+      "column": "7",
+      "line": "161",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "mem_alloc",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@mem_free",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void mem_free(void *)",
+    "location": {
+      "column": "6",
+      "line": "162",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "mem_free",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@update_meminfo",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void update_meminfo(void)",
+    "location": {
+      "column": "6",
+      "line": "163",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "update_meminfo",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@save_meminfo",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void save_meminfo(struct mallinfo)",
+    "location": {
+      "column": "6",
+      "line": "164",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "save_meminfo",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@ReadyList",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "ReadyList",
+    "location": {
+      "column": "7",
+      "line": "168",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "ReadyList",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@WaitingList",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "WaitingList",
+    "location": {
+      "column": "7",
+      "line": "169",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "WaitingList",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@TimerList",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "TimerList",
+    "location": {
+      "column": "7",
+      "line": "170",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "TimerList",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@first_heap",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "first_heap",
+    "location": {
+      "column": "7",
+      "line": "171",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "first_heap",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@DEBUG_memadress",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "DEBUG_memadress",
+    "location": {
+      "column": "9",
+      "line": "174",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "DEBUG_memadress",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@DEBUG_memsize",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "DEBUG_memsize",
+    "location": {
+      "column": "9",
+      "line": "175",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\kernel_functions.h"
+    },
+    "name": "DEBUG_memsize",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:@F@set_ticks",
     "What": "Function",
     "defdec": "Def",
@@ -106737,439 +106737,297 @@
     "scope": null
   },
   {
-    "ID": "c:utest.h@120@macro@A_EQ_S",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_EQ_S",
+    "ID": "c:@F@periodic_task_main",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void periodic_task_main(void)",
     "location": {
-      "column": "9",
-      "line": "11",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-    },
-    "name": "A_EQ_S",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:utest.h@189@macro@A_EQ_F",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_EQ_F",
-    "location": {
-      "column": "9",
+      "column": "6",
       "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_EQ_F",
-    "origin": "user_include",
+    "name": "periodic_task_main",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@260@macro@A_EQ_NP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_EQ_NP",
+    "ID": "c:@F@periodic_func",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void periodic_func(void)",
     "location": {
-      "column": "9",
+      "column": "6",
       "line": "13",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_EQ_NP",
-    "origin": "user_include",
+    "name": "periodic_func",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@338@macro@A_NEQ_S",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_NEQ_S",
+    "ID": "c:@F@periodic_task_test1",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void periodic_task_test1(void)",
     "location": {
-      "column": "9",
+      "column": "6",
       "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_NEQ_S",
-    "origin": "user_include",
+    "name": "periodic_task_test1",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@407@macro@A_NEQ_F",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_NEQ_F",
+    "ID": "c:@F@periodic_task_test2",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void periodic_task_test2(void)",
     "location": {
-      "column": "9",
+      "column": "6",
       "line": "15",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_NEQ_F",
-    "origin": "user_include",
+    "name": "periodic_task_test2",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@478@macro@A_NEQ_NP",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_NEQ_NP",
+    "ID": "c:@F@periodic_task_test3",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void periodic_task_test3(void)",
     "location": {
-      "column": "9",
+      "column": "6",
       "line": "16",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_NEQ_NP",
-    "origin": "user_include",
+    "name": "periodic_task_test3",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@556@macro@A_O_S",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_O_S",
+    "ID": "c:@F@p_rec",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void p_rec(void)",
     "location": {
-      "column": "9",
+      "column": "6",
       "line": "17",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_O_S",
-    "origin": "user_include",
+    "name": "p_rec",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@625@macro@A_O_F",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_O_F",
+    "ID": "c:@F@p_send",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void p_send(void)",
     "location": {
-      "column": "9",
+      "column": "6",
       "line": "18",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_O_F",
-    "origin": "user_include",
+    "name": "p_send",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@696@macro@A_F_S",
-    "What": "MacroDef",
+    "ID": "c:@pCounter",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "A_F_S",
+    "display": "pCounter",
     "location": {
-      "column": "9",
-      "line": "19",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-    },
-    "name": "A_F_S",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:utest.h@765@macro@A_F_F",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_F_F",
-    "location": {
-      "column": "9",
-      "line": "20",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-    },
-    "name": "A_F_F",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:utest.h@836@macro@A_I_S",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "A_I_S",
-    "location": {
-      "column": "9",
+      "column": "5",
       "line": "21",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "A_I_S",
-    "origin": "user_include",
+    "name": "pCounter",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@905@macro@A_I_F",
-    "What": "MacroDef",
+    "ID": "c:@pSendCount",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "A_I_F",
+    "display": "pSendCount",
     "location": {
-      "column": "9",
-      "line": "22",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-    },
-    "name": "A_I_F",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:utest.h@976@macro@UNEXPECTED_ERR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "UNEXPECTED_ERR",
-    "location": {
-      "column": "9",
+      "column": "5",
       "line": "23",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "UNEXPECTED_ERR",
-    "origin": "user_include",
+    "name": "pSendCount",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@1045@macro@TASK_ADMINISTRATION",
-    "What": "MacroDef",
+    "ID": "c:@pRecCount",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "TASK_ADMINISTRATION",
+    "display": "pRecCount",
     "location": {
-      "column": "9",
-      "line": "25",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "column": "5",
+      "line": "24",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "TASK_ADMINISTRATION",
-    "origin": "user_include",
+    "name": "pRecCount",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@1076@macro@MAILBOX_SYSTEM",
-    "What": "MacroDef",
+    "ID": "c:@pSendOKCount",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "MAILBOX_SYSTEM",
+    "display": "pSendOKCount",
     "location": {
-      "column": "9",
+      "column": "5",
       "line": "26",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "MAILBOX_SYSTEM",
-    "origin": "user_include",
+    "name": "pSendOKCount",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@1107@macro@TASK_TIMING",
-    "What": "MacroDef",
+    "ID": "c:@pRecOKCount",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "TASK_TIMING",
+    "display": "pRecOKCount",
     "location": {
-      "column": "9",
+      "column": "5",
       "line": "27",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "TASK_TIMING",
-    "origin": "user_include",
+    "name": "pRecOKCount",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@T@test_status",
-    "What": "Typedef",
+    "ID": "c:@pSendVal",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "char *",
+    "display": "pSendVal",
     "location": {
-      "column": "16",
+      "column": "5",
       "line": "28",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "test_status",
-    "origin": "user_include",
+    "name": "pSendVal",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@S@TestInfo",
-    "What": "Struct",
+    "ID": "c:@pRetVal",
+    "What": "Variable",
     "defdec": "Def",
-    "display": "TestInfo",
+    "display": "pRetVal",
     "location": {
-      "column": "16",
+      "column": "5",
       "line": "29",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "members": [
-      {
-        "ID": "c:@S@TestInfo@FI@test_id",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "test_id",
-        "location": {
-          "column": "9",
-          "line": "31",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-        },
-        "name": "test_id",
-        "origin": "user_include",
-        "scope": "TestInfo"
-      },
-      {
-        "ID": "c:@S@TestInfo@FI@test_adress",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "test_adress",
-        "location": {
-          "column": "11",
-          "line": "32",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-        },
-        "name": "test_adress",
-        "origin": "user_include",
-        "scope": "TestInfo"
-      },
-      {
-        "ID": "c:@S@TestInfo@FI@package",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "package",
-        "location": {
-          "column": "9",
-          "line": "33",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-        },
-        "name": "package",
-        "origin": "user_include",
-        "scope": "TestInfo"
-      },
-      {
-        "ID": "c:@S@TestInfo@FI@num_assert",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "num_assert",
-        "location": {
-          "column": "9",
-          "line": "34",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-        },
-        "name": "num_assert",
-        "origin": "user_include",
-        "scope": "TestInfo"
-      },
-      {
-        "ID": "c:@S@TestInfo@FI@test_s",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "test_s",
-        "location": {
-          "column": "17",
-          "line": "35",
-          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-        },
-        "name": "test_s",
-        "origin": "user_include",
-        "scope": "TestInfo"
-      }
-    ],
-    "name": "TestInfo",
-    "origin": "user_include",
+    "name": "pRetVal",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest.h@T@test_info",
-    "What": "Typedef",
+    "ID": "c:@F@periodic_task_test1",
+    "What": "Function",
     "defdec": "Def",
-    "display": "struct TestInfo",
+    "display": "void periodic_task_test1(void)",
     "location": {
-      "column": "3",
-      "line": "36",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "column": "6",
+      "line": "31",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "test_info",
-    "origin": "user_include",
+    "name": "periodic_task_test1",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@assert_equals",
+    "ID": "c:@F@periodic_task_test2",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "exception assert_equals(void *, void *, int, test_status)",
+    "defdec": "Def",
+    "display": "void periodic_task_test2(void)",
     "location": {
-      "column": "17",
-      "line": "38",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-    },
-    "name": "assert_equals",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@assert_not_equals",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception assert_not_equals(void *, void *, int, test_status)",
-    "location": {
-      "column": "17",
-      "line": "39",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
-    },
-    "name": "assert_not_equals",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@assert_interrupt",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "exception assert_interrupt(test_status)",
-    "location": {
-      "column": "17",
+      "column": "6",
       "line": "40",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "assert_interrupt",
-    "origin": "user_include",
+    "name": "periodic_task_test2",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@assert_fail",
+    "ID": "c:@F@periodic_task_test3",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "exception assert_fail(exception, test_status)",
+    "defdec": "Def",
+    "display": "void periodic_task_test3(void)",
     "location": {
-      "column": "17",
-      "line": "41",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "column": "6",
+      "line": "47",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "assert_fail",
-    "origin": "user_include",
+    "name": "periodic_task_test3",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@assert_ok",
+    "ID": "c:@F@periodic_func",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "exception assert_ok(exception, test_status)",
+    "defdec": "Def",
+    "display": "void periodic_func(void)",
     "location": {
-      "column": "17",
-      "line": "42",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "column": "6",
+      "line": "53",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "assert_ok",
-    "origin": "user_include",
+    "name": "periodic_func",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@display_test_status",
+    "ID": "c:@F@p_rec",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "void display_test_status(test_status)",
+    "defdec": "Def",
+    "display": "void p_rec(void)",
     "location": {
-      "column": "17",
-      "line": "43",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "column": "6",
+      "line": "59",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "display_test_status",
-    "origin": "user_include",
+    "name": "p_rec",
+    "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@pre_utest",
+    "ID": "c:@F@p_send",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * pre_utest(test_info *, int, void *, int, int)",
+    "defdec": "Def",
+    "display": "void p_send(void)",
     "location": {
-      "column": "17",
-      "line": "44",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+      "column": "6",
+      "line": "71",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
     },
-    "name": "pre_utest",
-    "origin": "user_include",
+    "name": "p_send",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@periodic_task_main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void periodic_task_main(void)",
+    "location": {
+      "column": "6",
+      "line": "85",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
+    },
+    "name": "periodic_task_main",
+    "origin": "project_file",
     "scope": null
   },
   {
@@ -109362,160 +109220,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@MEMFAULT_handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception MEMFAULT_handler(void)",
-    "location": {
-      "column": "11",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "MEMFAULT_handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ESCALATED_NULLPOINTER_handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception ESCALATED_NULLPOINTER_handler(void)",
-    "location": {
-      "column": "11",
-      "line": "21",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "ESCALATED_NULLPOINTER_handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@task_NULLPOINTER_handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception task_NULLPOINTER_handler(void)",
-    "location": {
-      "column": "13",
-      "line": "28",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "task_NULLPOINTER_handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@task_ALLOCFAIL_handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception task_ALLOCFAIL_handler(void)",
-    "location": {
-      "column": "11",
-      "line": "35",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "task_ALLOCFAIL_handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@task_FAIL_handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception task_FAIL_handler(void)",
-    "location": {
-      "column": "11",
-      "line": "43",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "task_FAIL_handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@DEADLINE_REACHED_handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception DEADLINE_REACHED_handler(void)",
-    "location": {
-      "column": "11",
-      "line": "50",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "DEADLINE_REACHED_handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@MEMORY_LEAKAGE_handler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception MEMORY_LEAKAGE_handler(void)",
-    "location": {
-      "column": "11",
-      "line": "58",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "MEMORY_LEAKAGE_handler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@task_exception_manager",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception task_exception_manager(exception)",
-    "location": {
-      "column": "11",
-      "line": "65",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "task_exception_manager",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@escalated_exception",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void escalated_exception(exception)",
-    "location": {
-      "column": "6",
-      "line": "110",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "escalated_exception",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@clear_task_exception",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void clear_task_exception(void)",
-    "location": {
-      "column": "6",
-      "line": "144",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "clear_task_exception",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@get_system_fault_registers",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void get_system_fault_registers(void)",
-    "location": {
-      "column": "6",
-      "line": "148",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
-    },
-    "name": "get_system_fault_registers",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@F@mailbox_dequeue",
     "What": "Function",
     "defdec": "Dec",
@@ -110356,142 +110060,86 @@
     "scope": null
   },
   {
-    "ID": "c:@F@utest_mem_alloc",
+    "ID": "c:@F@utest_min",
     "What": "Function",
     "defdec": "Dec",
-    "display": "test_info * utest_mem_alloc(test_info *)",
+    "display": "test_info * utest_min(test_info *)",
     "location": {
-      "column": "13",
+      "column": "25",
+      "line": "11",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
+    },
+    "name": "utest_min",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest___ISR_ON",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest___ISR_ON(test_info *)",
+    "location": {
+      "column": "25",
       "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
     },
-    "name": "utest_mem_alloc",
+    "name": "utest___ISR_ON",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_mem_free",
+    "ID": "c:@F@utest___ISR_OFF",
     "What": "Function",
     "defdec": "Dec",
-    "display": "test_info * utest_mem_free(test_info *)",
+    "display": "test_info * utest___ISR_OFF(test_info *)",
     "location": {
-      "column": "13",
+      "column": "25",
       "line": "13",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
     },
-    "name": "utest_mem_free",
+    "name": "utest___ISR_OFF",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_mem_copy",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_mem_copy(test_info *)",
-    "location": {
-      "column": "13",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
-    },
-    "name": "utest_mem_copy",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_update_meminfo",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_update_meminfo(test_info *)",
-    "location": {
-      "column": "13",
-      "line": "15",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
-    },
-    "name": "utest_update_meminfo",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_dynamic_mem_adress",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_dynamic_mem_adress(test_info *)",
-    "location": {
-      "column": "13",
-      "line": "16",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
-    },
-    "name": "utest_dynamic_mem_adress",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_mem_alloc",
+    "ID": "c:@F@utest_min",
     "What": "Function",
     "defdec": "Def",
-    "display": "test_info * utest_mem_alloc(test_info *)",
+    "display": "test_info * utest_min(test_info *)",
     "location": {
       "column": "13",
-      "line": "23",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+      "line": "20",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
     },
-    "name": "utest_mem_alloc",
+    "name": "utest_min",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_mem_free",
+    "ID": "c:@F@utest__ISR_ON",
     "What": "Function",
     "defdec": "Def",
-    "display": "test_info * utest_mem_free(test_info *)",
+    "display": "test_info * utest__ISR_ON(test_info *)",
     "location": {
       "column": "13",
-      "line": "32",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+      "line": "29",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
     },
-    "name": "utest_mem_free",
+    "name": "utest__ISR_ON",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_mem_copy",
+    "ID": "c:@F@utest__ISR_OFF",
     "What": "Function",
     "defdec": "Def",
-    "display": "test_info * utest_mem_copy(test_info *)",
+    "display": "test_info * utest__ISR_OFF(test_info *)",
     "location": {
       "column": "13",
-      "line": "41",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+      "line": "38",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
     },
-    "name": "utest_mem_copy",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_update_meminfo",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_update_meminfo(test_info *)",
-    "location": {
-      "column": "13",
-      "line": "50",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
-    },
-    "name": "utest_update_meminfo",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_dynamic_mem_adress",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_dynamic_mem_adress(test_info *)",
-    "location": {
-      "column": "13",
-      "line": "59",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
-    },
-    "name": "utest_dynamic_mem_adress",
+    "name": "utest__ISR_OFF",
     "origin": "project_file",
     "scope": null
   },
@@ -118584,408 +118232,156 @@
     "scope": null
   },
   {
-    "ID": "c:@F@utest_communication_main",
+    "ID": "c:@F@assert_equals",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_communication_main(void)",
+    "defdec": "Def",
+    "display": "exception assert_equals(void *, void *, int, test_status)",
     "location": {
-      "column": "14",
-      "line": "11",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_communication_main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_communication_before",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void utest_communication_before(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_communication_before",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_mailbox_dequeue",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_mailbox_dequeue(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "13",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_mailbox_dequeue",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_mailbox_enqueue",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_mailbox_enqueue(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_mailbox_enqueue",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_create_mailbox",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_create_mailbox(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "15",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_create_mailbox",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_append_msg",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_append_msg(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "16",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_append_msg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_remove_mailbox",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_remove_mailbox(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "17",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_remove_mailbox",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_send_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_send_wait(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "18",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_send_wait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_receive_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_receive_wait(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "19",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_receive_wait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_send_no_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_send_no_wait(test_info *)",
-    "location": {
-      "column": "14",
+      "column": "11",
       "line": "20",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
     },
-    "name": "utest_send_no_wait",
+    "name": "assert_equals",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_receive_no_wait",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_receive_no_wait(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "21",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_receive_no_wait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_no_messages",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_no_messages(test_info *)",
-    "location": {
-      "column": "14",
-      "line": "22",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_no_messages",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@utest_mailbox",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "utest_mailbox",
-    "location": {
-      "column": "13",
-      "line": "26",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_mailbox",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@utest_mes",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "utest_mes",
-    "location": {
-      "column": "17",
-      "line": "27",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_mes",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@testvar",
+    "ID": "c:utest_handler.c@978@F@assert_equals@i",
     "What": "Variable",
     "defdec": "Def",
-    "display": "testvar",
+    "display": "i",
+    "location": {
+      "column": "14",
+      "line": "28",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+    },
+    "name": "i",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@assert_not_equals",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception assert_not_equals(void *, void *, int, test_status)",
+    "location": {
+      "column": "11",
+      "line": "49",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+    },
+    "name": "assert_not_equals",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:utest_handler.c@1879@F@assert_not_equals@exc",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "exc",
     "location": {
       "column": "15",
-      "line": "28",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+      "line": "51",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
     },
-    "name": "testvar",
+    "name": "exc",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_communication_main",
+    "ID": "c:@F@assert_interrupt",
     "What": "Function",
     "defdec": "Def",
-    "display": "test_info * utest_communication_main(void)",
+    "display": "exception assert_interrupt(test_status)",
     "location": {
-      "column": "12",
-      "line": "29",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+      "column": "11",
+      "line": "65",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
     },
-    "name": "utest_communication_main",
+    "name": "assert_interrupt",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest_communication.c@1117@F@utest_communication_main@t_info",
+    "ID": "c:@F@assert_fail",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception assert_fail(exception, test_status)",
+    "location": {
+      "column": "11",
+      "line": "79",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+    },
+    "name": "assert_fail",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@assert_ok",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception assert_ok(exception, test_status)",
+    "location": {
+      "column": "11",
+      "line": "93",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+    },
+    "name": "assert_ok",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@full_test_status",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception full_test_status(test_status, int)",
+    "location": {
+      "column": "11",
+      "line": "101",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+    },
+    "name": "full_test_status",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:utest_handler.c@3732@F@full_test_status@i",
     "What": "Variable",
     "defdec": "Def",
-    "display": "t_info",
+    "display": "i",
     "location": {
-      "column": "16",
-      "line": "31",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+      "column": "14",
+      "line": "103",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
     },
-    "name": "t_info",
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_communication_before",
+    "ID": "c:@F@pre_utest",
     "What": "Function",
     "defdec": "Def",
-    "display": "void utest_communication_before(test_info *)",
+    "display": "test_info * pre_utest(test_info *, int, void *, int, int)",
+    "location": {
+      "column": "12",
+      "line": "109",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+    },
+    "name": "pre_utest",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@display_test_status",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void display_test_status(test_status)",
     "location": {
       "column": "6",
-      "line": "50",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+      "line": "122",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
     },
-    "name": "utest_communication_before",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_mailbox_dequeue",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_mailbox_dequeue(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "70",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_mailbox_dequeue",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:utest_communication.c@2279@F@utest_mailbox_dequeue@dequeue_status",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "dequeue_status",
-    "location": {
-      "column": "15",
-      "line": "76",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "dequeue_status",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_mailbox_enqueue",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_mailbox_enqueue(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "95",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_mailbox_enqueue",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_create_mailbox",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_create_mailbox(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "107",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_create_mailbox",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_append_msg",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_append_msg(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "119",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_append_msg",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_remove_mailbox",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_remove_mailbox(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "131",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_remove_mailbox",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_send_wait",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_send_wait(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "143",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_send_wait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_receive_wait",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_receive_wait(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "155",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_receive_wait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_send_no_wait",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_send_no_wait(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "167",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_send_no_wait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_receive_no_wait",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_receive_no_wait(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "179",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_receive_no_wait",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_no_messages",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_no_messages(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "191",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
-    },
-    "name": "utest_no_messages",
+    "name": "display_test_status",
     "origin": "project_file",
     "scope": null
   },
@@ -121708,6 +121104,160 @@
     "scope": null
   },
   {
+    "ID": "c:@F@MEMFAULT_handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception MEMFAULT_handler(void)",
+    "location": {
+      "column": "11",
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "MEMFAULT_handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ESCALATED_NULLPOINTER_handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception ESCALATED_NULLPOINTER_handler(void)",
+    "location": {
+      "column": "11",
+      "line": "21",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "ESCALATED_NULLPOINTER_handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@task_NULLPOINTER_handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception task_NULLPOINTER_handler(void)",
+    "location": {
+      "column": "13",
+      "line": "28",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "task_NULLPOINTER_handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@task_ALLOCFAIL_handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception task_ALLOCFAIL_handler(void)",
+    "location": {
+      "column": "11",
+      "line": "35",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "task_ALLOCFAIL_handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@task_FAIL_handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception task_FAIL_handler(void)",
+    "location": {
+      "column": "11",
+      "line": "43",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "task_FAIL_handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@DEADLINE_REACHED_handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception DEADLINE_REACHED_handler(void)",
+    "location": {
+      "column": "11",
+      "line": "50",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "DEADLINE_REACHED_handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@MEMORY_LEAKAGE_handler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception MEMORY_LEAKAGE_handler(void)",
+    "location": {
+      "column": "11",
+      "line": "58",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "MEMORY_LEAKAGE_handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@task_exception_manager",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "exception task_exception_manager(exception)",
+    "location": {
+      "column": "11",
+      "line": "65",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "task_exception_manager",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@escalated_exception",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void escalated_exception(exception)",
+    "location": {
+      "column": "6",
+      "line": "114",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "escalated_exception",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@clear_task_exception",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void clear_task_exception(void)",
+    "location": {
+      "column": "6",
+      "line": "148",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "clear_task_exception",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@get_system_fault_registers",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void get_system_fault_registers(void)",
+    "location": {
+      "column": "6",
+      "line": "152",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Handlers\\handlers.c"
+    },
+    "name": "get_system_fault_registers",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@idle_task",
     "What": "Variable",
     "defdec": "Dec",
@@ -121918,13 +121468,27 @@
     "scope": null
   },
   {
+    "ID": "c:@F@test_task3",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void test_task3(void)",
+    "location": {
+      "column": "6",
+      "line": "20",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
+    },
+    "name": "test_task3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@F@test_task_sending",
     "What": "Function",
     "defdec": "Dec",
     "display": "void test_task_sending(void)",
     "location": {
       "column": "6",
-      "line": "20",
+      "line": "21",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "test_task_sending",
@@ -121938,7 +121502,7 @@
     "display": "void test_task_recieving(void)",
     "location": {
       "column": "6",
-      "line": "21",
+      "line": "22",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "test_task_recieving",
@@ -121952,7 +121516,7 @@
     "display": "void pre_functional_test(void)",
     "location": {
       "column": "6",
-      "line": "22",
+      "line": "23",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "pre_functional_test",
@@ -121966,7 +121530,7 @@
     "display": "void functional_test_communication_main(void)",
     "location": {
       "column": "6",
-      "line": "23",
+      "line": "24",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "functional_test_communication_main",
@@ -121980,7 +121544,7 @@
     "display": "void pre_functional_test(void)",
     "location": {
       "column": "6",
-      "line": "26",
+      "line": "27",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "pre_functional_test",
@@ -121994,7 +121558,7 @@
     "display": "void functional_test_task_main(void)",
     "location": {
       "column": "6",
-      "line": "37",
+      "line": "38",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "functional_test_task_main",
@@ -122008,7 +121572,7 @@
     "display": "void functional_test_communication_main(void)",
     "location": {
       "column": "6",
-      "line": "44",
+      "line": "45",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "functional_test_communication_main",
@@ -122022,7 +121586,7 @@
     "display": "void test_task1(void)",
     "location": {
       "column": "6",
-      "line": "63",
+      "line": "64",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "test_task1",
@@ -122036,10 +121600,38 @@
     "display": "void test_task2(void)",
     "location": {
       "column": "6",
-      "line": "74",
+      "line": "75",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "test_task2",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@test_task3",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void test_task3(void)",
+    "location": {
+      "column": "6",
+      "line": "84",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
+    },
+    "name": "test_task3",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:functional_tests.c@2004@F@test_task3@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "9",
+      "line": "86",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
+    },
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -122050,7 +121642,7 @@
     "display": "void test_task_sending(void)",
     "location": {
       "column": "6",
-      "line": "84",
+      "line": "91",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "test_task_sending",
@@ -122058,13 +121650,13 @@
     "scope": null
   },
   {
-    "ID": "c:functional_tests.c@1993@F@test_task_sending@val",
+    "ID": "c:functional_tests.c@2104@F@test_task_sending@val",
     "What": "Variable",
     "defdec": "Def",
     "display": "val",
     "location": {
       "column": "9",
-      "line": "86",
+      "line": "93",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "val",
@@ -122078,7 +121670,7 @@
     "display": "void test_task_recieving(void)",
     "location": {
       "column": "6",
-      "line": "107",
+      "line": "114",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "test_task_recieving",
@@ -122086,13 +121678,13 @@
     "scope": null
   },
   {
-    "ID": "c:functional_tests.c@2463@F@test_task_recieving@val",
+    "ID": "c:functional_tests.c@2574@F@test_task_recieving@val",
     "What": "Variable",
     "defdec": "Def",
     "display": "val",
     "location": {
       "column": "9",
-      "line": "109",
+      "line": "116",
       "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "val",
@@ -122100,156 +121692,872 @@
     "scope": null
   },
   {
-    "ID": "c:@F@assert_equals",
+    "ID": "c:@F@functional_test_multiple_tasks",
     "What": "Function",
     "defdec": "Def",
-    "display": "exception assert_equals(void *, void *, int, test_status)",
+    "display": "void functional_test_multiple_tasks(void)",
     "location": {
-      "column": "11",
-      "line": "20",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+      "column": "6",
+      "line": "136",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
-    "name": "assert_equals",
+    "name": "functional_test_multiple_tasks",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:utest_handler.c@978@F@assert_equals@i",
+    "ID": "c:functional_tests.c@3135@F@functional_test_multiple_tasks@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "14",
-      "line": "28",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+      "line": "141",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\functional_tests.c"
     },
     "name": "i",
     "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@120@macro@A_EQ_S",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_EQ_S",
+    "location": {
+      "column": "9",
+      "line": "11",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_EQ_S",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@189@macro@A_EQ_F",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_EQ_F",
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_EQ_F",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@260@macro@A_EQ_NP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_EQ_NP",
+    "location": {
+      "column": "9",
+      "line": "13",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_EQ_NP",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@338@macro@A_NEQ_S",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_NEQ_S",
+    "location": {
+      "column": "9",
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_NEQ_S",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@407@macro@A_NEQ_F",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_NEQ_F",
+    "location": {
+      "column": "9",
+      "line": "15",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_NEQ_F",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@478@macro@A_NEQ_NP",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_NEQ_NP",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_NEQ_NP",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@556@macro@A_O_S",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_O_S",
+    "location": {
+      "column": "9",
+      "line": "17",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_O_S",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@625@macro@A_O_F",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_O_F",
+    "location": {
+      "column": "9",
+      "line": "18",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_O_F",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@696@macro@A_F_S",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_F_S",
+    "location": {
+      "column": "9",
+      "line": "19",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_F_S",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@765@macro@A_F_F",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_F_F",
+    "location": {
+      "column": "9",
+      "line": "20",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_F_F",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@836@macro@A_I_S",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_I_S",
+    "location": {
+      "column": "9",
+      "line": "21",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_I_S",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@905@macro@A_I_F",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "A_I_F",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "A_I_F",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@976@macro@UNEXPECTED_ERR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "UNEXPECTED_ERR",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "UNEXPECTED_ERR",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@1045@macro@TASK_ADMINISTRATION",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TASK_ADMINISTRATION",
+    "location": {
+      "column": "9",
+      "line": "25",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "TASK_ADMINISTRATION",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@1076@macro@MAILBOX_SYSTEM",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "MAILBOX_SYSTEM",
+    "location": {
+      "column": "9",
+      "line": "26",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "MAILBOX_SYSTEM",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@1107@macro@TASK_TIMING",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "TASK_TIMING",
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "TASK_TIMING",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@T@test_status",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "char *",
+    "location": {
+      "column": "16",
+      "line": "28",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "test_status",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@S@TestInfo",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "TestInfo",
+    "location": {
+      "column": "16",
+      "line": "29",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "members": [
+      {
+        "ID": "c:@S@TestInfo@FI@test_id",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "test_id",
+        "location": {
+          "column": "9",
+          "line": "31",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+        },
+        "name": "test_id",
+        "origin": "user_include",
+        "scope": "TestInfo"
+      },
+      {
+        "ID": "c:@S@TestInfo@FI@test_adress",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "test_adress",
+        "location": {
+          "column": "11",
+          "line": "32",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+        },
+        "name": "test_adress",
+        "origin": "user_include",
+        "scope": "TestInfo"
+      },
+      {
+        "ID": "c:@S@TestInfo@FI@package",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "package",
+        "location": {
+          "column": "9",
+          "line": "33",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+        },
+        "name": "package",
+        "origin": "user_include",
+        "scope": "TestInfo"
+      },
+      {
+        "ID": "c:@S@TestInfo@FI@num_assert",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "num_assert",
+        "location": {
+          "column": "9",
+          "line": "34",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+        },
+        "name": "num_assert",
+        "origin": "user_include",
+        "scope": "TestInfo"
+      },
+      {
+        "ID": "c:@S@TestInfo@FI@test_s",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "test_s",
+        "location": {
+          "column": "17",
+          "line": "35",
+          "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+        },
+        "name": "test_s",
+        "origin": "user_include",
+        "scope": "TestInfo"
+      }
+    ],
+    "name": "TestInfo",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:utest.h@T@test_info",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct TestInfo",
+    "location": {
+      "column": "3",
+      "line": "36",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "test_info",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@assert_equals",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "exception assert_equals(void *, void *, int, test_status)",
+    "location": {
+      "column": "17",
+      "line": "38",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "assert_equals",
+    "origin": "user_include",
     "scope": null
   },
   {
     "ID": "c:@F@assert_not_equals",
     "What": "Function",
-    "defdec": "Def",
+    "defdec": "Dec",
     "display": "exception assert_not_equals(void *, void *, int, test_status)",
     "location": {
-      "column": "11",
-      "line": "49",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+      "column": "17",
+      "line": "39",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
     },
     "name": "assert_not_equals",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:utest_handler.c@1879@F@assert_not_equals@exc",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "exc",
-    "location": {
-      "column": "15",
-      "line": "51",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
-    },
-    "name": "exc",
-    "origin": "project_file",
+    "origin": "user_include",
     "scope": null
   },
   {
     "ID": "c:@F@assert_interrupt",
     "What": "Function",
-    "defdec": "Def",
+    "defdec": "Dec",
     "display": "exception assert_interrupt(test_status)",
     "location": {
-      "column": "11",
-      "line": "65",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+      "column": "17",
+      "line": "40",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
     },
     "name": "assert_interrupt",
-    "origin": "project_file",
+    "origin": "user_include",
     "scope": null
   },
   {
     "ID": "c:@F@assert_fail",
     "What": "Function",
-    "defdec": "Def",
+    "defdec": "Dec",
     "display": "exception assert_fail(exception, test_status)",
     "location": {
-      "column": "11",
-      "line": "79",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+      "column": "17",
+      "line": "41",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
     },
     "name": "assert_fail",
-    "origin": "project_file",
+    "origin": "user_include",
     "scope": null
   },
   {
     "ID": "c:@F@assert_ok",
     "What": "Function",
-    "defdec": "Def",
+    "defdec": "Dec",
     "display": "exception assert_ok(exception, test_status)",
     "location": {
-      "column": "11",
-      "line": "93",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+      "column": "17",
+      "line": "42",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
     },
     "name": "assert_ok",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@full_test_status",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "exception full_test_status(test_status, int)",
-    "location": {
-      "column": "11",
-      "line": "101",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
-    },
-    "name": "full_test_status",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:utest_handler.c@3732@F@full_test_status@i",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "i",
-    "location": {
-      "column": "14",
-      "line": "103",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
-    },
-    "name": "i",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@pre_utest",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * pre_utest(test_info *, int, void *, int, int)",
-    "location": {
-      "column": "12",
-      "line": "109",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
-    },
-    "name": "pre_utest",
-    "origin": "project_file",
+    "origin": "user_include",
     "scope": null
   },
   {
     "ID": "c:@F@display_test_status",
     "What": "Function",
-    "defdec": "Def",
+    "defdec": "Dec",
     "display": "void display_test_status(test_status)",
     "location": {
-      "column": "6",
-      "line": "122",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_handler.c"
+      "column": "17",
+      "line": "43",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
     },
     "name": "display_test_status",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@pre_utest",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * pre_utest(test_info *, int, void *, int, int)",
+    "location": {
+      "column": "17",
+      "line": "44",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest.h"
+    },
+    "name": "pre_utest",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_communication_main",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_communication_main(void)",
+    "location": {
+      "column": "14",
+      "line": "11",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_communication_main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_communication_before",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void utest_communication_before(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "12",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_communication_before",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mailbox_dequeue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_mailbox_dequeue(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "13",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_mailbox_dequeue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mailbox_enqueue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_mailbox_enqueue(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_mailbox_enqueue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_create_mailbox",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_create_mailbox(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "15",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_create_mailbox",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_append_msg",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_append_msg(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "16",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_append_msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_remove_mailbox",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_remove_mailbox(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "17",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_remove_mailbox",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_send_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_send_wait(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "18",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_send_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_receive_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_receive_wait(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "19",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_receive_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_send_no_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_send_no_wait(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "20",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_send_no_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_receive_no_wait",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_receive_no_wait(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "21",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_receive_no_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_no_messages",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_no_messages(test_info *)",
+    "location": {
+      "column": "14",
+      "line": "22",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_no_messages",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@utest_mailbox",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "utest_mailbox",
+    "location": {
+      "column": "13",
+      "line": "26",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_mailbox",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@utest_mes",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "utest_mes",
+    "location": {
+      "column": "17",
+      "line": "27",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_mes",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@testvar",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "testvar",
+    "location": {
+      "column": "15",
+      "line": "28",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "testvar",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_communication_main",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_communication_main(void)",
+    "location": {
+      "column": "12",
+      "line": "29",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_communication_main",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:utest_communication.c@1117@F@utest_communication_main@t_info",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "t_info",
+    "location": {
+      "column": "16",
+      "line": "31",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "t_info",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_communication_before",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void utest_communication_before(test_info *)",
+    "location": {
+      "column": "6",
+      "line": "50",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_communication_before",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mailbox_dequeue",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_mailbox_dequeue(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "70",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_mailbox_dequeue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:utest_communication.c@2279@F@utest_mailbox_dequeue@dequeue_status",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "dequeue_status",
+    "location": {
+      "column": "15",
+      "line": "76",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "dequeue_status",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mailbox_enqueue",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_mailbox_enqueue(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "95",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_mailbox_enqueue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_create_mailbox",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_create_mailbox(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "107",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_create_mailbox",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_append_msg",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_append_msg(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "119",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_append_msg",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_remove_mailbox",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_remove_mailbox(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "131",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_remove_mailbox",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_send_wait",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_send_wait(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "143",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_send_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_receive_wait",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_receive_wait(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "155",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_receive_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_send_no_wait",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_send_no_wait(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "167",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_send_no_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_receive_no_wait",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_receive_no_wait(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "179",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_receive_no_wait",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_no_messages",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_no_messages(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "191",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_communication.c"
+    },
+    "name": "utest_no_messages",
     "origin": "project_file",
     "scope": null
   },
@@ -122858,370 +123166,6 @@
     "scope": null
   },
   {
-    "ID": "c:@F@min",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint min(uint, uint)",
-    "location": {
-      "column": "6",
-      "line": "19",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\common_functions.c"
-    },
-    "name": "min",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@F@__ISR_ON",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int __ISR_ON(void)",
-    "location": {
-      "column": "12",
-      "line": "28",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\common_functions.c"
-    },
-    "name": "__ISR_ON",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:kernel_functions.h@F@__ISR_OFF",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "int __ISR_OFF(void)",
-    "location": {
-      "column": "12",
-      "line": "44",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\common_functions.c"
-    },
-    "name": "__ISR_OFF",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_main",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void periodic_task_main(void)",
-    "location": {
-      "column": "6",
-      "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_func",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void periodic_func(void)",
-    "location": {
-      "column": "6",
-      "line": "13",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_func",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_test1",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void periodic_task_test1(void)",
-    "location": {
-      "column": "6",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_test1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_test2",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void periodic_task_test2(void)",
-    "location": {
-      "column": "6",
-      "line": "15",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_test2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_test3",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void periodic_task_test3(void)",
-    "location": {
-      "column": "6",
-      "line": "16",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_test3",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@p_rec",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void p_rec(void)",
-    "location": {
-      "column": "6",
-      "line": "17",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "p_rec",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@p_send",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void p_send(void)",
-    "location": {
-      "column": "6",
-      "line": "18",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "p_send",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pCounter",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pCounter",
-    "location": {
-      "column": "5",
-      "line": "21",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "pCounter",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pSendCount",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pSendCount",
-    "location": {
-      "column": "5",
-      "line": "23",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "pSendCount",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pRecCount",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pRecCount",
-    "location": {
-      "column": "5",
-      "line": "24",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "pRecCount",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pSendOKCount",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pSendOKCount",
-    "location": {
-      "column": "5",
-      "line": "26",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "pSendOKCount",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pRecOKCount",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pRecOKCount",
-    "location": {
-      "column": "5",
-      "line": "27",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "pRecOKCount",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pSendVal",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pSendVal",
-    "location": {
-      "column": "5",
-      "line": "28",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "pSendVal",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@pRetVal",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "pRetVal",
-    "location": {
-      "column": "5",
-      "line": "29",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "pRetVal",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_test1",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void periodic_task_test1(void)",
-    "location": {
-      "column": "6",
-      "line": "31",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_test1",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_test2",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void periodic_task_test2(void)",
-    "location": {
-      "column": "6",
-      "line": "40",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_test2",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_test3",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void periodic_task_test3(void)",
-    "location": {
-      "column": "6",
-      "line": "47",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_test3",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_func",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void periodic_func(void)",
-    "location": {
-      "column": "6",
-      "line": "53",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_func",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@p_rec",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void p_rec(void)",
-    "location": {
-      "column": "6",
-      "line": "59",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "p_rec",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@p_send",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void p_send(void)",
-    "location": {
-      "column": "6",
-      "line": "71",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "p_send",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@periodic_task_main",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void periodic_task_main(void)",
-    "location": {
-      "column": "6",
-      "line": "85",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\Tests\\periodic_test.c"
-    },
-    "name": "periodic_task_main",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@terminate",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void terminate(void)",
-    "location": {
-      "column": "6",
-      "line": "11",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\kernel.c"
-    },
-    "name": "terminate",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@run",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void run(void)",
-    "location": {
-      "column": "6",
-      "line": "27",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\kernel.c"
-    },
-    "name": "run",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
     "ID": "c:@g0",
     "What": "Variable",
     "defdec": "Def",
@@ -123348,86 +123292,352 @@
     "scope": null
   },
   {
-    "ID": "c:@F@utest_min",
+    "ID": "c:@F@terminate",
     "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_min(test_info *)",
+    "defdec": "Def",
+    "display": "void terminate(void)",
     "location": {
-      "column": "25",
+      "column": "6",
       "line": "11",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\kernel.c"
     },
-    "name": "utest_min",
+    "name": "terminate",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest___ISR_ON",
+    "ID": "c:@F@run",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void run(void)",
+    "location": {
+      "column": "6",
+      "line": "24",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\kernel.c"
+    },
+    "name": "run",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mem_alloc",
     "What": "Function",
     "defdec": "Dec",
-    "display": "test_info * utest___ISR_ON(test_info *)",
+    "display": "test_info * utest_mem_alloc(test_info *)",
     "location": {
-      "column": "25",
+      "column": "13",
       "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
     },
-    "name": "utest___ISR_ON",
+    "name": "utest_mem_alloc",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest___ISR_OFF",
+    "ID": "c:@F@utest_mem_free",
     "What": "Function",
     "defdec": "Dec",
-    "display": "test_info * utest___ISR_OFF(test_info *)",
+    "display": "test_info * utest_mem_free(test_info *)",
     "location": {
-      "column": "25",
+      "column": "13",
       "line": "13",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
     },
-    "name": "utest___ISR_OFF",
+    "name": "utest_mem_free",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest_min",
+    "ID": "c:@F@utest_mem_copy",
     "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_min(test_info *)",
+    "defdec": "Dec",
+    "display": "test_info * utest_mem_copy(test_info *)",
     "location": {
       "column": "13",
-      "line": "20",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
     },
-    "name": "utest_min",
+    "name": "utest_mem_copy",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest__ISR_ON",
+    "ID": "c:@F@utest_update_meminfo",
     "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest__ISR_ON(test_info *)",
+    "defdec": "Dec",
+    "display": "test_info * utest_update_meminfo(test_info *)",
     "location": {
       "column": "13",
+      "line": "15",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+    },
+    "name": "utest_update_meminfo",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_dynamic_mem_adress",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_dynamic_mem_adress(test_info *)",
+    "location": {
+      "column": "13",
+      "line": "16",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+    },
+    "name": "utest_dynamic_mem_adress",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mem_alloc",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_mem_alloc(test_info *)",
+    "location": {
+      "column": "13",
+      "line": "23",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+    },
+    "name": "utest_mem_alloc",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mem_free",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_mem_free(test_info *)",
+    "location": {
+      "column": "13",
+      "line": "32",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+    },
+    "name": "utest_mem_free",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_mem_copy",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_mem_copy(test_info *)",
+    "location": {
+      "column": "13",
+      "line": "41",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+    },
+    "name": "utest_mem_copy",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_update_meminfo",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_update_meminfo(test_info *)",
+    "location": {
+      "column": "13",
+      "line": "50",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+    },
+    "name": "utest_update_meminfo",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_dynamic_mem_adress",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_dynamic_mem_adress(test_info *)",
+    "location": {
+      "column": "13",
+      "line": "59",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utetst_memory_manager.c"
+    },
+    "name": "utest_dynamic_mem_adress",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@min",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint min(uint, uint)",
+    "location": {
+      "column": "6",
+      "line": "19",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\common_functions.c"
+    },
+    "name": "min",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@F@__ISR_ON",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int __ISR_ON(void)",
+    "location": {
+      "column": "12",
+      "line": "28",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\common_functions.c"
+    },
+    "name": "__ISR_ON",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:kernel_functions.h@F@__ISR_OFF",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int __ISR_OFF(void)",
+    "location": {
+      "column": "12",
+      "line": "44",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\CFiles\\common_functions.c"
+    },
+    "name": "__ISR_OFF",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_init_kernel",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_init_kernel(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "12",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
+    },
+    "name": "utest_init_kernel",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_create_task_list",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_create_task_list(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "13",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
+    },
+    "name": "utest_create_task_list",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_idle",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_idle(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "14",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
+    },
+    "name": "utest_idle",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_init_kernel",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_init_kernel(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "21",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
+    },
+    "name": "utest_init_kernel",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_create_task_list",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_create_task_list(test_info *)",
+    "location": {
+      "column": "12",
       "line": "29",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
     },
-    "name": "utest__ISR_ON",
+    "name": "utest_create_task_list",
     "origin": "project_file",
     "scope": null
   },
   {
-    "ID": "c:@F@utest__ISR_OFF",
+    "ID": "c:@F@utest_idle",
     "What": "Function",
     "defdec": "Def",
-    "display": "test_info * utest__ISR_OFF(test_info *)",
+    "display": "test_info * utest_idle(test_info *)",
     "location": {
-      "column": "13",
-      "line": "38",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_common_functions.c"
+      "column": "12",
+      "line": "37",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
     },
-    "name": "utest__ISR_OFF",
+    "name": "utest_idle",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_terminate",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_terminate(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "11",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
+    },
+    "name": "utest_terminate",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_run",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "test_info * utest_run(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "12",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
+    },
+    "name": "utest_run",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_terminate",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_terminate(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "21",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
+    },
+    "name": "utest_terminate",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@utest_run",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "test_info * utest_run(test_info *)",
+    "location": {
+      "column": "12",
+      "line": "30",
+      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
+    },
+    "name": "utest_run",
     "origin": "project_file",
     "scope": null
   },
@@ -124101,146 +124311,6 @@
     },
     "name": "ULLONG_MAX",
     "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_init_kernel",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_init_kernel(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
-    },
-    "name": "utest_init_kernel",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_create_task_list",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_create_task_list(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "13",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
-    },
-    "name": "utest_create_task_list",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_idle",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_idle(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "14",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
-    },
-    "name": "utest_idle",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_init_kernel",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_init_kernel(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "21",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
-    },
-    "name": "utest_init_kernel",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_create_task_list",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_create_task_list(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "29",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
-    },
-    "name": "utest_create_task_list",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_idle",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_idle(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "37",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel_init.c"
-    },
-    "name": "utest_idle",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_terminate",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_terminate(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "11",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
-    },
-    "name": "utest_terminate",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_run",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "test_info * utest_run(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "12",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
-    },
-    "name": "utest_run",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_terminate",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_terminate(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "21",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
-    },
-    "name": "utest_terminate",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@utest_run",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "test_info * utest_run(test_info *)",
-    "location": {
-      "column": "12",
-      "line": "30",
-      "path": "C:\\Users\\elias\\Documents\\CSE2\\OS_Proj_03_01\\Sam3x_Micro_OS\\UnitTest\\utest_kernel.c"
-    },
-    "name": "utest_run",
-    "origin": "project_file",
     "scope": null
   },
   {

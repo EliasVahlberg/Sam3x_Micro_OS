@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>4160068117</Checksum>
+        <Checksum>3157976721</Checksum>
     </DebugChecksum>
     <Disassembly>
         <MixedMode>1</MixedMode>
@@ -136,27 +136,6 @@
         <ShowTimeSum>1</ShowTimeSum>
         <SumSortOrder>0</SumSortOrder>
     </EventLog>
-    <TermIOLog>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-    </TermIOLog>
-    <LogFile>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ ""</LogFile>
-        <Category>_ 0</Category>
-    </LogFile>
-    <DriverProfiling>
-        <Enabled>0</Enabled>
-        <Mode>1</Mode>
-        <Graph>0</Graph>
-        <Symbiont>0</Symbiont>
-    </DriverProfiling>
-    <CallStackLog>
-        <Enabled>0</Enabled>
-    </CallStackLog>
-    <CallStackStripe>
-        <ShowTiming>1</ShowTiming>
-    </CallStackStripe>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>
@@ -173,7 +152,7 @@
         <Bp9>_ 0 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.48.14" 0 0 1 "" 0 "" 0</Bp9>
         <Bp10>_ 0 "EMUL_CODE" "{$PROJ_DIR$\UnitTest\utest_tasks.c}.45.5" 0 0 1 "" 0 "" 0</Bp10>
         <Bp11>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.31.5" 0 0 1 "WriteMemory2File(DEBUG_memadress,DEBUG_memsize)&amp;&amp;WriteMemory2FileExtended(DEBUG_memadress,DEBUG_memsize)" 0 "" 0</Bp11>
-        <Bp12>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.52.9" 0 0 1 "WriteFreeMemory2File(DEBUG_memadress)&amp;&amp;WriteMemory2FileExtended(DEBUG_memadress, 0)" 0 "" 0</Bp12>
+        <Bp12>_ 0 "EMUL_CODE" "{$PROJ_DIR$\CFiles\memory_manager.c}.55.5" 0 0 1 "WriteFreeMemory2File(DEBUG_memadress)&amp;&amp;WriteMemory2FileExtended(DEBUG_memadress, 0)" 0 "" 0</Bp12>
         <Bp13>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp13>
         <Bp14>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp14>
         <Bp15>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\memory_leakage_test.c}.28.5" 0 0 1 "" 0 "" 0</Bp15>
@@ -181,17 +160,41 @@
         <Bp17>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests_task.c}.96.5" 0 0 1 "" 0 "" 0</Bp17>
         <Bp18>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests_task.c}.85.5" 0 0 1 "" 0 "" 0</Bp18>
         <Bp19>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests_task.c}.86.5" 0 0 1 "" 0 "" 0</Bp19>
-        <Bp20>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests.c}.125.9" 0 0 1 "" 0 "" 0</Bp20>
-        <Bp21>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.17.5" 0 0 1 "" 0 "" 0</Bp21>
-        <Bp22>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.223.5" 0 0 1 "" 0 "" 0</Bp22>
-        <Bp23>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.231.5" 0 0 1 "" 0 "" 0</Bp23>
-        <Bp24>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.67.9" 0 0 1 "" 0 "" 0</Bp24>
-        <Bp25>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.79.9" 0 0 1 "" 0 "" 0</Bp25>
-        <Bp26>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\tasks.c}.286.9" 0 0 1 "" 0 "" 0</Bp26>
-        <Count>27</Count>
+        <Bp20>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.17.5" 0 0 1 "" 0 "" 0</Bp20>
+        <Bp21>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.223.5" 0 0 1 "" 0 "" 0</Bp21>
+        <Bp22>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\lab3test.c}.231.5" 0 0 1 "" 0 "" 0</Bp22>
+        <Bp23>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.67.9" 0 0 1 "" 0 "" 0</Bp23>
+        <Bp24>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\periodic_test.c}.79.9" 0 0 1 "" 0 "" 0</Bp24>
+        <Bp25>_ 0 "EMUL_CODE" "{$PROJ_DIR$\Tests\functional_tests.c}.138.9" 0 0 1 "" 0 "" 0</Bp25>
+        <Bp26>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\kernel_init.c}.75.5" 0 0 1 "" 0 "" 0</Bp26>
+        <Bp27>_ 1 "EMUL_CODE" "{$PROJ_DIR$\Handlers\handlers.c}.85.5" 0 0 1 "" 0 "" 0</Bp27>
+        <Bp28>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\tasks.c}.179.17" 0 0 1 "" 0 "" 0</Bp28>
+        <Bp29>_ 1 "EMUL_CODE" "{$PROJ_DIR$\CFiles\tasks.c}.152.47" 0 0 1 "" 0 "" 0</Bp29>
+        <Count>30</Count>
     </Breakpoints2>
+    <TermIOLog>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+    </TermIOLog>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ ""</LogFile>
+        <Category>_ 0</Category>
+    </LogFile>
     <Aliases>
         <Count>0</Count>
         <SuppressDialog>0</SuppressDialog>
     </Aliases>
+    <DriverProfiling>
+        <Enabled>0</Enabled>
+        <Mode>1</Mode>
+        <Graph>0</Graph>
+        <Symbiont>0</Symbiont>
+    </DriverProfiling>
+    <CallStackLog>
+        <Enabled>0</Enabled>
+    </CallStackLog>
+    <CallStackStripe>
+        <ShowTiming>1</ShowTiming>
+    </CallStackStripe>
 </settings>

@@ -8,6 +8,11 @@
 *     ...
 */
 
+#pragma region macros
+#define MAILBOX_NON_EMPTY_THRESHOLD 100
+#define NULLPOINTER_THRESHOLD 10
+#pragma endregion macros
+
 #pragma region FAULT_REGISTERS
 #define SYS_FAULT_REG_AFSR	    0xE000ED3C 
 #define SYS_FAULT_REG_AIRCR	    0xE000ED0C 
@@ -26,7 +31,7 @@
 #pragma endregion FAULT_REGISTERS
 
 #pragma region flags
-volatile int task_exception_status          = 0;
+volatile int task_exception_status          = 1;
 volatile int num_memfaults                  = 0;
 volatile int num_nullpointers               = 0;
 volatile int num_escalated_nullpointers     = 0;
@@ -35,7 +40,10 @@ volatile int num_allocfails                 = 0;
 volatile int num_deadline_reached           = 0;
 volatile int escalated_exception_set        = 0;
 volatile int isr_cleared_during_exception   = 0;
+volatile int num_failed_remove_mailbox      = 0;
 volatile int FAULT_REGISTERS[14];
+volatile void* memfault_adress2              = NULL;
+volatile void* memfault_adress1              = NULL;
 #pragma endregion flags
 
 
@@ -47,6 +55,7 @@ exception   task_FAIL_handler();
 exception   DEADLINE_REACHED_handler();
 exception   MEMORY_LEAKAGE_handler();
 exception   ESCALATED_NULLPOINTER_handler();
+exception   NOT_EMPTY_handeler();
 void        escalated_exception(exception exc);
 void        get_system_fault_registers();
 void        clear_task_exception();

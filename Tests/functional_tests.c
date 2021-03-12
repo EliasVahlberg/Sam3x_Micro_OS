@@ -14,13 +14,17 @@ int dl1 = 1;
 int very_low_deadline = 50;
 exception test2_status = OK;
 int n_mess = 0;
+int n_tasks_terminated = 0;
 
 void test_task1();
 void test_task2();
+void test_task3();
+void test_task4();
 void test_task_sending();
 void test_task_recieving();
 void pre_functional_test();
 void functional_test_communication_main();
+void functional_test_multiple_tasks();
 
 
 void pre_functional_test()
@@ -41,6 +45,19 @@ void functional_test_task_main()
         while (1){}
     run();
 }
+
+void functional_test_multiple_tasks()
+{
+    pre_functional_test();
+        update_meminfo();
+    for (int i = 0; i < 10; i++)
+    {
+    if (create_task(test_task3, high_deadline) <= FAIL)
+        while (1){}
+    }
+    run();
+}
+
 void functional_test_communication_main()
 {
     pre_functional_test();
@@ -80,7 +97,25 @@ void test_task2()
     terminate();
     return;
 }
-
+void test_task3()
+{
+    update_meminfo();
+    for (int i = 0; i < 100; i++)
+    {
+        if (create_task(test_task4, 10) <= FAIL)
+            while (1){}
+    }
+    update_meminfo();
+    terminate();
+}
+void test_task4()
+{
+    int i = 10;
+    i++;
+    update_meminfo();
+    n_tasks_terminated++;
+    terminate();
+}
 void test_task_sending()
 {
     int val;
@@ -125,3 +160,4 @@ void test_task_recieving()
         while(1){/*is good*/}
     terminate();
 }
+

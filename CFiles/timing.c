@@ -83,12 +83,12 @@ exception periodically_run(void (*body)(),int ticks_period,int num_periods)
 extern void TimerInt(void)
 {
     tick_counter++;
-    if(ticks() >= min(TimerList->pHead->nTCnt,TimerList->pHead->pTask->Deadline))
+    if(TimerList->pHead!=NULL&&ticks() >= min(TimerList->pHead->nTCnt,TimerList->pHead->pTask->Deadline))
     {
         move_listobj(TimerList,ReadyList,TimerList->pHead);
         NextTask = ReadyList->pHead->pTask;
     }
-    else if(ticks() >= WaitingList->pHead->pTask->Deadline)
+    else if(WaitingList->pHead!=NULL&&ticks() >= WaitingList->pHead->pTask->Deadline)
     {
         move_listobj(WaitingList,ReadyList,WaitingList->pHead);
         NextTask = ReadyList->pHead->pTask;

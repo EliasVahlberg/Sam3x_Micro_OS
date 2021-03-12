@@ -1,136 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>5</fileVersion>
-    <fileChecksum>2804337115</fileChecksum>
+    <fileChecksum>1939962666</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\context_switching_functions_march_2019.o.rsp</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.o</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\Tests\lab1test.c</file>
-            <file>$PROJ_DIR$\CFiles\timing.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$PROJ_DIR$\Tests\functional_tests.c</file>
-            <file>$PROJ_DIR$\UnitTest\utest_kernel_init.c</file>
-            <file>$PROJ_DIR$\UnitTest\utest_handler.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\at91sam3x8.h</file>
-            <file>$PROJ_DIR$\Tests\lab3test.c</file>
-            <file>$PROJ_DIR$\Debug\Exe\OS_Project.out</file>
-            <file>$PROJ_DIR$\CFiles\mallocstats.h</file>
-            <file>$PROJ_DIR$\UnitTest\utetst_memory_manager.c</file>
-            <file>$PROJ_DIR$\Tests\periodic_test.c</file>
-            <file>$PROJ_DIR$\Debug\Obj\cstartup.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\Tests\lab2test.c</file>
-            <file>$PROJ_DIR$\UnitTest\utest_timing.c</file>
-            <file>$PROJ_DIR$\Debug\List\OS_Project.map</file>
-            <file>$PROJ_DIR$\kernel_functions.h</file>
-            <file>$PROJ_DIR$\CFiles\memory_manager.c</file>
-            <file>$PROJ_DIR$\main.c</file>
-            <file>$PROJ_DIR$\Tests\memory_leakage_test.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\UnitTest\utest_common_functions.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\exceptions.c</file>
-            <file>$PROJ_DIR$\UnitTest\utest_kernel.c</file>
-            <file>$PROJ_DIR$\CFiles\tasks.c</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
-            <file>$PROJ_DIR$\UnitTest\utest_communication.c</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\cstartup.o.rsp</file>
-            <file>$PROJ_DIR$\CFiles\common_functions.c</file>
-            <file>$PROJ_DIR$\CFiles\kernel.c</file>
-            <file>$PROJ_DIR$\UnitTest\utest_tasks.c</file>
             <file>$PROJ_DIR$\cstartup.s</file>
-            <file>$PROJ_DIR$\core_cmFunc.h</file>
-            <file>$PROJ_DIR$\core_cm3.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\CFiles\communication.c</file>
-            <file>$PROJ_DIR$\system_sam3x.h</file>
-            <file>$PROJ_DIR$\core_cmInstr.h</file>
-            <file>$PROJ_DIR$\exceptions.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$PROJ_DIR$\UnitTest\utest_tasks.c</file>
             <file>$PROJ_DIR$\startup_sam3x.c</file>
-            <file>$PROJ_DIR$\Tests\tests.h</file>
-            <file>$PROJ_DIR$\UnitTest\utest.h</file>
-            <file>$PROJ_DIR$\system_sam3x.c</file>
-            <file>$PROJ_DIR$\CFiles\kernel_init.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\cmsis_iar.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\exceptions.o</file>
-            <file>$PROJ_DIR$\sam3x8-sram_BigHeap.icf</file>
+            <file>$PROJ_DIR$\UnitTest\utest_timing.c</file>
             <file>$PROJ_DIR$\context_switching_functions_march_2019.s</file>
-            <file>$PROJ_DIR$\Debug\Obj\context_switching_functions_march_2019.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\cstartup.o.rsp</file>
+            <file>$PROJ_DIR$\core_cm3.h</file>
+            <file>$PROJ_DIR$\exceptions.c</file>
+            <file>$PROJ_DIR$\main.c</file>
+            <file>$PROJ_DIR$\system_sam3x.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\CFiles\kernel_init.c</file>
+            <file>$PROJ_DIR$\CFiles\communication.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\UnitTest\utest.h</file>
+            <file>$PROJ_DIR$\UnitTest\utest_communication.c</file>
+            <file>$PROJ_DIR$\exceptions.h</file>
             <file>$PROJ_DIR$\Handlers\handlers.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\system_sam3x.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup_sam3x.o</file>
+            <file>$PROJ_DIR$\CFiles\common_functions.c</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$PROJ_DIR$\Tests\periodic_test.c</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$PROJ_DIR$\sam3x8-sram_BigHeap.icf</file>
+            <file>$PROJ_DIR$\CFiles\kernel.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\exceptions.o</file>
+            <file>$PROJ_DIR$\Tests\lab2test.c</file>
             <file>$PROJ_DIR$\Handlers\handlers.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$PROJ_DIR$\kernel_functions.h</file>
+            <file>$PROJ_DIR$\Tests\lab1test.c</file>
+            <file>$PROJ_DIR$\Tests\memory_leakage_test.c</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\cstartup.o</file>
+            <file>$PROJ_DIR$\Tests\lab3test.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\context_switching_functions_march_2019.o.rsp</file>
+            <file>$PROJ_DIR$\CFiles\timing.c</file>
+            <file>$PROJ_DIR$\UnitTest\utetst_memory_manager.c</file>
+            <file>$PROJ_DIR$\Debug\List\OS_Project.map</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$PROJ_DIR$\UnitTest\utest_kernel.c</file>
+            <file>$PROJ_DIR$\UnitTest\utest_common_functions.c</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\UnitTest\utest_kernel_init.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\core_cmFunc.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\context_switching_functions_march_2019.o</file>
+            <file>$PROJ_DIR$\core_cmInstr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\OS_Project.out</file>
+            <file>$PROJ_DIR$\Tests\tests.h</file>
+            <file>$PROJ_DIR$\system_sam3x.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$PROJ_DIR$\UnitTest\utest_handler.c</file>
+            <file>$PROJ_DIR$\CFiles\memory_manager.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+            <file>$PROJ_DIR$\at91sam3x8.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\CFiles\mallocstats.h</file>
+            <file>$PROJ_DIR$\CFiles\tasks.c</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Tests\functional_tests.c</file>
         </outputs>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\OS_Project.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 27</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 38 41 5 1 65 23 62 10 39 4 63</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\main.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 10</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 34 50 6 55 42 61 3 15 24 14 9 32 0 16 44 51 45 60 20 29 37 8 67 66 11 7 25 18 31 22 57 58 33 40 13 36 12 46 26 21 17 49 48 53 28 52</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\exceptions.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 62</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 54</file>
-                </tool>
-            </inputs>
-        </file>
         <file>
             <name>$PROJ_DIR$\cstartup.s</name>
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 23</file>
+                    <file> 35</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 43</file>
+                    <file> 5</file>
                 </tool>
             </inputs>
         </file>
@@ -139,28 +94,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 39</file>
+                    <file> 20</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 34 50 6 61 3 24 32 16 17 49 48 53 54</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\system_sam3x.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 4</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 34 50 6 61 3 24 32 16 17 49 48 53 52</file>
+                    <file> 13 52 65 10 42 62 30 48 60 6 49 51 16</file>
                 </tool>
             </inputs>
         </file>
@@ -169,13 +109,58 @@
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 65</file>
+                    <file> 50</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 2</file>
+                    <file> 38</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\exceptions.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\main.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13 52 65 47 18 10 42 59 62 56 61 30 66 48 21 12 26 11 63 58 64 39 29 17 67 32 28 36 33 23 54 14 44 15 57 43 46 1 3 40 60 6 49 51 31 55</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\system_sam3x.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 19</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13 52 65 10 42 62 30 48 60 6 49 51 55</file>
                 </tool>
             </inputs>
         </file>
@@ -184,13 +169,31 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 19 27</file>
+                    <file> 53 41</file>
                 </tool>
             </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Debug\Exe\OS_Project.out</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 22 24 34 45 50 35 27 37 20 19 25</file>
+                </tool>
+            </inputs>
         </file>
         <forcedrebuild>
             <name>[MULTI_TOOL]</name>
             <tool>ILINK</tool>
+        </forcedrebuild>
+        <forcedrebuild>
+            <name>[REBUILD_ALL]</name>
         </forcedrebuild>
     </configuration>
     <configuration>

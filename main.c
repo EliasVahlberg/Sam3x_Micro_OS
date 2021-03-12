@@ -35,7 +35,9 @@ unsigned int high_deadline = 100000;
   SysTick_Config(100000);
   isr_off();
   //mem_leak_test_main();
-  periodic_task_main();
+
+  functional_test_multiple_tasks();
+  //periodic_task_main();
   //functional_test_communication_main();
   //functional_test_task_main();
   while(1){}

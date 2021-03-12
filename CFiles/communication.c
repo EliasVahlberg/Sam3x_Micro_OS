@@ -92,13 +92,18 @@ exception force_remove_mailbox(mailbox *mBox)
 exception remove_mailbox(mailbox *mBox)
 {
     if (mBox == NULL)
-        return task_exception_manager(FAIL);
+        return task_exception_manager(NULLPOINTER);
     if (mBox->nMessages == 0)
     {
         mem_free(mBox);
         return OK;
     }
-    return task_exception_manager(NOT_EMPTY);
+    if(task_exception_manager(NOT_EMPTY)==FAIL)
+    {
+        force_remove_mailbox(mBox);
+        return FAIL;
+    }
+    return NOT_EMPTY;
 }
 
 exception send_wait(mailbox *mBox, void *pData)
@@ -128,6 +133,9 @@ exception send_wait(mailbox *mBox, void *pData)
     }
     else
     {
+        if(task_exception_status == DEADLINE_REACHED)
+            return FAIL;
+            
         msg *mes = NULL;
         exception status = append_msg(mes, mBox, pData, SENDER, 1);
         //Allocate a msg
@@ -188,6 +196,8 @@ exception receive_wait(mailbox *mBox, void *pData)
     }
     else
     {
+        if(task_exception_status == DEADLINE_REACHED)
+            return FAIL;
         msg *mes = NULL;
         exception status = append_msg(mes, mBox, pData, RECEIVER, 1);
         if (status != OK)

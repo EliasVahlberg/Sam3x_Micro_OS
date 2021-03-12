@@ -27,7 +27,11 @@ struct mallinfo meminfo;
 void *mem_alloc(size_t size)
 {
     void *mem;
-    __ISR_OFF();
+    int isr_off_before = 0;
+    if(__get_BASEPRI()!=0)
+        isr_off_before = 1;
+    else
+        __ISR_OFF();
     mem = calloc(1, size);
     if (mem_counter == 0)
         first_heap = mem;
@@ -36,7 +40,8 @@ void *mem_alloc(size_t size)
     DEBUG_memadress = mem;
     DEBUG_memsize = size;
     //BREAKPOINT HERE
-    __ISR_ON();
+    if(isr_off_before==0)
+        __ISR_ON();
     return mem;
 }
 
@@ -51,15 +56,28 @@ void mem_free(void *mem)
     {
         if (!dynamic_mem_adress(mem))
         {
+            if(memfault_adress1==NULL || memfault_adress1!=NULL &&memfault_adress2!=NULL)
+            {
+                memfault_adress1 = mem;
+                memfault_adress2 = NULL;
+            }
+            else
+                memfault_adress2 = mem;
+
             task_exception_manager(MEMFAULT);
             return;
         }
-        __ISR_OFF();
+        int isr_off_before = 0;
+        if(__get_BASEPRI()!=0)
+            isr_off_before = 1;
+        else
+            __ISR_OFF();
         free(mem);
         mem_counter--;
         DEBUG_memadress = mem;
         //BREAKPOINT HERE
-        __ISR_ON();
+        if(isr_off_before==0)
+           __ISR_ON();
         return;
     }
     else
@@ -84,12 +102,15 @@ exception mem_copy(char *src, char *dest, uint size)
 }
 void update_meminfo()
 {
-    meminfo = __iar_dlmallinfo();
+    //Turn on advanced heap management to use this feature
+    //meminfo = __iar_dlmallinfo();
     return;
 }
 void save_meminfo(struct mallinfo minfo)
 {
-    minfo = __iar_dlmallinfo();
+    //Turn on advanced heap management to use this feature
+   // minfo = __iar_dlmallinfo();
+   
     return;
 }
 int dynamic_mem_adress(void *ptr)
